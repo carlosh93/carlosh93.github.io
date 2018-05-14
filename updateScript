@@ -1,14 +1,20 @@
 #!/bin/sh
-
+git remote update
 UPSTREAM=${1:-'@{u}'}
 LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
-
+sudo rm -R /tmp/sofinezure
 if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date"
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
+    sudo rm -R /tmp/sofinezure
+    git pull
+    if [ $LOCAL = $REMOTE ]; then
+        echo "Repository was successfully updated"
+        echo "Updating Database"
+    fi
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
 else
