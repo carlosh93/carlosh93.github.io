@@ -108,6 +108,52 @@
         });
 
 
+
+        /***PUBLICATIONS GALLERY***/
+        var all_publs = '#journals,#conferences,#theses';
+        var afterJournals = '#conferences,#theses';
+
+        $(afterJournals).addClass('hide');
+
+        $('a#all-publ').on('click', function () {
+            $('#add-more').removeClass('hide');
+            $(all_publs).removeClass('tab-pane');
+            $(afterJournals).addClass('hide');
+        });
+        $('a.cate-publ').on('click', function () {
+            $('#add-more').addClass('hide');
+            $(afterJournals).removeClass('hide');
+            $(all_publs).addClass('tab-pane');
+
+        });
+        $('#add-more').on('click', function () {
+            if ($(all_publs).hasClass('')) {
+                $(all_publs).removeClass('tab-pane hide').addClass('x');
+                $('#port-add-icon').removeClass('fa-plus').addClass('fa-arrow-up');
+            } else {
+                $(afterJournals).addClass('hide');
+                $(all_publs).removeClass('x');
+                $('#port-add-icon').addClass('fa-plus').removeClass('fa-arrow-up');
+            }
+
+        });
+
+
+        /***PUBLICATIONS***/
+        /*$('li.list-shuffle-publ,#add-more').on('click', function () {
+            $(".inLeft")
+                .removeClass('InLeft')
+                .hide()
+                .addClass('InLeft')
+                .show();
+            $(".inRight")
+                .removeClass('InRight')
+                .hide()
+                .addClass('InRight')
+                .show();
+        });*/
+
+
         /***SKILLS***/
         $('div.skillbar').each(function () {
             $(this).find('div.skillbar-bar').css({
@@ -235,7 +281,7 @@
         window.sr = ScrollReveal({reset: false}); // reset false stops repetition of animation
         var commonCards = '#port-add-icon,#map-card,.interest-icon-even,.interest-icon,' +
             '.timeline-dot, .timeline-content,#add-more,#skills-card,#testimonials-card,' +
-            '#portfolios-card,#interest-card,#p-one,#p-two,#p-three,#blog-card,#contact-card,#clients';
+            '#portfolios-card,#interest-card,#p-one,#p-two,#p-three,#publ-card,#blog-card,#contact-card,#clients';
         // Customizing a reveal set
         sr.reveal(commonCards, {duration: 1100});
         sr.reveal('#about-card,.map-label', {duration: 1400, delay: 500});

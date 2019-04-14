@@ -1,0 +1,182 @@
+#publ .publ {
+    /*publications class*/
+    position: relative;
+    height: 21em;
+}
+
+#publ #publ-card .tab-content {
+    /*portfolios content*/
+    margin: 0 10px;
+}
+
+#publ #publ-card .nav-tabs {
+    /*publications tabs*/
+    border-bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#publ #publ-card .nav-tabs li {
+    /*option list*/
+    float: none;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+#publ #publ-card .nav-tabs li a {
+    /*links for options*/
+    margin-right: 0;
+    border: 0;
+    color: #555555;
+}
+
+#publ #publ-card .nav-tabs>li.active>a,
+#publ #publ-card .nav-tabs>li.active>a:hover,
+#publ #publ-card .nav-tabs>li.active>a:focus {
+    /*tabs style bootstrap*/
+    border: 0;
+    border-bottom: 5px solid #1976D2;
+    background-color: transparent;
+    /* outline: 0;*/
+}
+
+#publ .publ:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+#publ .publ:before {
+    background: blue;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#publ .publ .content {
+    /*publications content*/
+    display: inline-block;
+    padding: 40px;
+    vertical-align: middle;
+    width: 49.3%;
+}
+
+#publ .publ .content:last-child {
+    margin: 0 2px 0 -2px;
+}
+
+#publ .publ .content h6 {
+    /*publications header*/
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+#publ .publ .content .breadcrumb {
+    padding: 0;
+    background: transparent !important;
+    font-size: 15px;
+}
+
+#publ .publ .content a {
+    /*read more link*/
+    border-bottom: 1px solid gainsboro;
+}
+
+#publ .publ .image {
+    /*publications image*/
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#publ .publ .image:hover .image-overlay {
+    /*overlay effect*/
+    z-index: 2;
+}
+
+#publ .publ .image:hover img {
+    /*image hover*/
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#publ .publ .image img {
+    /*publications image*/
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: .5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#publ .publ .image-overlay {
+    /*publications image overlay*/
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#publ .odd {
+    /*publications odd property*/
+    text-align: left;
+}
+
+#publ .odd .image {
+    float: left;
+}
+
+#publ .odd .image img {
+    right: 0;
+    top: 0;
+}
+
+#publ .even {
+    /*publications even property*/
+    text-align: right;
+}
+
+#publ .even .image {
+    float: right;
+}
+
+#publ .even .image img {
+    left: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #publ .publ {
+        /*publications class*/
+        display: block;
+        height: auto;
+    }
+
+    #publ .publ:last-child {
+        margin-bottom: 0;
+    }
+
+    #publ .publ .image {
+        /*image*/
+        height: 20em;
+        width: 100%;
+    }
+
+    #publ .publ .content {
+        /*publications content*/
+        text-align: center;
+        width: 100%;
+    }
+}

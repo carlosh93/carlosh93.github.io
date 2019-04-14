@@ -1,0 +1,1124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Trimatrix Lab">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <title>{{ site.title }}</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <!--APPLE TOUCH ICON-->
+    <link rel="apple-touch-icon" href="img/template/apple-touch-icon.png">
+
+
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+
+    <!-- MATERIAL ICON FONT -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- ANIMATION -->
+    <link href="stylesheets/animate.min.css" rel="stylesheet">
+
+
+    <!-- MATERIALIZE -->
+    <link href="stylesheets/materialize.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- CUSTOM STYLE -->
+    <link href="stylesheets/style.css" id="switch_style" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--==========================================
+                  PRE-LOADER
+===========================================-->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="box-holder animated bounceInDown">
+                    <span class="load-box">
+                        <span class="box-inner"></span>
+                    </span>
+                </div>
+                <!-- NAME & STATUS -->
+                <div class="text-holder text-center">
+                    <h2>Carlos Hinojosa</h2>
+                    <h6>Computer Scientist & Engineer</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========================================
+                        HEADER
+    ===========================================-->
+    <header id="home">
+        <nav id="theMenu" class="menu">
+
+            <!--MENU-->
+            <div id="menu-options" class="menu-wrap">
+
+                <!--PERSONAL LOGO-->
+                <div class="logo-flat">
+                    <img alt="personal-logo" class="img-responsive" src="img/favicon.png">
+                </div>
+                <br>
+
+                <!--OPTIONS-->
+                <a href="#home">
+                    <i class="title-icon fa fa-user"></i>Home</a>
+                <a href="#about">
+                    <i class="title-icon fa fa-dashboard"></i>About me</a>
+                <a href="#education">
+                    <i class="title-icon fa fa-graduation-cap"></i>Education</a>
+                <a href="#skills">
+                    <i class="title-icon fa fa-sliders"></i>Professional Skills</a>
+                <a href="#experience">
+                    <i class="title-icon fa fa-suitcase"></i>Work Experience</a>
+                <a href="#blog">
+                    <i class="title-icon fa fa-pencil-square"></i>Research Experience/a>
+                    <a href="#portfolios">
+                        <i class="title-icon fa fa-archive"></i>Software Development</a>
+                    <a href="#interest">
+                        <i class="title-icon fa fa-heart"></i>Personal Interests</a>
+                    <a href="#contact">
+                        <i class="title-icon fa fa-envelope"></i>Contact</a>
+            </div>
+
+            <!-- MENU BUTTON -->
+            <div id="menuToggle">
+                <div class="toggle-normal">
+                    <i class="material-icons top-bar">remove</i>
+                    <i class="material-icons middle-bar">remove</i>
+                    <i class="material-icons bottom-bar">remove</i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-background section">
+            <div id="v-card-holder">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+
+                            <!-- V-CARD -->
+                            <div id="v-card" class="card">
+
+                                <!-- PROFILE PICTURE -->
+                                <div id="profile" class="right">
+                                    <img alt="profile-image" class="img-responsive" src="img/profile.png">
+                                    <div class="slant"></div>
+                                    <div class="btn-floating btn-large add-btn">
+                                        <i class="material-icons">add</i>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+
+                                    <!-- NAME & STATUS -->
+                                    <div class="info-headings">
+                                        <h4 class="text-uppercase left">Carlos Hinojosa</h4>
+                                        <h6 class="text-capitalize left">Computer Scientist & Engineer</h6>
+                                    </div>
+
+                                    <!-- CONTACT INFO -->
+                                    <div class="infos">
+                                        <ul class="profile-list">
+                                            <li class="clearfix">
+                                                <span class="title">
+                                                    <i class="material-icons">email</i>
+                                                </span>
+                                                <span class="content">{{ site.email }}</span>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span class="title">
+                                                    <i class="material-icons">language</i>
+                                                </span>
+                                                <span class="content">carlosh93.github.io</span>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span class="title">
+                                                    <i class="fa fa-skype" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="content">{{ site.mySkype }}</span>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span class="title">
+                                                    <i class="material-icons">phone</i>
+                                                </span>
+                                                <span class="content">{{ site.myPhone }}</span>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span class="title">
+                                                    <i class="material-icons">place</i>
+                                                </span>
+                                                <span class="content">{{ site.workAddress }}</span>
+                                                <!--<span class="content">Facultad de Ingenierías Físico-Mecánicas</span>
+                                                <span class="content">Escuela de Ingeniería de Sistemas e Informática, Salon Lp 334</span>-->
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!--LINKS-->
+                                    <div class="links">
+                                        <!-- FACEBOOK-->
+                                        <a href="https://www.facebook.com/carloshinojosamontero" id="first_one"
+                                            class="social btn-floating indigo">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <!-- TWITTER-->
+                                        <a href="https://twitter.com/CarlosH_93" class="social  btn-floating blue">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <!-- GOOGLE+-->
+                                        <a href="https://plus.google.com/109063978235385790662"
+                                            class="social  btn-floating red">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                        <!-- LINKEDIN-->
+                                        <a href="https://www.linkedin.com/in/carlos-alberto-hinojosa-montero-368713139/"
+                                            class="social  btn-floating blue darken-3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <!-- RSS-->
+                                        <a href="#" class="social  btn-floating orange darken-3">
+                                            <i class="fa fa-rss"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--==========================================
+                       ABOUT
+    ===========================================-->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- DETAILS -->
+                    <div id="about-card" class="card">
+                        <div class="card-content">
+                            <!-- ABOUT PARAGRAPH -->
+                            <p>
+                                Cientifico e ingeniero de la computación con cerca de 6 años de experiencia en
+                                investigación cientifica y desarrollo de software.
+                                Hello! I'm Carlos Hinojosa. Computer scientist and engineer with over 6 years of
+                                experience in software development and scientific
+                                research. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad
+                                Industrial
+                                de Santander, Colombia, in 2015 and 2018, respectively. I am currently pursuing the
+                                Ph.D.
+                                in computer science at Universidad Industrial de Santander. My main research areas are
+                                computational
+                                imaging, optical code design, compressive imaging, computer vision and sparse
+                                representation.
+                                I also have developed scientific software for companies like Ecopetrol-ICP and for my
+                                university
+                                in different research projects. I have experience with different programming languages
+                                like
+                                C/C++, Java, C#, Javascript, MATLAB, Typescript, Python and Bash scripting in Linux-like
+                                operating systems. Furthermore, I have experience with Linux system administration and
+                                hybrid
+                                mobile app development with different frameworks like Ionic, React and Cordova.
+                            </p>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div id="about-btn" class="card-action">
+                            <div class="about-btn">
+                                <!-- DOWNLOAD CV BUTTON -->
+                                <a href="#" class="btn waves-effect">Download CV</a>
+                                <!-- CONTACT BUTTON -->
+                                <a href="#contact" class="btn waves-effect">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========================================
+                       EDUCATION
+    ===========================================-->
+    <section id="education" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-graduation-cap"></i>Education</h4>
+            </div>
+
+            <div id="timeline-education">
+
+                <!-- TIMELINE -->
+                {% assign ordered_educationC = site.education | sort:"order_number" %}
+                {% for education in ordered_educationC %}
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot">
+                        {% if education.dotIcon %}
+                        <i class="{{education.dot}}"></i>
+                        {% else %}
+                        <h6>{{education.dot}}</h6>
+                        {% endif %}
+                    </div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">{{education.title}}</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>{{education.place}}</small>
+                                </h6>
+                                <h6>
+                                    <small>{{education.city}}-{{education.state}}, {{education.country}} </small>
+                                </h6>
+                                <h6>
+                                    <small>{{education.iniDate}} - {{education.endDate}}</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                {{education.content | markdownify }}
+                            </p>
+                            <!-- BUTTON TRIGGER MODAL -->
+                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================================
+                           SKILLS
+        ===========================================-->
+    <section id="skills" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-sliders"></i>Skills</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="skills-card" class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- FIRST SKILL SECTION -->
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Professional</h6>
+                                    </div>
+                                    <div class="skillbar" data-percent="95%">
+                                        <div class="skillbar-title">
+                                            <span>Image & Signal Processing</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">95%</div>
+                                    </div>
+                                    <div class="skillbar" data-percent="90%">
+                                        <div class="skillbar-title">
+                                            <span>Computer Vision</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">90%</div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>Machine Learning</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>Compressive Sensing</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">
+                                            <span>Sparse Representation</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>Spectral Imaging</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- SECOND SKILL SECTION -->
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Programming Languages</h6>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>C/C++</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">95%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="85%">
+                                        <div class="skillbar-title">
+                                            <span>Javascript</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">85%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="85%">
+                                        <div class="skillbar-title">
+                                            <span>Hybrid Mobile App Dev</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">85%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="85%">
+                                        <div class="skillbar-title">
+                                            <span>HTML & CSS</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">85%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>MATLAB</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                    
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>Java</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">
+                                            <span>C#</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">
+                                            <span>Cuda</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">
+                                            <span>Python</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">
+                                            <span>LaTEX</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="60%">
+                                        <div class="skillbar-title">
+                                            <span>Bash Scripting</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">60%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="40%">
+                                        <div class="skillbar-title">
+                                            <span>R</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">40%</div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- THIRD SKILL SECTION -->
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Software</h6>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>DecisionSpace</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>SeisSpace ProMAX</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                    
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">
+                                            <span>Dev Console</span>
+                                        </div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================================
+                           EXPERIENCE
+        ===========================================-->
+    <section id="experience" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-suitcase"></i>Experience</h4>
+            </div>
+
+            <div id="timeline-experience">
+
+                {% assign ordered_exp = site.experience | sort:"order_number" %}
+                {% for experience in ordered_exp %}
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot">
+                        {% if experience.dotIcon %}
+                        <i class="{{experience.dot}}"></i>
+                        {% else %}
+                        <h6>{{experience.dot}}</h6>
+                        {% endif %}
+                    </div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">{{experience.title}}</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>{{experience.place}}</small>
+                                </h6>
+                                <h6>
+                                    <small>{{experience.dateInit}} - {{experience.dateEnd}}</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                {{experience.subtitle}}
+                            </p>
+                            <!-- BUTTON TRIGGER MODAL -->
+                            <a href="http://bit.ly/247Q2jH" class="modal-dot" data-toggle="modal"
+                                data-target="#myModal-{{experience.order_number}}">
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================================
+                          MODALS
+        ===========================================-->
+
+    {% assign ordered_exp = site.experience | sort:"order_number" %}
+    {% for experience in ordered_exp %}
+    <div class="modal fade" id="myModal-{{experience.order_number}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-{{experience.order_number}}">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!--MODAL HEADER-->
+                <div class="modal-header  text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel-{{experience.order_number}}">{{experience.modalTitle}} </h4>
+                    <h6>
+                        <small>{{experience.dateInit}} - {{experience.dateEnd}}</small>
+                    </h6>
+                </div>
+                <!--MODAL BODY-->
+                <div class="modal-body">
+                    <p>
+                        {{experience.content | markdownify }}
+                    </p>
+                </div>
+                <!--MODAL FOOTER-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!--==========================================
+                    Publications: Journals
+        ===========================================-->
+    <section id="blog" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-pencil-square"></i>Publications</h4>
+            </div>
+            
+            <div id="blog-card" class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="card">
+                        <!--BLOG ODD-->
+                        <div class="blog odd">
+                            <!--IMAGE-->
+                            <div class="image">
+                                <img alt="blog-image" src="img/template/blog.png" />
+                                <div class="image-overlay"></div>
+                            </div>
+                            <!--DETAILS-->
+                            <div class="content">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="http://goo.gl/oUVX01">Frontend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Design</a>
+                                    </li>
+                                    <li class="active">Material</li>
+                                </ol>
+                                <h6>Material Design</h6>
+                                <p>
+                                    Web design encompasses many different skills and disciplines in the production of
+                                    websites.Web design include web graphic
+                                    design, interface design etc.
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!--BLOG EVEN-->
+                        <div class="blog even">
+                            <!--IMAGE-->
+                            <div class="image">
+                                <img alt="blog-image" src="img/template/blog.png" />
+                                <div class="image-overlay"></div>
+                            </div>
+                            <!--DETAILS-->
+                            <div class="content">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="#">Backend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dev</a>
+                                    </li>
+                                    <li class="active">Shortcuts</li>
+                                </ol>
+                                <h6>Development Shortcut</h6>
+                                <p>
+                                    Web development is a broad term for the work involved in developing a web site for
+                                    the Internet or an intranet. Now lets
+                                    get a bit deeper in this topic
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!--BLOG ODD-->
+                        <div class="blog odd">
+                            <!--IMAGE-->
+                            <div class="image">
+                                <img alt="blog-image" src="img/template/blog.png" />
+                                <div class="image-overlay"></div>
+                            </div>
+                            <!--DETAILS-->
+                            <div class="content">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="#">Frontend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Specs</a>
+                                    </li>
+                                    <li class="active">UI</li>
+                                </ol>
+                                <h6>A Good UI</h6>
+                                <p>
+                                    The user interface (UI), in the industrial design field of human–machine
+                                    interaction, is the space where interactions between
+                                    humans and machines occur.
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========================================
+                          PORTFOLIOS
+        ===========================================-->
+    <section id="portfolios" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-archive"></i>Research Projects</h4>
+            </div>
+            <div id="portfolios-card" class="row">
+
+                <!--OPTIONS-->
+                <ul class="nav nav-tabs">
+                    <!--ALL CATEGORIES-->
+                    <li class="active waves-effect list-shuffle">
+                        <a id="all-sample" class="active" href="#all" data-toggle="tab">ALL</a>
+                        <!--CATEGORIES-->
+                    <li class="waves-effect list-shuffle">
+                        <a class="cate" href="#a" data-toggle="tab">LOGO</a>
+                    </li>
+                    <li class="waves-effect list-shuffle">
+                        <a class="cate" href="#b" data-toggle="tab">DRIBBLE</a>
+                    </li>
+                    <li class="waves-effect list-shuffle">
+                        <a class="cate" href="#c" data-toggle="tab">WEBSITES</a>
+                    </li>
+                </ul>
+
+                <!--CATEGORIES CONTENT-->
+                <div class="tab-content">
+
+                    <!--All CATEGORIES-->
+                    <div id="all"></div>
+
+                    <!--CATEGORY 1-->
+                    <div id="a">
+
+                        <!--CATEGORY CONTENT ONE BIG-->
+                        <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Personal
+                                        <span>LOGO</span>
+                                    </h2>
+                                    <p>Designed this logo in a competition. It was chosen as a winner.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!--CATEGORY CONTENT TWO SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Cafe
+                                        <span>LOGO</span>
+                                    </h2>
+                                    <p>I designed this for a clint for his cafe.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!--CATEGORY CONTENT THREE SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Cafe
+                                        <span>LOGO</span>
+                                    </h2>
+                                    <p>I designed this for a clint for his cafe.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+
+                    <!--CATEGORY 2-->
+                    <div id="b">
+
+                        <!--CATEGORY CONTENT ONE BIG-->
+                        <div class="col-md-4 col-sm-12 col-xs-12 grid big inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>T-shirt
+                                        <span>BRAND</span>
+                                    </h2>
+                                    <p>A brand logo designed by me for Silicon Brand</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!--CATEGORY CONTENT TWO SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>V-Card
+                                        <span>MATERIAL</span>
+                                    </h2>
+                                    <p>Used latest material design to made this sample</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+
+                        <!--CATEGORY CONTENT THREE SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Cafe
+                                        <span>LOGO</span>
+                                    </h2>
+                                    <p>I designed this for a clint for his cafe.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+
+                    <!--CATEGORY 3-->
+                    <div id="c">
+                        <!--CATEGORY CONTENT ONE SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>T-shirt
+                                        <span>BRAND</span>
+                                    </h2>
+                                    <p>A brand logo designed by me for Silicon Brand</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!--CATEGORY CONTENT TWO SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Sport
+                                        <span>WEBSITE</span>
+                                    </h2>
+                                    <p>Made this for DECo Sports LTD.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!--CATEGORY CONTENT THREE SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Corporate
+                                        <span>WEBSITE</span>
+                                    </h2>
+
+                                    <p>Made this for Lance Corporation UK</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!--CATEGORY CONTENT FOUR SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>T-shirt
+                                        <span>BRAND</span>
+                                    </h2>
+                                    <p>A brand logo designed by me for Silicon Brand</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!--CATEGORY CONTENT FIVE SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Sport
+                                        <span>WEBSITE</span>
+                                    </h2>
+                                    <p>Made this for DECo Sports LTD.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!--CATEGORY CONTENT SIX SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                            <figure class="port-effect">
+                                <img src="img/template/portfolio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2>Corporate
+                                        <span>WEBSITE</span>
+                                    </h2>
+
+                                    <p>Made this for Lance Corporation UK</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!--PORTFOLIOS ADD GALLERY BUTTON-->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button id="add-more" class="center-block btn-large waves-effect">
+                            <i id="port-add-icon" class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================================
+                           INTEREST
+        ===========================================-->
+    <section id="interest" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-heart"></i>Interest</h4>
+            </div>
+
+            <div id="interest-card" class="card">
+                <!--INTEREST TEXT-->
+                <div class="card-content">
+                    <p>
+                        I love watching and playing soccer. I love music, specially Vallenato music which is folk music of Colombia. 
+                        Indeed this kind of music born in my hometown, Valledupar. I also like traveling and photography, 
+                        these keep me fresh for the working environment.
+                    </p>
+                </div>
+
+                <!--INTEREST ICONS-->
+                <div class="row no-gutters">
+
+                    <!--INTEREST ICON ONE-->
+                    <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
+                        <div class="interest-icon">
+                            <i class="fa fa-music"></i>
+                            <span>Music</span>
+                        </div>
+                    </div>
+                    <!--INTEREST ICON TWO-->
+                    <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                        <div class="interest-icon-even">
+                            <i class="fa fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                    <!--INTEREST ICON THREE-->
+                    <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                        <div class="interest-icon">
+                            <i class="fa fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                    <!--INTEREST ICON FOUR-->
+                    <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                        <div class="interest-icon-even">
+                            <i class="fa fa-futbol-o"></i>
+                            <span>Football</span>
+                        </div>
+                    </div>
+                    <!--INTEREST ICON FIVE-->
+                    <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                        <div class="interest-icon">
+                            <i class="fa fa-plane"></i>
+                            <span>Traveling</span>
+                        </div>
+                    </div>
+                    <!--INTEREST ICON SIX-->
+                    <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                        <div class="interest-icon-even">
+                            <i class="fa fa-film"></i>
+                            <span>Movies</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========================================
+                      CONTACT
+    ===========================================-->
+    <section id="contact" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center">
+                    <i class="title-icon fa fa-envelope"></i>Contact</h4>
+            </div>
+            <div class="row">
+                <div id="contact-card" class="col-md-5 col-sm-12 col-xs-12">
+                    <!-- CONTACT FORM -->
+                    <div class="card">
+                        <div class="card-content">
+                            <form id="contact-form" name="c-form">
+                                <!-- NAME -->
+                                <div class="input-field">
+                                    <input id="first_name" type="text" class="validate" name="first_name" required>
+                                    <label for="first_name">Name</label>
+                                </div>
+                                <!--SUBJECT-->
+                                <div class="input-field">
+                                    <input id="sub" type="text" class="validate" name="sub">
+                                    <label for="sub">Subject</label>
+                                </div>
+                                <!--EMAIL-->
+                                <div class="input-field">
+                                    <input id="email" type="email" class="validate" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <!--MESSAGE-->
+                                <div class="input-field">
+                                    <textarea id="textarea1" class="materialize-textarea" name="message"
+                                        required></textarea>
+                                    <label for="textarea1">Message</label>
+                                </div>
+                                <!-- SEND BUTTON -->
+                                <div class="contact-send">
+                                    <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                                        class="btn waves-effect">Send
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--FORM LOADER-->
+                        <div id="form-loader" class="progress is-hidden">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <!-- CONTACT MAP -->
+                    <div id="map-card" class="card">
+                        <!-- MAP -->
+                        <div id="myMap"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--SCROLL TO TOP-->
+    <div id="scroll-top">
+        <div id="scrollup">
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </div>
+
+    <!--==========================================
+                      FOOTER
+===========================================-->
+
+    <footer>
+        <div class="container">
+            <!--FOOTER DETAILS-->
+            <p class="text-center">
+                © All right reserved by
+                <a href="http://carlosh93.github.io" target="_blank">
+                    <strong>Carlos Hinojosa</strong>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================== SCRIPTS ================== -->
+    <script src="javascript/jquery-2.1.3.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLlIihVNbt63MIWlFAO2tAc4Ow8Qj8bk"></script>
+    <script src="javascript/markerwithlabel.min.js"></script>
+    <script src="javascript/retina.min.js"></script>
+    <script src="javascript/scrollreveal.min.js"></script>
+    <script src="javascript/jquery.touchSwipe.min.js"></script>
+    <script src="javascript/custom.js"></script>
+
+
+</body>
+
+</html>

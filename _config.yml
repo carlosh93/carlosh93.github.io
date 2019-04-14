@@ -13,16 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Carlos Hinojosa Home Page
+title: Carlos Hinojosa WebPage
+myName: Carlos Hinojosa
+myProfile: Computer Scientist & Engineer
+workAddress: Carrera 27, Calle 9 Universidad Industrial de Santander Facultad de Ingenierías Físico-Mecánicas Escuela de Ingeniería de Sistemas e Informática, Salon Lp 334
+myAge: 25
 email: carlos.hinojosa@saber.uis.edu.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Carlos Hinojosa Home Page. In this page, my complete curriculum vitae is presented.
+  In this page, my complete curriculum vitae is presented.
   Different research and software projects, which I have been developed, are shown.
   In addition, my complete contact information is provided.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlosh93.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: carlosh_93
 github_username:  carlosh93
+mySkype: carlos_h93@skype.com
+myPhone: +57 316 749 4710
+
+# Collections
+collections_dir: collections
+collections: 
+  - education
+  - experience
 
 # Build settings
 markdown: kramdown
