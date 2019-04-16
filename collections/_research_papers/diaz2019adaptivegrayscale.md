@@ -4,6 +4,11 @@ picture: "img/journals/covers/diaz2019adaptivegrayscale.png"
 journal: Optics and Laser Technology
 authors: Nelson Diaz, Carlos Hinojosa, Henry Arguello
 publisher: ELSEVIER
+show_copyright: true
+modaltitle: ELSEVIER Journal - Optics and Laser Technology
+modalsubtitle: "<small>Nelson Diaz, Carlos Hinojosa, and Henry Arguello, Adaptive grayscale compressive spectral imaging using optimal blue noise coding patterns, Optics & Laser Technology (2019), Volume 117, Pages 147-157, ISSN 0030-3992. Available Online: <a href=https://www.sciencedirect.com/science/article/pii/S0030399218312088>https://doi.org/10.1016/j.optlastec.2019.03.038</a> <br> <br><b>Get free access to the final version of the article using this <a href='https://authors.elsevier.com/c/1YvA76wNUc~EO'>link</a> (50 days' free access)</b> </small>"
+modalcontent: "<br>[&#x24B8; 2019 ELSEVIER]. One print or electronic copy may be made for personal use only. Systematic reproduction and distribution, duplication of any material in this paper for a fee or for commercial purposes, or modifications of the content of this paper are prohibited. Due to ELSEVIER restrictions, we only provide the accepted version of the manuscript. The final published journal article can be found via the <a href='https://doi.org/10.1016/j.optlastec.2019.03.038'>DOI</a>. <br><br> <a rel='license' href='http://creativecommons.org/licenses/by-nc-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>."
+file_link: Documents/Publications/Journals/diaz2019adaptivegrayscale.pdf
 link_categoy_name: Adaptive_Grayscale
 repo_link: https://github.com/carlosh93/Adaptive-Grayscale-CSI-Blue-Noise-Patterns
 order_number: 1

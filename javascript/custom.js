@@ -138,6 +138,29 @@
 
         });
 
+        /** Publications modals **/
+        //copyrights
+        $('#copyright-notice-modal').on('show.bs.modal', function (event) {
+            console.log("HOLISSSS")
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var title = button.data('modaltitle') // Extract info from data-* attributes
+            var subtitle = button.data('modalsubtitle')
+            var content = button.data('modalcontent')
+            var download_file = button.data('modalfile')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').html(title)
+            modal.find('.modal-subtitle').html(subtitle)
+            modal.find('.modal-body p').html(content)
+            
+            modal.find('.modal-footer form').attr({
+                method: "get",
+                target: "_blank",
+                action: download_file
+            })
+          })
+
 
         /***PUBLICATIONS***/
         /*$('li.list-shuffle-publ,#add-more').on('click', function () {

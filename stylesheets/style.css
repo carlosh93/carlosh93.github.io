@@ -269,6 +269,7 @@ html, body {
   .modal-content .modal-body {
     position: relative;
     padding: 40px;
+    padding-top: 5px!important;
     text-align: justify; }
   .modal-content .modal-header {
     padding: 15px;

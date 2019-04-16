@@ -4,6 +4,11 @@ picture: "img/journals/covers/hinojosa2018csiclustering.png"
 journal: Journal of Selected Topics in Signal Processing
 authors: Carlos Hinojosa, Jorge Bacca, Henry Arguello
 publisher: IEEE
+show_copyright: true
+modaltitle: IEEE Journal of Selected Topics in Signal Processing
+modalsubtitle: "<small>Carlos Hinojosa, Jorge Bacca and Henry Arguello, Coded Aperture Design for Compressive Spectral Subspace Clustering, in IEEE Journal of Selected Topics in Signal Processing, vol. 12, no. 6, pp. 1589-1600, Dec. 2018.. Available Online: <a href=https://doi.org/10.1109/JSTSP.2018.2878293>https://doi.org/10.1109/JSTSP.2018.2878293</a></small>"
+modalcontent: "&#x24B8; 2018 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works."
+file_link: Documents/Publications/Journals/hinojosa2018csiclustering.pdf
 link_categoy_name: CA_Design_Clustering
 repo_link: https://github.com/carlosh93/compressive_spectral_subspace_clustering
 order_number: 3

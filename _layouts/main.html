@@ -688,15 +688,22 @@
                                                 {{paper.content | markdownify | truncate: 200 }}
                                             </p>
                                             <a href="#">Read More</a> <span class="link_separator_publ">|</span>
-                                            {% if paper.OSA %}
-                                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#condition-term-osa-1" >Download Paper</a> <span class="link_separator_publ">|</span>
+                                            {% if paper.show_copyright %}
+                                            <a href="#" class="modal-dot" data-toggle="modal"
+                                                data-target="#copyright-notice-modal"
+                                                data-modaltitle="{{paper.modaltitle}}"
+                                                data-modalsubtitle="{{paper.modalsubtitle}}"
+                                                data-modalcontent="{{paper.modalcontent}}"
+                                                data-modalfile="{{paper.file_link}}">Download Paper</a> <span
+                                                class="link_separator_publ">|</span>
                                             {% else %}
                                             <a href="#">Download Paper</a> <span class="link_separator_publ">|</span>
                                             {% endif %}
                                             {% if paper.repo_link %}
                                             <a target="_blank" href="{{paper.repo_link}}">Download Code</a>
                                             {% else %}
-                                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#no_code" >Download Code</a>
+                                            <a href="#" class="modal-dot" data-toggle="modal"
+                                                data-target="#no_code">Download Code</a>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -705,7 +712,65 @@
                             </div>
                         </div>
                         <div id="conferences">
-                            <h1> HOLIS </h1>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="card">
+                                    {% assign ordered_conf_papers = site.research_conf | sort:"order_number" %}
+                                    {% for paper in ordered_conf_papers %}
+                                    {% assign check_value = paper.order_number | modulo:2 %}
+                                    {% if check_value == 0%}
+                                    <div class="publ even">
+                                        {% else %}
+                                        <div class="publ odd">
+                                            {% endif %}
+                                            <!--IMAGE-->
+                                            <div class="image">
+                                                <img alt="publ-image" src={{paper.picture}} />
+                                                <div class="image-overlay"></div>
+                                            </div>
+                                            <!--DETAILS-->
+                                            <div class="content">
+                                                <ol class="breadcrumb">
+                                                    <li>
+                                                        <a href="#">Publications</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Journals</a>
+                                                    </li>
+                                                    <li class="active">{{paper.link_categoy_name}}</li>
+                                                </ol>
+                                                <h6>{{paper.title}}</h6>
+                                                <p>
+                                                    {{paper.content | markdownify | truncate: 200 }}
+                                                </p>
+                                                <a href="#">Read More</a> <span class="link_separator_publ">|</span>
+                                                {% if paper.show_copyright %}
+                                                <a href="#" class="modal-dot" data-toggle="modal"
+                                                    data-target="#copyright-notice-modal"
+                                                    data-modaltitle="{{paper.modaltitle}}"
+                                                    data-modalsubtitle="{{paper.modalsubtitle}}"
+                                                    data-modalcontent="{{paper.modalcontent}}"
+                                                    data-modalfile="{{paper.file_link}}">Paper</a> <span
+                                                    class="link_separator_publ">|</span>
+                                                {% else %}
+                                                <a href="#">Paper</a> <span
+                                                    class="link_separator_publ">|</span>
+                                                {% endif %}
+                                                {% if paper.presentation_link %}
+                                                <a target="_blank" href="{{paper.presentation_link}}">Presentation</a> <span
+                                                    class="link_separator_publ">|</span>
+                                                {% endif %}
+                                                {% if paper.repo_link %}
+                                                <a target="_blank" href="{{paper.repo_link}}">Code</a>
+                                                {% else %}
+                                                <a href="#" class="modal-dot" data-toggle="modal"
+                                                    data-target="#no_code">Code</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -723,8 +788,8 @@
     <!--==========================================
                     Publications Modals
         ===========================================-->
-        {% include conditions_terms_osa.html %}
-        {% include no_code.html %}
+    {% include copyright_notice.html %}
+    {% include no_code.html %}
 
     <!--==========================================
                            INTEREST
