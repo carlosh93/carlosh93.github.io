@@ -157,6 +157,10 @@
     top: 0;
 }
 
+.link_separator_publ{
+    color: #777;
+}
+
 @media screen and (max-width: 768px) {
     #publ .publ {
         /*publications class*/

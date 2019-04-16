@@ -651,115 +651,80 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <!--All CATEGORIES-->
-                    <div id="all-publ"></div>
+                    <!--All CATEGORIES
+                    <div id="all-publ"></div>-->
 
                     <!-- JOURNALS -->
                     <div id="journals">
                         <div class="col-md-12 col-sm-12">
                             <div class="card">
                                 <!--Publications ODD-->
-                                <div class="publ odd">
-                                    <!--IMAGE-->
-                                    <div class="image">
-                                        <img alt="publ-image" src="img/template/blog.png" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <!--DETAILS-->
-                                    <div class="content">
-                                        <ol class="breadcrumb">
-                                            <li>
-                                                <a href="http://goo.gl/oUVX01">Frontend</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Design</a>
-                                            </li>
-                                            <li class="active">Material</li>
-                                        </ol>
-                                        <h6>Material Design</h6>
-                                        <p>
-                                            Web design encompasses many different skills and disciplines in the
-                                            production of
-                                            websites.Web design include web graphic
-                                            design, interface design etc.
-                                        </p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <!--Publications EVEN-->
+                                {% assign ordered_papers = site.research_papers | sort:"order_number" %}
+                                {% for paper in ordered_papers %}
+                                {% assign check_value = paper.order_number | modulo:2 %}
+                                {% if check_value == 0%}
                                 <div class="publ even">
-                                    <!--IMAGE-->
-                                    <div class="image">
-                                        <img alt="publ-image" src="img/template/blog.png" />
-                                        <div class="image-overlay"></div>
+                                    {% else %}
+                                    <div class="publ odd">
+                                        {% endif %}
+                                        <!--IMAGE-->
+                                        <div class="image">
+                                            <img alt="publ-image" src={{paper.picture}} />
+                                            <div class="image-overlay"></div>
+                                        </div>
+                                        <!--DETAILS-->
+                                        <div class="content">
+                                            <ol class="breadcrumb">
+                                                <li>
+                                                    <a href="#">Publications</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Journals</a>
+                                                </li>
+                                                <li class="active">{{paper.link_categoy_name}}</li>
+                                            </ol>
+                                            <h6>{{paper.title}}</h6>
+                                            <p>
+                                                {{paper.content | markdownify | truncate: 200 }}
+                                            </p>
+                                            <a href="#">Read More</a> <span class="link_separator_publ">|</span>
+                                            {% if paper.OSA %}
+                                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#condition-term-osa-1" >Download Paper</a> <span class="link_separator_publ">|</span>
+                                            {% else %}
+                                            <a href="#">Download Paper</a> <span class="link_separator_publ">|</span>
+                                            {% endif %}
+                                            {% if paper.repo_link %}
+                                            <a target="_blank" href="{{paper.repo_link}}">Download Code</a>
+                                            {% else %}
+                                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#no_code" >Download Code</a>
+                                            {% endif %}
+                                        </div>
                                     </div>
-                                    <!--DETAILS-->
-                                    <div class="content">
-                                        <ol class="breadcrumb">
-                                            <li>
-                                                <a href="#">Backend</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Dev</a>
-                                            </li>
-                                            <li class="active">Shortcuts</li>
-                                        </ol>
-                                        <h6>Development Shortcut</h6>
-                                        <p>
-                                            Web development is a broad term for the work involved in developing a web
-                                            site for
-                                            the Internet or an intranet. Now lets
-                                            get a bit deeper in this topic
-                                        </p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <!--Publications ODD-->
-                                <div class="publ odd">
-                                    <!--IMAGE-->
-                                    <div class="image">
-                                        <img alt="publ-image" src="img/template/blog.png" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <!--DETAILS-->
-                                    <div class="content">
-                                        <ol class="breadcrumb">
-                                            <li>
-                                                <a href="#">Frontend</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Specs</a>
-                                            </li>
-                                            <li class="active">UI</li>
-                                        </ol>
-                                        <h6>A Good UI</h6>
-                                        <p>
-                                            The user interface (UI), in the industrial design field of human–machine
-                                            interaction, is the space where interactions between
-                                            humans and machines occur.
-                                        </p>
-                                        <a href="#">Read More</a>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
+                        <div id="conferences">
+                            <h1> HOLIS </h1>
+                        </div>
                     </div>
-                    <div id="conferences">
-                    <h1> HOLIS </h1>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <button id="add-more" class="center-block btn-large waves-effect">
-                            <i id="port-add-icon" class="fa fa-plus"></i>
-                        </button>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <button id="add-more" class="center-block btn-large waves-effect">
+                                <i id="port-add-icon" class="fa fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
+    <!--==========================================
+                    Publications Modals
+        ===========================================-->
+        {% include conditions_terms_osa.html %}
+        {% include no_code.html %}
 
     <!--==========================================
                            INTEREST

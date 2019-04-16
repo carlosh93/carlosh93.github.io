@@ -35,6 +35,9 @@ collections_dir: collections
 collections: 
   - education
   - experience
+  - research_papers
+  - research_conf
+  - research_theses
 
 # Build settings
 markdown: kramdown
