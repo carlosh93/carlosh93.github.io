@@ -13,3 +13,4 @@ presentation_link: Documents/Publications/Conferences/Presentations/COSI20183D_R
 link_categoy_name: 3D_Regularizer_Clustering
 order_number: 1
 ---
+This paper proposes a spectral image clustering approach that uses a 3-D Gaussian filter to incorporate the spatial information of the scene in the Sparse Subspace Clustering model obtaining a more accurate representation coefficient matrix.
