@@ -9,7 +9,7 @@ modaltitle: OSA Conference - Imaging and Applied Optics 2017
 modalsubtitle: "<small>J. Bacca, C. Hinojosa, and H. Arguello, Kernel Sparse Subspace Clustering with Total Variation Denoising for Hyperspectral Remote Sensing Images, in Imaging and Applied Optics 2017 (3D, AIO, COSI, IS, MATH, pcAOP), OSA Technical Digest (Optical Society of America, 2017), paper MTu4C.5. Available Online: <a href=https://doi.org/10.1364/MATH.2017.MTu4C.5>https://doi.org/10.1364/MATH.2017.MTu4C.5</a></small>"
 modalcontent: "[&#x24B8; 2017 Optical Society of America]. One print or electronic copy may be made for personal use only. Systematic reproduction and distribution, duplication of any material in this paper for a fee or for commercial purposes, or modifications of the content of this paper are prohibited."
 file_link: Documents/Publications/Conferences/Files/bacca2017kernelclustering.pdf
-presentation_link: 
+presentation_link: Documents/Publications/Conferences/Presentations/COSI2017BaccaKernelClustering.pdf
 link_categoy_name: Kernel_Clustering_TotalVariation
 order_number: 3
 ---
