@@ -752,12 +752,11 @@
                                                     data-modalfile="{{paper.file_link}}">Paper</a> <span
                                                     class="link_separator_publ">|</span>
                                                 {% else %}
-                                                <a href="#">Paper</a> <span
-                                                    class="link_separator_publ">|</span>
+                                                <a href="#">Paper</a> <span class="link_separator_publ">|</span>
                                                 {% endif %}
                                                 {% if paper.presentation_link %}
-                                                <a target="_blank" href="{{paper.presentation_link}}">Presentation</a> <span
-                                                    class="link_separator_publ">|</span>
+                                                <a target="_blank" href="{{paper.presentation_link}}">Presentation</a>
+                                                <span class="link_separator_publ">|</span>
                                                 {% endif %}
                                                 {% if paper.repo_link %}
                                                 <a target="_blank" href="{{paper.repo_link}}">Code</a>
@@ -918,11 +917,13 @@
                 </div>
 
                 <div class="col-md-7 col-sm-12 col-xs-12">
+                    <a href="https://www.google.com/maps/place/UIS,+Bucaramanga,+Colombia/" class="card"><img
+                            src="https://maps.googleapis.com/maps/api/staticmap?center=UIS,+Bucaramanga,+Colombia&zoom=24&scale=2&size=600x300&maptype=roadmap&key=AIzaSyA1qx0vrWr-nwhHoPAjY2xbaPaz0sW3YXQ&format=png&visual_refresh=true"
+                            alt="Google Map of UIS, Bucaramanga, Colombia"></a>
                     <!-- CONTACT MAP -->
-                    <div id="map-card" class="card">
-                        <!-- MAP -->
+                    <!--<div id="map-card" class="card">
                         <div id="myMap"></div>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -943,9 +944,9 @@
         <div class="container">
             <!--FOOTER DETAILS-->
             <p class="text-center">
-                © All right reserved by
+                &#x24B8; All right reserved by
                 <a href="http://carlosh93.github.io" target="_blank">
-                    <strong>Carlos Hinojosa</strong>
+                    <strong>Carlos Hinojosa 2019</strong>
                 </a>
             </p>
         </div>
@@ -955,8 +956,8 @@
     <script src="javascript/jquery-2.1.3.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/materialize.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLlIihVNbt63MIWlFAO2tAc4Ow8Qj8bk"></script>
-    <script src="javascript/markerwithlabel.min.js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLlIihVNbt63MIWlFAO2tAc4Ow8Qj8bk"></script>-->
+    <!--<script src="javascript/markerwithlabel.min.js"></script>-->
     <script src="javascript/retina.min.js"></script>
     <script src="javascript/scrollreveal.min.js"></script>
     <script src="javascript/jquery.touchSwipe.min.js"></script>
