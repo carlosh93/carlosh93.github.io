@@ -1,3 +1,8 @@
+#honeypot {
+    display: none;
+    /*makes the field not visible to humans*/
+}
+
 #publ .publ {
     /*publications class*/
     position: relative;
@@ -191,7 +196,7 @@ SIDEBAR and new Menu
 */
 
 .head-bar {
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     -webkit-transform: translate(0, -100px);

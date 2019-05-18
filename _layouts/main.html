@@ -591,7 +591,7 @@
                                                         <a href="#">Publications</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Journals</a>
+                                                        <a href="#">Conferences</a>
                                                     </li>
                                                     <li class="active">{{paper.link_categoy_name}}</li>
                                                 </ol>
@@ -736,16 +736,21 @@
                     <!-- CONTACT FORM -->
                     <div class="card">
                         <div class="card-content">
-                            <form id="contact-form" name="c-form">
+                            <form id="contact-form" name="c-form" method="POST" class="gform"
+                                action="https://script.google.com/a/saber.uis.edu.co/macros/s/AKfycbw-EdV5jsXNBQqozZ9g_FBYMAzIgEqKtsT6lSjv/exec">
+                                <!--input id must be honeypot or else it wont work-->
+                                <label class="sr-only">Keep this field blank</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                                <!--the rest of your form-->
                                 <!-- NAME -->
                                 <div class="input-field">
-                                    <input id="first_name" type="text" class="validate" name="first_name" required>
-                                    <label for="first_name">Name</label>
+                                    <input id="name" type="text" class="validate" name="name" required>
+                                    <label for="name">Name</label>
                                 </div>
                                 <!--SUBJECT-->
                                 <div class="input-field">
-                                    <input id="sub" type="text" class="validate" name="sub">
-                                    <label for="sub">Subject</label>
+                                    <input id="subject" type="text" class="validate" name="subject">
+                                    <label for="subject">Subject</label>
                                 </div>
                                 <!--EMAIL-->
                                 <div class="input-field">
@@ -760,8 +765,7 @@
                                 </div>
                                 <!-- SEND BUTTON -->
                                 <div class="contact-send">
-                                    <button id="submit" name="contactSubmit" type="submit" value="Submit"
-                                        class="btn waves-effect">Send
+                                    <button id="submit" type="submit" value="Submit" class="btn waves-effect">Send
                                     </button>
                                 </div>
                             </form>
@@ -823,7 +827,7 @@
     <script src="javascript/scrollreveal.min.js"></script>
     <script src="javascript/jquery.touchSwipe.min.js"></script>
     <script src="javascript/custom.js"></script>
-
+    <script data-cfasync="false" type="text/javascript" src="javascript/form-submission-handler.js"></script>
 
 </body>
 

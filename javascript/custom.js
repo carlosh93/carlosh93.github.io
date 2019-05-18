@@ -265,7 +265,7 @@
 
 
         /***MAIL SCRIPT***/ // Upadted in V. 1.1
-        $('form#contact-form').on('submit', function (e) {
+        /*$('form#contact-form').on('submit', function (e) {
             e.preventDefault(); //Prevents default submit
             var form = $(this);
             $("#submit").attr('disabled', 'disabled'); //Disable the submit button on click
@@ -289,7 +289,7 @@
                     Materialize.toast('Sorry! Something Wrong, Try Again', 4000);
                     $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
                 });
-        });
+        });*/
 
 
     });
