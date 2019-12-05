@@ -2,11 +2,11 @@
 # A Projects section created with the Portfolio widget.
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
 title = "Projects"
-subtitle = "ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY"
+#subtitle = "ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY"
 
 [content]
   # Page type to display. E.g. project.
@@ -26,12 +26,16 @@ subtitle = "ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY"
     tag = "*"
   
   [[content.filter_button]]
-    name = "Image Processing"
-    tag = "imageprocessing"
+    name = "Mobile Apps"
+    tag = "Mobile App"
   
   [[content.filter_button]]
-    name = "Seismic Processing"
-    tag = "seismicProcessing"
+    name = "Seismic Time-to-depth Conversion"
+    tag = "Time-to-depth conversion"
+  
+  [[content.filter_button]]
+    name = "Software Projects"
+    tag = "Software"
   
   #[[content.filter_button]]
   #  name = "Human"
