@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Carlos Hinojosa</title>
+    <link>http://carloshinojosa.me/project/</link>
+    <description>Recent content in Projects on Carlos Hinojosa</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="http://carloshinojosa.me/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Smartphone-based application for agricultural remote technical assistance in Colombia</title>
+      <link>http://carloshinojosa.me/project/agrotic-mobile-app/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/agrotic-mobile-app/</guid>
+      <description>&lt;p&gt;The Food and Agriculture Organization of the United Nations (FAO) has defined that agriculture is the main source of food supply given the high demand related to the population growth. Therefore, the FAO has also defined the trend to increase agricultural productivity based on the use of technology, information, and com- munication (ICT) tools. Nowadays, recent ICT tools like smartphones, cloud computing, Internet of Things (IoT), and big data support the implementation of precision agriculture to improve crops and their management. Colombia is an abundant country with suitable soils for the cultivation of diverse types of crops. However, the unknown ICT advantages for the farmers and the user rejection to adopt new technology difficult ICT implementation in the Colombian agriculture. On the other hand, the use of smartphones in various industrial applications has brought several advantages, due to their versatility, low-cost, and ease of use. Therefore, smart- phones can be used to address agriculture issues with a promissory implementation. In this sense, this work presents a smartphone application, called AgroTIC, for implementing ICT tools in the traditional work of the Colombian agricultural sector in order to support the productivity of Colombian farmers. AgroTIC takes advantage of smartphone sensors and several ICT tools. Specifically, AgroTIC is composed of four main modules: I) Communication module, II) Image processing and estimation of visible vegetation indices module, III) Production module, and IV) Marketing module. The first allows communication between farmer-to-farmer, and farmers-to-specialists/agronomist for technical assistance remote. The second module is a tool that provides an RGB analysis based on the estimation of two visible vegetation indices to help agronomist in diagnosis. The third module allows farmers to enter information related to their crops to estimate volumes of production and prepare the information for the marketing process. In the fourth module, the farmers can offer their products and establish a direct contact with different potential buyers. AgroTIC has been developed for a community of farmers who grow citrus fruits (orange, tangerine, and Tahiti lime) in the municipality of Simacota, Santander, Colombia.&lt;/p&gt;
+&lt;p&gt;This is the Model-View-ViewModel architectural pattern of the AgroTIC App&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./model.png&#34; alt=&#34;reviews&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=org.hdsp.agrotic&#34;&gt;&lt;img src=&#34;./getit2.png&#34; alt=&#34;button&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://carloshinojosa.me/project/artificial-intelligence/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>http://carloshinojosa.me/project/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>http://carloshinojosa.me/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>http://carloshinojosa.me/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>http://carloshinojosa.me/project/robotics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skin Cancer AI</title>
+      <link>http://carloshinojosa.me/project/skin-cancer-ai/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/skin-cancer-ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time to depth conversion and seismic interval velocity estimation</title>
+      <link>http://carloshinojosa.me/project/seismic-time-to-depth/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/seismic-time-to-depth/</guid>
+      <description>&lt;p&gt;Time-domain seismic imaging, also known as time migration, is a fast and robust process for areas with mild lateral velocity variation. Even so, structural problems by mild lateral velocity variation can appear under this approach. An alternative known as depth migration manages to mitigate this problem in areas with lateral velocity variation. Therefore, time-to-depth conversion techniques have been employed to obtain seismic interval velocity. In detail, these techniques consist of solving a system of partial differential equations ill-posed with missing boundary conditions, which could lead to stability issues. Thus, an alternative two-step approach, solution of a system of partial differential equations, and interval velocity estimation from an optimization problem were proposed to take into account lateral velocity variations for the 2D case. However, the formulation of an optimization problem for the 3D case is not direct, and it is crucial for the seismic analysis in the interior of the earth.&lt;/p&gt;
+&lt;p&gt;In this project, we develop optimization problems to estimate the seismic interval velocity from Dix velocity on 2D and 3D data using image ray theory. Furthermore, we develop different modules for the DecisionSpace Geoscience software to implement the designed algorithms.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
