@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatio-spectral classification on Carlos Hinojosa</title>
+    <link>http://carloshinojosa.me/tags/spatio-spectral-classification/</link>
+    <description>Recent content in Spatio-spectral classification on Carlos Hinojosa</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="http://carloshinojosa.me/tags/spatio-spectral-classification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Supervised spatio-spectral classification of fused images using superpixels</title>
+      <link>http://carloshinojosa.me/publication/journal-rgb-superpixels/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/journal-rgb-superpixels/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
