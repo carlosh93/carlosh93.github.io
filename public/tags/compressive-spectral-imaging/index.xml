@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compressive Spectral Imaging on Carlos Hinojosa</title>
+    <link>http://carloshinojosa.me/tags/compressive-spectral-imaging/</link>
+    <description>Recent content in Compressive Spectral Imaging on Carlos Hinojosa</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
+    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="http://carloshinojosa.me/tags/compressive-spectral-imaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spectral-spatial classification from multi-sensor compressive measurements using superpixels.</title>
+      <link>http://carloshinojosa.me/publication/conf-icip2019/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-icip2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive grayscale compressive spectral imaging using optimal blue noise coding patterns</title>
+      <link>http://carloshinojosa.me/publication/journal-adaptive2019/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/journal-adaptive2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coded aperture design for compressive spectral subspace clustering</title>
+      <link>http://carloshinojosa.me/publication/journal-coded-design-clustering2018/</link>
+      <pubDate>Fri, 26 Oct 2018 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/journal-coded-design-clustering2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple snapshot colored compressive spectral imager</title>
+      <link>http://carloshinojosa.me/publication/journal-sccsi-multishot2017/</link>
+      <pubDate>Tue, 22 Nov 2016 15:16:09 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/journal-sccsi-multishot2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
