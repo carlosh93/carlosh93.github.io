@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,86 +15,21 @@
     <item>
       <title></title>
       <link>http://carloshinojosa.me/authors/admin/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/admin/</guid>
-      <description>&lt;p&gt;I&#39;m Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad Industrial de Santander, Colombia, in 2015 and 2018, respectively. Currently, I am pursuing a Ph.D. in Computer Science at Universidad Industrial de Santander. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing. I also have developed scientific software for companies like Ecopetrol S.A and my university under distinct research projects. I have experience with different programming languages, including C/C++, Java, C#, Javascript, MATLAB, Typescript, Python, and Bash scripting in Linux-like operating systems. Furthermore, I have experience with Linux system administration and hybrid mobile app development with different frameworks like Ionic, React, and Cordova.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
+      <description>&lt;p&gt;Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/certifacates.jpg&#34; alt=&#34;reviews&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Edwin Vargas</title>
-      <link>http://carloshinojosa.me/authors/edwin-vargas/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      <title>Robert Ford</title>
+      <link>http://carloshinojosa.me/authors/robert-ford/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://carloshinojosa.me/authors/edwin-vargas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Henry Arguello</title>
-      <link>http://carloshinojosa.me/authors/henry-arguello/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/henry-arguello/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jorge Bacca</title>
-      <link>http://carloshinojosa.me/authors/jorge-bacca/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/jorge-bacca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sergio Castillo</title>
-      <link>http://carloshinojosa.me/authors/sergio-castillo/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/sergio-castillo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Juan Marcos Ramirez</title>
-      <link>http://carloshinojosa.me/authors/juan-marcos-ramirez/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/juan-marcos-ramirez/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nelson Diaz</title>
-      <link>http://carloshinojosa.me/authors/nelson-diaz/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/nelson-diaz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karen Sanchez</title>
-      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Claudia V. Correa</title>
-      <link>http://carloshinojosa.me/authors/claudia-v.-correa/</link>
-      <pubDate>Tue, 22 Nov 2016 15:16:09 -0500</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/claudia-v.-correa/</guid>
+      <guid>http://carloshinojosa.me/authors/robert-ford/</guid>
       <description></description>
     </item>
     

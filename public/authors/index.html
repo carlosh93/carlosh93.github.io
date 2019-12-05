@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Ph.D Student In Computer Science">
+  <meta name="description" content="Professor of Artificial Intelligence">
 
   
   <link rel="alternate" hreflang="en-us" href="http://carloshinojosa.me/authors/">
@@ -42,7 +42,7 @@
   
   
   
-  <meta name="theme-color" content="#23BF53">
+  <meta name="theme-color" content="#EAF04E">
   
 
   
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -131,10 +131,10 @@
   <meta property="og:site_name" content="Carlos Hinojosa">
   <meta property="og:url" content="http://carloshinojosa.me/authors/">
   <meta property="og:title" content="Authors | Carlos Hinojosa">
-  <meta property="og:description" content="Ph.D Student In Computer Science"><meta property="og:image" content="http://carloshinojosa.me/img/icon-192.png">
+  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="http://carloshinojosa.me/img/icon-192.png">
   <meta property="twitter:image" content="http://carloshinojosa.me/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-10-24T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2019-04-07T00:00:00&#43;00:00">
   
 
   
@@ -151,7 +151,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -168,7 +168,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -306,7 +307,29 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#talks"><span>Conferences</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Code</span></a>
         </li>
 
         
@@ -335,7 +358,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#gallery"><span>Gallery</span></a>
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
         </li>
 
         
@@ -374,6 +397,10 @@
 
         
 
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
@@ -428,28 +455,7 @@
       <li><a href="http://carloshinojosa.me/authors/admin/">Carlos Hinojosa</a></li>
     
       
-      <li><a href="http://carloshinojosa.me/authors/edwin-vargas/">Edwin Vargas</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/henry-arguello/">Henry Arguello</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/jorge-bacca/">Jorge Bacca</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/sergio-castillo/">Sergio Castillo</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/juan-marcos-ramirez/">Juan Marcos Ramirez</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/nelson-diaz/">Nelson Diaz</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/karen-sanchez/">Karen Sanchez</a></li>
-    
-      
-      <li><a href="http://carloshinojosa.me/authors/claudia-v.-correa/">Claudia V. Correa</a></li>
+      <li><a href="http://carloshinojosa.me/authors/robert-ford/">Robert Ford</a></li>
     
   </ul>
 
@@ -484,7 +490,7 @@
 
     
     
-      <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBPcH_5oUYBFGdlBpDvZlV_sEQ3glsV5e4"></script>
+      <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
       
@@ -502,18 +508,52 @@
     
 
     
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
 
     
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
@@ -521,12 +561,12 @@
     
     
     
+      
     
     
     
     
-    
-    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+    <script src="/js/academia.min.75978b39883a27b262f4f051da2ecf3c.js"></script>
 
     
 
@@ -545,9 +585,6 @@
         
         <p>
           © All right reserved by Carlos Hinojosa, 2019 &middot; 
-          Powered by
-          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
-          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
         </p>
       </div>
       <div class="col-md-6">

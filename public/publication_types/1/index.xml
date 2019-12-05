@@ -7,27 +7,21 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Single-pixel camera sensing matrix design for hierarchical compressed spectral clustering</title>
-      <link>http://carloshinojosa.me/publication/conf-mlsp2019/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      <title>An example conference paper</title>
+      <link>http://carloshinojosa.me/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://carloshinojosa.me/publication/conf-mlsp2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spectral-spatial classification from multi-sensor compressive measurements using superpixels.</title>
-      <link>http://carloshinojosa.me/publication/conf-icip2019/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/publication/conf-icip2019/</guid>
-      <description></description>
+      <guid>http://carloshinojosa.me/publication/conference-paper/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

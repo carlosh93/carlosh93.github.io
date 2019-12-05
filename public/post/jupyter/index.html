@@ -42,7 +42,7 @@
   
   
   
-  <meta name="theme-color" content="#23BF53">
+  <meta name="theme-color" content="#EAF04E">
   
 
   
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -149,7 +149,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -166,7 +166,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -304,7 +305,29 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#talks"><span>Conferences</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Code</span></a>
         </li>
 
         
@@ -333,7 +356,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#gallery"><span>Gallery</span></a>
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
         </li>
 
         
@@ -372,6 +395,10 @@
 
         
 
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
@@ -647,13 +674,13 @@ rm Untitled.md
   <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hud3cbfdec65012fc4935a074f5a45363e_182342_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
     
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="http://carloshinojosa.me/">Carlos Hinojosa</a></h5>
-      <h6 class="card-subtitle">Ph.D Student In Computer Science</h6>
-      <p class="card-text" itemprop="description">I'm Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing.</p>
+      <h6 class="card-subtitle">Professor of Artificial Intelligence</h6>
+      <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
       <ul class="network-icon" aria-hidden="true">
         
           
@@ -665,8 +692,10 @@ rm Untitled.md
           
           
           
+            
+          
           <li>
-            <a itemprop="sameAs" href="mailto:carlos.hinojosa@saber.uis.edu.co" >
+            <a itemprop="sameAs" href="/#contact" >
               <i class="fas fa-envelope"></i>
             </a>
           </li>
@@ -683,7 +712,7 @@ rm Untitled.md
             
           
           <li>
-            <a itemprop="sameAs" href="https://twitter.com/CarlosH_93" target="_blank" rel="noopener">
+            <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
@@ -698,22 +727,7 @@ rm Untitled.md
             
           
           <li>
-            <a itemprop="sameAs" href="https://www.researchgate.net/profile/Carlos_Hinojosa2" target="_blank" rel="noopener">
-              <i class="ai ai-researchgate"></i>
-            </a>
-          </li>
-        
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          <li>
-            <a itemprop="sameAs" href="https://scholar.google.com/citations?hl=es&amp;user=KP02_jwAAAAJ" target="_blank" rel="noopener">
+            <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
               <i class="ai ai-google-scholar"></i>
             </a>
           </li>
@@ -730,7 +744,7 @@ rm Untitled.md
             
           
           <li>
-            <a itemprop="sameAs" href="https://github.com/carlosh93" target="_blank" rel="noopener">
+            <a itemprop="sameAs" href="https://github.com/gcushen" target="_blank" rel="noopener">
               <i class="fab fa-github"></i>
             </a>
           </li>
@@ -803,7 +817,7 @@ rm Untitled.md
 
     
     
-      <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBPcH_5oUYBFGdlBpDvZlV_sEQ3glsV5e4"></script>
+      <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
       
@@ -821,18 +835,52 @@ rm Untitled.md
     
 
     
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
 
     
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
@@ -840,12 +888,12 @@ rm Untitled.md
     
     
     
+      
     
     
     
     
-    
-    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+    <script src="/js/academia.min.75978b39883a27b262f4f051da2ecf3c.js"></script>
 
     
 
@@ -864,9 +912,6 @@ rm Untitled.md
         
         <p>
           © All right reserved by Carlos Hinojosa, 2019 &middot; 
-          Powered by
-          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
-          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
         </p>
       </div>
       <div class="col-md-6">
