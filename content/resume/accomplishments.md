@@ -21,6 +21,16 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Coursera"
   organization_url = "https://www.coursera.org"
+  title = "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization"
+  url = "https://es.coursera.org/learn/deep-neural-network"
+  certificate_url = "/certificates/Coursera_DeepLearning2.pdf"
+  date_start = "2019-12-20"
+  date_end = "2020-01-20"
+  description = "Duration: 40 Hours."
+
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org"
   title = "Neural Networks and Deep Learning"
   url = "https://www.coursera.org/learn/neural-networks-deep-learning"
   certificate_url = "/certificates/Coursera_DeepLearning1.pdf"
