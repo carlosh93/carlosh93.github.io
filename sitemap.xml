@@ -228,16 +228,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url>
@@ -288,6 +278,36 @@
   </url>
   
   <url>
+    <loc>http://carloshinojosa.me/tags/mobile-app/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/remote-technical-assistance/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/scientific-mobile-app/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/agrotic-mobile-app/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/software/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://carloshinojosa.me/authors/claudia-v.-correa/</loc>
     <lastmod>2016-11-22T15:16:09-05:00</lastmod>
   </url>
@@ -308,57 +328,22 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/project/artificial-intelligence/</loc>
+    <loc>http://carloshinojosa.me/tags/decisionspace-geoscience/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/deep-learning/</loc>
+    <loc>http://carloshinojosa.me/tags/seismic/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/project/deep-learning/</loc>
+    <loc>http://carloshinojosa.me/project/seismic-time-to-depth/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/human/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/robotics/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/robotics/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/skin-cancer-ai/</loc>
+    <loc>http://carloshinojosa.me/tags/time-to-depth-conversion/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
