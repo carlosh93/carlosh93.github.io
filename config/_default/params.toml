@@ -85,7 +85,7 @@ contact_links = [
 #   2: OpenStreetMap (Mapnik)
 #   3: OpenStreetMap (Mapbox)
 map = 1
-map_api_key = "AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_api_key = "AIzaSyBPcH_5oUYBFGdlBpDvZlV_sEQ3glsV5e4"
 latitude = "7.1412342"
 longitude = "-73.1229484"
 zoom = 15
@@ -149,7 +149,7 @@ sharing = true
   #   0: No search engine
   #   1: academia (built-in)
   #   2: Algolia (https://www.algolia.com)
-  engine = 1
+  engine = 0
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.

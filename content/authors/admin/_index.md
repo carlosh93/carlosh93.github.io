@@ -7,7 +7,7 @@ authors:
 - admin
 # resume download button
 btn:
-- url : "https://sourcethemes.com/academic/docs/install/"
+- url : "/files/CV_CarlosHinojosa.pdf"
   label : "Download Resume"
 
 # Is this the primary user of the site?
@@ -22,11 +22,15 @@ organizations:
   url: "https://www.uis.edu.co/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include computer vision, sparse representation, subspace clustering, computational imaging, compressive imaging, and coding pattern design.
+bio: I'm Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing.
 
 interests:
 
 - Computer Vision
+- Machine Learning
+- Computational Imaging
+- Sparse Representation
+- Sparse Representation
 - Subspace Clustering and Learning
 - Spectral Imaging
 - Compressive Spectral Imaging
@@ -57,10 +61,13 @@ social:
   link: https://twitter.com/CarlosH_93
 - icon: researchgate
   icon_pack: ai
-  link: https://www.researchgate.net/profile/Carlos_Alberto_Hinojosa_Montero
+  link: https://www.researchgate.net/profile/Carlos_Hinojosa2
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=es&user=KP02_jwAAAAJ
+#- icon: orcid
+#  icon_pack: ai
+#  link: https://orcid.org/0000-0001-9286-9587
 - icon: github
   icon_pack: fab
   link: https://github.com/carlosh93
@@ -80,7 +87,7 @@ email: "carlos.hinojosa@saber.uis.edu.co"
 # - Visitors
 
 ---
-I'm Carlos Hinojosa. Computer scientist and engineer with over 6 years of experience in software development and scientific research. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad Industrial de Santander, Colombia, in 2015 and 2018, respectively. I am currently pursuing the Ph.D. in computer science at Universidad Industrial de Santander. My main research areas are computational imaging, optical code design, compressive imaging, computer vision and sparse representation. I also have developed scientific software for companies like Ecopetrol-ICP and for my university in different research projects. I have experience with different programming languages like C/C++, Java, C#, Javascript, MATLAB, Typescript, Python and Bash scripting in Linux-like operating systems. Furthermore, I have experience with Linux system administration and hybrid mobile app development with different frameworks like Ionic, React and Cordova.
+I'm Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad Industrial de Santander, Colombia, in 2015 and 2018, respectively. Currently, I am pursuing a Ph.D. in Computer Science at Universidad Industrial de Santander. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing. I also have developed scientific software for companies like Ecopetrol S.A and my university under distinct research projects. I have experience with different programming languages, including C/C++, Java, C#, Javascript, MATLAB, Typescript, Python, and Bash scripting in Linux-like operating systems. Furthermore, I have experience with Linux system administration and hybrid mobile app development with different frameworks like Ionic, React, and Cordova.
 
 <!--Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 

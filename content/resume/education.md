@@ -44,7 +44,7 @@ date_format = "Jan 2006"
   company = "Universidad Industrial de Santander"
   company_url = "https://www.uis.edu.co"
   location = "Bucaramanga, Colombia"
-  date_start = "2018-06-01"
+  date_start = "2017-08-01"
   date_end = ""
   #description = """Taught electronic engineering and researched semiconductor physics."""
   
