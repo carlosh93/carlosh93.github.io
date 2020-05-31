@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pycharm on Carlos Hinojosa</title>
+    <link>http://carloshinojosa.me/tags/pycharm/</link>
+    <description>Recent content in pycharm on Carlos Hinojosa</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:04:38 -0500</lastBuildDate>
+    
+	    <atom:link href="http://carloshinojosa.me/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flujo de trabajo con Colab y Pycharm</title>
+      <link>http://carloshinojosa.me/post/colab-intro1/</link>
+      <pubDate>Sat, 30 May 2020 18:04:38 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/post/colab-intro1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Antes de empezar, da click en el boton &amp;ldquo;Open in Colab&amp;rdquo; de arriba. Esto abrirá este notebook de python directamente en Colab. Luego, para poder editar y ejecutar el código, deberas copiar el notebook en Google drive utilizando el boton:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/copy_drive.png&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De esta manera, este notebook quedará almacenado en Google drive, en la carpeta &lt;em&gt;Colab Notebooks&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;
+&lt;p&gt;El objetivo de este tutorial es proporcionar un flujo de trabajo para entrenar modelos de Deep Learning. El flujo de trabajo propuesto requiere tener instalado los siguientes componentes en nuestra computadora:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cliente de sincronización de Google Drive.&lt;/li&gt;
+&lt;li&gt;Editor de texto o IDE de python como Pycharm.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;La idea general será tener nuestro código python en una carpeta en Google Drive. De esta manera, utilizaremos el cliente de sincronización para modificar los archivos de manera local en nuestras computadoras (utilizando el editor de texto o un IDE de python) y que los cambios se vean reflejados directamente en Colab.&lt;/strong&gt; Aunque Colab permite editar archivos (simplemente dando doble click en el archivo deseado en el menu de la izquierda) es mucho mas sencillo y cómodo editar y manipular archivos complejos en un IDE de python.&lt;/p&gt;
+&lt;h2 id=&#34;cliente-google-drive&#34;&gt;Cliente Google Drive&lt;/h2&gt;
+&lt;p&gt;Para sistemas operativos Windows y Mac el cliente de Google drive puede ser descargado directamente de la pagina de google drive&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/drive/download/&#34;&gt;https://www.google.com/drive/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sin embargo, para sistemas operativos Linux no existe un cliente oficial de google drive, pero existen alternativas excelentes como Insync (Software pago una única vez) o el cliente para sistemas Ubuntu:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cambiatealinux.com/instalar-google-drive-en-ubuntu&#34;&gt;https://cambiatealinux.com/instalar-google-drive-en-ubuntu&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;editor-de-python&#34;&gt;Editor de Python&lt;/h2&gt;
+&lt;p&gt;Para trabajar con proyectos Python, es recomendable utilizar el entorno de desarrollo integrado (IDE) Pycharm. Actualmente, es posible acceder a una licencia de estudiante de la version profesional de Pycharm por un año:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/es-es/community/education/#students&#34;&gt;https://www.jetbrains.com/es-es/community/education/#students&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para acceder al beneficio solo se necesita el correo electronico institucional (@correo.uis.edu.co o @saber.uis.edu.co o @uis.edu.co).&lt;/p&gt;
+&lt;p&gt;Si no se desea utilizar un IDE, es posible trabajar con un editor avanzado de texto: Visual Studio Code:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note que, debido a que nuestra intención es solo modificar el código en nuestra computadora local y ejecutar el código en Colab, no necesitamos tener instalado Python y las librerias de Tensorflow en nuestra computadora ya que estas se encuentran instaladas en Colab. Sin embargo, es recomendable instalar Python (Anaconda) y configurarlo con Pycharm en nuestra computadora local. A continuación proporciono links de interes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instalar Anaconda: Windows: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/windows/,&#34;&gt;https://docs.anaconda.com/anaconda/install/windows/,&lt;/a&gt; Linux: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/linux/,&#34;&gt;https://docs.anaconda.com/anaconda/install/linux/,&lt;/a&gt; Mac: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/mac-os/&#34;&gt;https://docs.anaconda.com/anaconda/install/mac-os/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configurar Pycharm con Anaconda: &lt;a href=&#34;https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/&#34;&gt;https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instalar liberias de Deep Learning: &lt;a href=&#34;https://asociacionaepi.es/primeros-pasos-con-tensorflow/&#34;&gt;https://asociacionaepi.es/primeros-pasos-con-tensorflow/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;solicitar-recursos-a-colab&#34;&gt;Solicitar Recursos a Colab&lt;/h1&gt;
+&lt;p&gt;Una vez creemos un notebook en Colab, para solicitar recursos debemos primero seleccionar el entorno de ejecución adecuado y dar click en el botón Conectar:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/sel_entorno_conect.gif&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Una vez conectados, Colab nos asigna un entorno &lt;strong&gt;Linux con 25.51 GB de Ram, 68 GB de disco duro&lt;/strong&gt; y una GPU cuyas caracteristicas podemos consultar ejecutando la siguiente celda&lt;/p&gt;
+&lt;h3 id=&#34;características-de-la-gpu-asignada&#34;&gt;Características de la GPU asignada&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# Check nvidia and nvcc cuda compiler
+
+!nvidia-smi
+!/usr/local/cuda/bin/nvcc --version
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Tue May 19 00:16:53 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.82       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla P100-PCIE...  Off  | 00000000:00:04.0 Off |                    0 |
+| N/A   34C    P0    26W / 250W |      0MiB / 16280MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Sun_Jul_28_19:07:16_PDT_2019
+Cuda compilation tools, release 10.1, V10.1.243
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por lo general, Colab asigna de manera aleatoria GPUs con diferente cantidad de memoria. Es recomendable utilizar una GPU de 16 o 15 GB de memoria para proyectos que requieran mucha memoria o trabajen con muchos datos. En caso de que Colab no nos asigne una GPU adecuada (algunas veces asigna GPUs de 8 o 11 GB de memoria) para nuestro proyecto, siempre podemos realizar distintas solicitudes hasta conseguir una GPU adecuada. Para esto debemos cerrar la sesion actual y volver a solicitar recursos:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/get_new_GPU.gif&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Este proceso se repite varias veces hasta que se nos asigne la GPU deseada. Note que es posible que requiera recargar la ventana (F5) para poder finalizar la sesion. &lt;strong&gt;OJO&lt;/strong&gt; Esto solo es necesario hacerlo si necesitamos una GPU de un tamaño de memoria especifico. Si nuestro proyecto es pequeño, cualquier GPU asignada por Colab servirá.&lt;/p&gt;
+&lt;p&gt;Nota: Este notebook está pre-configurado para trabajar con 25 Gb de memoria RAM, sin embargo esta configuración no es por defecto. La cantidad de memoria asignada por general es de 12 a 16 GB. Si crea un notebook nuevo en Colab y quiere tener 25 GB ver sección de Bonus al final de este tutorial.&lt;/p&gt;
+&lt;h3 id=&#34;comandos-básicos&#34;&gt;Comandos Básicos&lt;/h3&gt;
+&lt;p&gt;Debido a que cada notebook de Colab se ejecuta en una máquina Linux, es posible utilizar todos los comandos de Linux. Los comandos más básicos para movernos dentro de este tipo de ambiente son:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%pwd # Ver el directorio actual de trabajo
+%ls # Listar los archivos del directorio actual
+%cd # Cambiar de directorio
+%mkdir # Crear un nuevo directorio
+%rmdir # Eliminar un directorio vacio
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Por ejemplo, si quiero ver en que carpeta me encuentro actualmente ejecuto una celda con el comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%pwd
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;&#39;/content&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como vemos, me encuentro en la carpeta &amp;lsquo;/content&amp;rsquo;, es decir, la carpeta raiz de Colab. Adicionalmente, podemos ejecutar varios comandos dentro de una celda agregando %%shell al inicio de esta. Por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%%shell
+pwd
+ls
+mkdir &amp;quot;nuevo_directorio&amp;quot;
+ls
+rmdir &amp;quot;nuevo_directorio&amp;quot;
+ls
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;/content
+sample_data
+nuevo_directorio  sample_data
+sample_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note que si se agrega &lt;em&gt;%%shell&lt;/em&gt; al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir &lt;em&gt;%pwd&lt;/em&gt;, escribimos &lt;em&gt;pwd&lt;/em&gt; solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &amp;lsquo;sample_data/&#39;. Luego creamos la carpeta &amp;lsquo;nuevo_directorio&amp;rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.&lt;/p&gt;
+&lt;p&gt;En general se puede utilizar cualquier comando linux, incluso instalar paquetes linux con el software apt, por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%%shell
+sudo apt install nano
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;%%shell
+sudo apt install nano
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  spell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 31 not upgraded.
+Need to get 231 kB of archives.
+After this operation, 778 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 nano amd64 2.9.3-2 [231 kB]
+Fetched 231 kB in 2s (130 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76, &amp;lt;&amp;gt; line 1.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package nano.
+(Reading database ... 144433 files and directories currently installed.)
+Preparing to unpack .../nano_2.9.3-2_amd64.deb ...
+Unpacking nano (2.9.3-2) ...
+Setting up nano (2.9.3-2) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Puede buscar mas comandos en internet, una pagina inicial sería:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://marcosmarti.org/comandos-basicos-de-linux/&#34;&gt;https://marcosmarti.org/comandos-basicos-de-linux/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;setup&#34;&gt;Setup&lt;/h1&gt;
+&lt;p&gt;Lo primero que haremos será conectarnos con nuestra cuenta de Google Drive. &lt;strong&gt;Importante conectarse a la cuenta de google drive en donde se tiene almacenado el proyecto o el código a ejecutar.&lt;/strong&gt; Adicionalmente, esta cuenta debe estar previamente sincronizada en nuestra computadora utilizando un cliente de Google Drive (Ver Introducción). Para conectarnos a google drive, ejecutamos la celda de abajo y seguimos los pasos. Por favor seleccione la cuenta previamente sincronizada.&lt;/p&gt;
+&lt;p&gt;##Mount Goolge Drive&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# link to google drive
+
+from google.colab import drive
+#drive.mount(&#39;/content/gdrive/&#39;)
+drive.mount(&amp;quot;/content/gdrive/&amp;quot;, force_remount=True)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;amp;response_type=code&amp;amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
+
+Enter your authorization code:
+··········
+Mounted at /content/gdrive/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si damos click en el panel de la izquierda, al icono de carpeta, veremos que tenemos una nueva carpeta llamada &amp;lsquo;gdrive&amp;rsquo;. De esta manera habremos sincronizado de manera correcta google drive con Colab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/ver_gdrive.png&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ahora la idea es trabajar en nuestro código. Existen básicamente dos maneras:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Añadir el codigo directamente en este notebook e ir ejecutando cada celda.&lt;/li&gt;
+&lt;li&gt;Ejecutar un script de python directamente desde una celda.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;En este tutorial se utilizará la segunda forma. Para esto utilicé como ejemplo el tutorial de tensorflow:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.tensorflow.org/tensorboard/get_started&#34;&gt;https://www.tensorflow.org/tensorboard/get_started&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Seguidamente, creé un proyecto en mi computadora local llamado colab_tutorial. La carpeta de este proyecto se encuentra sincronizado con mi Google Drive, por lo tanto, todo cambio que se realice en mi computadora local se vera reflejado directamente en Drive y, de igual forma, en Colab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/screen_pycharm.png&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/carpeta_google_drive.png&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Una vez tengamos listo el código en nuestra carpeta local, solo basta con ejecutar una celda de la siguiente forma&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;!python3 nombre_archivo.py --parametros (opcional)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;De esta forma ejecutaremos nuestro código en Colab. Note que nuestro código tambien puede generar salidas, las cuales (si se almacenan dentro de la misma carpeta del proyecto) quedarán sincronizadas con nuestra computadora local.&lt;/p&gt;
+&lt;p&gt;Aqui un ejemplo de ejecutar la funcion main.py dentro de mi carpeta proyecto &amp;ldquo;colab_tutorial&amp;rdquo;. Primero vamos hacia la carpeta con los comandos básicos explicados en la sección 2.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%cd /content/gdrive/My\ Drive/colab_tutorial/
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;/content/gdrive/My Drive/colab_tutorial
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;%ls
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;main.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;!python main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;2020-05-19 01:24:56.751869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-19 01:24:58.852417: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-19 01:24:58.866042: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.866658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-05-19 01:24:58.866696: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-19 01:24:58.868230: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-19 01:24:58.869913: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-19 01:24:58.870253: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-19 01:24:58.871814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-19 01:24:58.872594: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-19 01:24:58.875551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-19 01:24:58.875654: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.876241: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.876770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-05-19 01:24:58.881933: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2200000000 Hz
+2020-05-19 01:24:58.882377: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x138f100 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-19 01:24:58.882409: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-19 01:24:58.960753: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.961607: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x138ef40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-19 01:24:58.961643: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0
+2020-05-19 01:24:58.961839: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.962429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-05-19 01:24:58.962471: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-19 01:24:58.962526: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-19 01:24:58.962541: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-19 01:24:58.962554: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-19 01:24:58.962566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-19 01:24:58.962581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-19 01:24:58.962596: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-19 01:24:58.962655: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.963213: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:58.963746: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-05-19 01:24:58.963791: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-19 01:24:59.498013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-19 01:24:59.498074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-05-19 01:24:59.498084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-05-19 01:24:59.498276: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:59.498864: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-19 01:24:59.499412: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-05-19 01:24:59.499466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14973 MB memory) -&amp;gt; physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+2020-05-19 01:24:59.547390: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session started.
+2020-05-19 01:24:59.547453: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1363] Profiler found 1 GPUs
+2020-05-19 01:24:59.548374: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcupti.so.10.1
+2020-05-19 01:24:59.678606: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1479] CUPTI activity buffer flushed
+Epoch 1/10
+2020-05-19 01:25:00.110434: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-19 01:25:00.407164: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session started.
+   1/1875 [..............................] - ETA: 0s - loss: 2.5025 - accuracy: 0.0000e+002020-05-19 01:25:00.411242: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1479] CUPTI activity buffer flushed
+2020-05-19 01:25:00.411386: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:216]  GpuTracer has collected 62 callback api events and 62 activity events.
+2020-05-19 01:25:00.424149: I tensorflow/core/profiler/rpc/client/save_profile.cc:168] Creating directory: logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00
+2020-05-19 01:25:00.430074: I tensorflow/core/profiler/rpc/client/save_profile.cc:174] Dumped gzipped tool data for trace.json.gz to logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00/998f21424347.trace.json.gz
+2020-05-19 01:25:00.430893: I tensorflow/core/profiler/utils/event_span.cc:288] Generation of step-events took 0.016 ms
+
+2020-05-19 01:25:00.449145: I tensorflow/python/profiler/internal/profiler_wrapper.cc:87] Creating directory: logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00Dumped tool data for overview_page.pb to logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00/998f21424347.overview_page.pb
+Dumped tool data for input_pipeline.pb to logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00/998f21424347.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00/998f21424347.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to logs/fit/20200519-012459/train/plugins/profile/2020_05_19_01_25_00/998f21424347.kernel_stats.pb
+
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.2168 - accuracy: 0.9365 - val_loss: 0.1001 - val_accuracy: 0.9694
+Epoch 2/10
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0948 - accuracy: 0.9710 - val_loss: 0.0865 - val_accuracy: 0.9725
+Epoch 3/10
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0670 - accuracy: 0.9786 - val_loss: 0.0708 - val_accuracy: 0.9778
+Epoch 4/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0525 - accuracy: 0.9832 - val_loss: 0.0623 - val_accuracy: 0.9810
+Epoch 5/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0433 - accuracy: 0.9855 - val_loss: 0.0696 - val_accuracy: 0.9806
+Epoch 6/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0357 - accuracy: 0.9885 - val_loss: 0.0685 - val_accuracy: 0.9816
+Epoch 7/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0299 - accuracy: 0.9901 - val_loss: 0.0625 - val_accuracy: 0.9822
+Epoch 8/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0276 - accuracy: 0.9908 - val_loss: 0.0655 - val_accuracy: 0.9821
+Epoch 9/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0237 - accuracy: 0.9925 - val_loss: 0.0789 - val_accuracy: 0.9806
+Epoch 10/10
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.0230 - accuracy: 0.9923 - val_loss: 0.0750 - val_accuracy: 0.9827
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En este ejemplo en particular se hizo uso de la herramienta &lt;a href=&#34;https://www.tensorflow.org/tensorboard&#34;&gt;Tensorboard&lt;/a&gt;, el cual proporciona una interfaz de visualización para el entrenamiento de los modelos. Al ejecutar nuestro código, se guarda en la carpeta logs el resultado de entrenamiento para cada epoch. Para visualizar la herramienta Tensorboard tenemos basicamente dos formas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visualizar Tensorboard directamente en Colab&lt;/li&gt;
+&lt;li&gt;Visualizar Tensorboard en nuestra computadora local&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;La desventaja de visualizar en Colab es que debemos esperar a que termine el entrenamiento para visualizar Tensorboard. Por el contrario, debido a que tenemos nuestra carpeta sincronizada, podemos ejecutar Tensorboard en nuestra computadora y visualizar el entrenamiento de manera local en tiempo real mientras se ejecuta el entrenamiento en Colab.&lt;/p&gt;
+&lt;p&gt;Para visualizar el resultado directamente en este notebook ejecutamos las siguientes dos celdas. La primera solo se ejecuta una vez, pues es la encargada de cargar la extension.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Load the TensorBoard notebook extension (Ejecutar una sola vez)
+%load_ext tensorboard
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;%tensorboard --logdir logs/fit
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Reusing TensorBoard on port 6006 (pid 1921), started 0:04:55 ago. (Use &#39;!kill 1921&#39; to kill it.)
+
+
+
+&amp;lt;IPython.core.display.Javascript object&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Los detalles de implementación del código utilizado de ejemplo se pueden consultar directamente en la página del tutorial: &lt;a href=&#34;https://www.tensorflow.org/tensorboard/get_started&#34;&gt;https://www.tensorflow.org/tensorboard/get_started&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#Conclusion
+En conclusion, gracias a la sincronización que nos provee el cliente de google drive, podemos hacer todas las modificaciones necesarias de manera local en nuestras computadoras y unicamente utilizar colab para ejecturar el entrenamiento de la red neuronal aprovechando su GPU. Adicionalmente, el uso de la herramienta Tensorboard es fundamental para monitorear el entrenamiento.&lt;/p&gt;
+&lt;h1 id=&#34;bonus&#34;&gt;Bonus&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;
+Cuando ejecutamos entrenamientos muy largos, es posible que Colab se desconecte inesperadamente debido a falta de interactividad. Para solucionar este problema podemos agregar un código Javascript en esta página para hacer &amp;ldquo;clicks&amp;rdquo; de manera automática en el boton Conect (Boton donde se muestra uso de RAM y Disco). El código en cuestión es el siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function ClickConnect(){
+    console.log(&amp;quot;Clicked on connect button&amp;quot;); 
+    document.querySelector(&amp;quot;colab-connect-button&amp;quot;).click()
+}
+setInterval(ClickConnect,60000)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Este código debe agregarse en la consola de Javascript de la siguiente manera:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/prevent_disconecting.gif&#34; alt=&#34;texto alternativo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; Si se quiere mas memoria ram, se puede ejecutar el siguiente código en una celda:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a = []
+while(1):
+    a.append(‘1’)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Al ejecutarlo, este comando va a llenar la memoria ram disponible en Colab y forzará a este a ampliar la capacidad. Debemos esperar aproximadamente 1 minuto hasta que salga un letrero que pregunta si deseamos ampliar la memoria. Despues de aceptar, tendremos más memoria RAM en nuestro notebook. Mas información: &lt;a href=&#34;https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d&#34;&gt;https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
