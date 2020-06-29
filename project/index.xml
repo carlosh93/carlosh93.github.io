@@ -7,10 +7,19 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 18:29:33 -0500</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy Preserving Human Pose Estimation</title>
+      <link>http://carloshinojosa.me/project/privacy-preserving-optics/</link>
+      <pubDate>Mon, 22 Jun 2020 18:29:33 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/privacy-preserving-optics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Smartphone-based application for agricultural remote technical assistance in Colombia</title>
@@ -31,8 +40,18 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/project/seismic-time-to-depth/</guid>
-      <description>&lt;p&gt;Time-domain seismic imaging, also known as time migration, is a fast and robust process for areas with mild lateral velocity variation. Even so, structural problems by mild lateral velocity variation can appear under this approach. An alternative known as depth migration manages to mitigate this problem in areas with lateral velocity variation. Therefore, time-to-depth conversion techniques have been employed to obtain seismic interval velocity. In detail, these techniques consist of solving a system of partial differential equations ill-posed with missing boundary conditions, which could lead to stability issues. Thus, an alternative two-step approach, solution of a system of partial differential equations, and interval velocity estimation from an optimization problem were proposed to take into account lateral velocity variations for the 2D case. However, the formulation of an optimization problem for the 3D case is not direct, and it is crucial for the seismic analysis in the interior of the earth.&lt;/p&gt;
-&lt;p&gt;In this project, we develop optimization problems to estimate the seismic interval velocity from Dix velocity on 2D and 3D data using image ray theory. Furthermore, we develop different modules for the DecisionSpace Geoscience software to implement the designed algorithms.&lt;/p&gt;
+      <description>&lt;p&gt;Time-domain seismic imaging, also known as time migration, is a fast and robust process for areas with mild lateral
+velocity variation. Even so, structural problems by mild lateral velocity variation can appear under this approach.
+An alternative known as depth migration manages to mitigate this problem in areas with lateral velocity variation.
+Therefore, time-to-depth conversion techniques have been employed to obtain seismic interval velocity. In detail,
+these techniques consist of solving a system of partial differential equations ill-posed with missing boundary
+conditions, which could lead to stability issues. Thus, an alternative two-step approach, solution of a system of
+partial differential equations, and interval velocity estimation from an optimization problem were proposed to
+take into account lateral velocity variations for the 2D case. However, the formulation of an optimization problem for
+the 3D case is not direct, and it is crucial for the seismic analysis in the interior of the earth.&lt;/p&gt;
+&lt;p&gt;In this project, we develop optimization problems to estimate the seismic interval velocity from Dix velocity on 2D
+and 3D data using image ray theory. Furthermore, we develop different modules for the DecisionSpace Geoscience software
+to implement the designed algorithms.&lt;/p&gt;
 </description>
     </item>
     

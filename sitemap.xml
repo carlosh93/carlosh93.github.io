@@ -3,48 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://carloshinojosa.me/courses/example/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>http://carloshinojosa.me/courses/deep-learning-labs/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/courses/example.1/example3/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>http://carloshinojosa.me/courses/deep-learning-labs/colab/</loc>
+    <lastmod>2020-06-29T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/courses/example.2/example3/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example.1/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example.2/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example.2/example4/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example/example2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/example.1/example4/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>http://carloshinojosa.me/courses/deep-learning-labs/concepts/</loc>
+    <lastmod>2020-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -68,12 +38,52 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/colab/</loc>
-    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
+    <loc>http://carloshinojosa.me/courses/</loc>
+    <lastmod>2020-06-29T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://carloshinojosa.me/tags/deep-learning/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/machine-learning/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/privacy-preserving/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/privacy-preserving-optics/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/</loc>
+    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/colab/</loc>
     <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
@@ -89,11 +99,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/pycharm/</loc>
-    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/</loc>
     <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
@@ -233,11 +238,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/grayscale-coded-aperture/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -250,11 +250,6 @@
   <url>
     <loc>http://carloshinojosa.me/tags/spectral-imaging-systems/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/courses/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -309,11 +304,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/mobile-app/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   
