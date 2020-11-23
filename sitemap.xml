@@ -43,47 +43,12 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
+    <loc>http://carloshinojosa.me/tags/colab/</loc>
+    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://carloshinojosa.me/tags/deep-learning/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/machine-learning/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/privacy-preserving/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/privacy-preserving-optics/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/</loc>
-    <lastmod>2020-06-22T18:29:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/colab/</loc>
     <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
@@ -99,6 +64,11 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/pycharm/</loc>
+    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/</loc>
     <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
@@ -238,6 +208,11 @@
   </url>
   
   <url>
+    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://carloshinojosa.me/tags/grayscale-coded-aperture/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -304,6 +279,11 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/mobile-app/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   
