@@ -37,7 +37,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <base href="https://carloshinojosa.me/project/test/">
+
   </head>
   <body>
     <!-- ====== Header Section ====== -->
@@ -362,7 +362,7 @@
 
           <div class="header">
             <h1>Who develop the App</h1>
-            <p>This App was developed when we were at the High Dimensional Signal Processing Group (HDSP) at Universidad Industrial de Santander. We are all software engineers from Universidad Industrial de Santander.</p>
+            <p>This App was developed when we were at the High Dimensional Signal Processing Group (<a href="http://hdspgroup.com/" target="_blank">HDSP</a>) at Universidad Industrial de Santander. We are all software engineers from Universidad Industrial de Santander.</p>
             <div class="underline"></div>
           </div> <!-- end .container> .header -->
 
@@ -375,9 +375,9 @@
                   <div class="details">
                     <div class="social icon">
                       <ul>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/CarlosH_93" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/phdcarloshinojosa/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                       </ul>
                     </div> <!-- end .icon -->
@@ -736,6 +736,17 @@
       jQuery(document).ready(function($) {
         "use strict";
         jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({social_tools:false});
+      });
+    </script>
+
+    <script type="text/javascript">
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
       });
     </script>
   </body>
