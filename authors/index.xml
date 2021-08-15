@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,15 +15,112 @@
     <item>
       <title></title>
       <link>http://carloshinojosa.me/authors/admin/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/admin/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad Industrial de Santander, Colombia, in 2015 and 2018, respectively. Currently, I am pursuing a Ph.D. in Computer Science at Universidad Industrial de Santander. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing. I also have developed scientific software for companies like Ecopetrol S.A and my university under distinct research projects. I have experience with different programming languages, including C/C++, Java, C#, Javascript, MATLAB, Typescript, Python, and Bash scripting in Linux-like operating systems. Furthermore, I have experience with Linux system administration and hybrid mobile app development with different frameworks like Ionic, React, and Cordova.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Henry Arguello</title>
+      <link>http://carloshinojosa.me/authors/henry-arguello/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/henry-arguello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juan Carlos Niebles</title>
+      <link>http://carloshinojosa.me/authors/juan-carlos-niebles/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/juan-carlos-niebles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jhon López</title>
+      <link>http://carloshinojosa.me/authors/jhon-lopez/</link>
+      <pubDate>Fri, 16 Jul 2021 15:16:09 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/jhon-lopez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adrian Basarab</title>
+      <link>http://carloshinojosa.me/authors/adrian-basarab/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/adrian-basarab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Denis Kouamé</title>
+      <link>http://carloshinojosa.me/authors/denis-kouame/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/denis-kouame/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Karen Sanchez</title>
+      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicolas Sans</title>
+      <link>http://carloshinojosa.me/authors/nicolas-sans/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/nicolas-sans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oliver Meyrignc</title>
+      <link>http://carloshinojosa.me/authors/oliver-meyrignc/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/oliver-meyrignc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simon Freiss</title>
+      <link>http://carloshinojosa.me/authors/simon-freiss/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/simon-freiss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fernando Rojas</title>
+      <link>http://carloshinojosa.me/authors/fernando-rojas/</link>
+      <pubDate>Thu, 28 Jan 2021 15:16:09 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/fernando-rojas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sergio Castillo</title>
+      <link>http://carloshinojosa.me/authors/sergio-castillo/</link>
+      <pubDate>Thu, 28 Jan 2021 15:16:09 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/sergio-castillo/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -36,29 +133,11 @@
     </item>
     
     <item>
-      <title>Henry Arguello</title>
-      <link>http://carloshinojosa.me/authors/henry-arguello/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/henry-arguello/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jorge Bacca</title>
       <link>http://carloshinojosa.me/authors/jorge-bacca/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/jorge-bacca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sergio Castillo</title>
-      <link>http://carloshinojosa.me/authors/sergio-castillo/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/sergio-castillo/</guid>
       <description></description>
     </item>
     
@@ -77,15 +156,6 @@
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/nelson-diaz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karen Sanchez</title>
-      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
       <description></description>
     </item>
     

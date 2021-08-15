@@ -22,6 +22,24 @@
     </item>
     
     <item>
+      <title>Publications</title>
+      <link>http://carloshinojosa.me/publication/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://carloshinojosa.me/project/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Courses</title>
       <link>http://carloshinojosa.me/courses/</link>
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0100</pubDate>
@@ -49,29 +67,11 @@
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>http://carloshinojosa.me/publication/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Resume</title>
       <link>http://carloshinojosa.me/resume/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/resume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://carloshinojosa.me/project/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/project/</guid>
       <description></description>
     </item>
     

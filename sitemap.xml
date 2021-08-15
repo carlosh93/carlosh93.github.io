@@ -38,17 +38,212 @@
   </url>
   
   <url>
+    <loc>http://carloshinojosa.me/authors/admin/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/1/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computational-photography/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/henry-arguello/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/human-pose-estimation/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/juan-carlos-niebles/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-iccv2021/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/privacy-preserving/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/2/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/journal-spie-jars-efficient-f4sc/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/hyperspectral-image-segmentation/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/jhon-lopez/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/spectral-image-classification/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/subspace-clustering/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/unsupervised-classification/</loc>
+    <lastmod>2021-07-16T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/privacy-hpe-project-page/</loc>
+    <lastmod>2021-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/</loc>
+    <lastmod>2021-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/project/privacy-hpe/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/adrian-basarab/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/deep-learning/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/denis-kouame/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/generative-adversarial-networks/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/neural-networks/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/nicolas-sans/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/oliver-meyrignc/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/simon-freiss/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/subspace-domain-adaptation/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-isbi2019-subspace-domain-chest-xray/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/transfer-learning/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/fernando-rojas/</loc>
+    <lastmod>2021-01-28T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/journal-spie-jars-3ds-ssc/</loc>
+    <lastmod>2021-01-28T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/sergio-castillo/</loc>
+    <lastmod>2021-01-28T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/spatio-spectral-classification/</loc>
+    <lastmod>2021-01-28T15:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://carloshinojosa.me/courses/</loc>
     <lastmod>2020-06-29T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://carloshinojosa.me/tags/colab/</loc>
-    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/deep-learning/</loc>
     <lastmod>2020-05-30T18:04:38-05:00</lastmod>
   </url>
   
@@ -68,11 +263,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/</loc>
-    <lastmod>2020-05-30T18:04:38-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/blog/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -83,32 +273,12 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/authors/admin/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication_types/1/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/compressive-spectral-clustering/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://carloshinojosa.me/authors/edwin-vargas/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/henry-arguello/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -124,21 +294,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/matrix-design/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication_types/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication/</loc>
-    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/sergio-castillo/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -168,11 +323,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/spectral-image-classification/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/publication/conf-icip2019/</loc>
     <lastmod>2019-09-25T00:00:00+00:00</lastmod>
   </url>
@@ -188,11 +338,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/publication_types/2/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/publication/journal-adaptive2019/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -204,11 +349,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/coded-aperture-design/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,16 +373,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
-    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/spatio-spectral-classification/</loc>
-    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/spectral-image-fusion/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url>
@@ -263,27 +393,17 @@
   </url>
   
   <url>
+    <loc>http://carloshinojosa.me/publication_types/9/</loc>
+    <lastmod>2018-10-26T15:15:15-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://carloshinojosa.me/publication/journal-coded-design-clustering2018/</loc>
     <lastmod>2018-10-26T15:15:15-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/subspace-clustering/</loc>
-    <lastmod>2018-10-26T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/unsupervised-classification/</loc>
-    <lastmod>2018-10-26T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/mobile-app/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/project/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   

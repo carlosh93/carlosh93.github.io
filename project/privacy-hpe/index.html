@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Carlos Hinojosa">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Landing page of our ICCV 2021 Paper.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://carloshinojosa.me/project/privacy-hpe/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#23BF53">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.21dd17c57da63b5d50cc96fce0b62689.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.f15c2950aa528fa71a9dde95a47b621e.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153594023-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://carloshinojosa.me/project/privacy-hpe/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@CarlosH_93">
+  <meta property="twitter:creator" content="@CarlosH_93">
+  
+  <meta property="og:site_name" content="Carlos Hinojosa">
+  <meta property="og:url" content="http://carloshinojosa.me/project/privacy-hpe/">
+  <meta property="og:title" content="Learning Privacy-preserving Optics for Human Pose Estimation | Carlos Hinojosa">
+  <meta property="og:description" content="Landing page of our ICCV 2021 Paper."><meta property="og:image" content="http://carloshinojosa.me/img/icon-192.png">
+  <meta property="twitter:image" content="http://carloshinojosa.me/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-07-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-07-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Learning Privacy-preserving Optics for Human Pose Estimation | Carlos Hinojosa</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Carlos Hinojosa</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#gallery"><span>Conferences</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resume/"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="introduction" class="home-section wg-new-intro-project   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading2 text-center">
+      <h1>Learning Privacy-preserving Optics for Human Pose Estimation</h1>
+      <p>We design the camera lens to perform human pose estimation while preserving users&rsquo; privacy.</p>
+    </div>
+    <div class="authors-container">
+    
+    <div class="col-12 col-sm-auto people-person">
+      <a href="https://carloshinojosa.me"><img class="portrait" src="/img/user.png"></a>
+
+      <div class="portrait-title">
+        <h3><a href="https://carloshinojosa.me">Carlos Hinojosa</a></h3>
+        <p>Universidad Industrial de Santander</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-auto people-person">
+      <a href="http://www.niebles.net"><img class="portrait" src="/img/niebles.jpg"></a>
+
+      <div class="portrait-title">
+        <h3><a href="http://www.niebles.net">Juan Carlos Niebles</a></h3>
+        <p>Stanford University</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-auto people-person">
+      <a href="http://hdspgroup.com/people/henry-arguello/"><img class="portrait" src="/img/henarfu.jpg"></a>
+
+      <div class="portrait-title">
+        <h3><a href="http://hdspgroup.com/people/henry-arguello/">Henry Arguello</a></h3>
+        <p>Universidad Industrial de Santander</p>
+      </div>
+    </div>
+    
+    </div>
+    <div class="col-12">
+      <p> 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<video autoplay loop >
+  <source src="/videos/intro_vid.mp4" type="video/mp4">
+</video></p>
+
+    </div>
+
+  <div class="btn-links project_links">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/carlosh93/privacy-optics-hpe" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/privacy-HPE-poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/cNkSKzakOB8" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+  </div>
+
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="abstract" class="home-section wg-blank   priv-hpe-project-abstract"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Abstract</h1>
+      
+    </div>
+    <div class="col-12">
+      <p><div class="full-imgs">
+<p class="title-figs"><b>Cameras are everywhere! How to develop privacy-preserving vision systems?</b></p>
+<div class="row-figs">
+  <div class="column-fig">
+    <img src="/img/priv-hpe-abstract-imgs/img1.png" style="width:100%">
+  </div>
+  <div class="column-fig">
+    <img src="/img/priv-hpe-abstract-imgs/img2.png" style="width:100%">
+  </div>
+  <div class="column-fig">
+    <img src="/img/priv-hpe-abstract-imgs/img3.png" style="width:100%">
+  </div>
+  <div class="column-fig">
+    <iframe style="width:100%; height:188.18px" src="https://www.youtube.com/embed/mTnX3ixd13Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe style="width:100%">
+  </div>
+</div>
+<p></p>
+</div>
+
+<div class="only-vid">
+  <p class="title-figs"><b>Cameras are everywhere! How to develop privacy-preserving vision systems?</b></p>
+  <iframe style="width:99%"  height="368px" src="https://www.youtube.com/embed/mTnX3ixd13Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p></p>
+</div>
+
+The widespread use of always-connected digital cameras in our everyday life has led to increasing concerns about the
+users&rsquo; privacy and security. How to develop privacy-preserving computer vision systems? In particular, we want to
+prevent the camera from obtaining detailed visual data that may contain private information. However, we also want the
+camera to capture useful information to perform computer vision tasks. Inspired by the trend of jointly designing optics
+and algorithms, we tackle the problem of privacy-preserving human pose estimation by optimizing an optical encoder (
+hardware-level protection) with a software decoder (convolutional neural network) in an end-to-end framework. We
+introduce a visual privacy protection layer in our optical encoder which, parametrized appropriately, enables the
+optimization of the point spread function (PSF) of the camera lens. We validate our approach with extensive simulations
+and a prototype camera. We show that our privacy-preserving deep optics approach successfully degrades or inhibits
+private attributes while maintaining important features to perform human pose estimation.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="method" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Method Overview</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<video autoplay loop >
+  <source src="/videos/prop_approach.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+<figure class="img_prop_iccv2021">
+
+<img src="/img/iccv2021_zernike.png" >
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<video autoplay loop >
+  <source src="/videos/opt_procc.mp4" type="video/mp4">
+</video>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="results" class="home-section wg-blank   priv-hpe-results"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Results</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+
+
+
+<figure>
+
+<img src="visual_sim.png" alt="Qualitative results on example COCO images. We compare our proposed privacy-preserving pose estimation results using the optimized lens with the Non-privacy approach using a standard lens. The last two columns depict failure cases where we fail to estimate the pose of far distant people." >
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  
+  <p>
+    Qualitative results on example COCO images. We compare our proposed privacy-preserving pose estimation results using the optimized lens with the Non-privacy approach using a standard lens. The last two columns depict failure cases where we fail to estimate the pose of far distant people.
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="lab_impl" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Lab Implementation</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/1.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/1_hud3f753107351103424d1d7bd476a91ac_735127_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/2.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/2_hu07f18bb06e739a260ce3178d4e13e219_524249_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/3.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/3_hu2d45acd130229763e90739db434a13f2_1416290_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/4.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/4_hua3a611e28afb1afeb9ff11241bb94b82_1736992_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/5.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/5_hu3d321e5b53b990e3dd9e877712bda486_437422_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/6.jpg" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/6_hu5bdff6edb43e4ecd2ec8b843d056ce1c_143574_0x190_resize_q90_lanczos.jpg" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/7.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/7_hu5dfc98781b04df7edd4785f084af359c_944032_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/privacy-hpe/lab_impl/gallery/8.png" >
+  <img src="/project/privacy-hpe/lab_impl/gallery/8_hu00b2b70af9dd6ee9c3600145e4cd65bc_546643_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+
+  
+</div>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="video" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Submitted Video</h1>
+      
+    </div>
+    <div class="col-12">
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cNkSKzakOB8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="citation" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Cite this work</h1>
+      
+    </div>
+    <div class="col-12">
+      <pre><code>@article{hinojosa2021ICCV,
+  title={Learning Privacy-preserving Optics for Human Pose Estimation},
+  author={Hinojosa, Carlos and Niebles, Juan~Carlos and Arguello, Henry},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2021}
+}
+</code></pre>
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//http-carloshinojosa-me.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © All right reserved by Carlos Hinojosa, 2021 &middot; 
+          <a href="http://hdspgroup.com/" target="_blank" rel="noopener">HDSP Research Group</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/CarlosH_93" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:carlos_h93?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://wa.link/7hxpg4" target="_blank" rel="noopener" title="Whatsapp Me"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
