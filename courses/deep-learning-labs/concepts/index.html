@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.88.1" />
 
   
 
@@ -87,7 +87,7 @@ Image(&#39;ML.PNG&#39;, width = 800) Machine Learning es un metodo de análisis 
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.21dd17c57da63b5d50cc96fce0b62689.css">
+  <link rel="stylesheet" href="/css/academia.min.98be10c55ff8a58324a34944665d0c04.css">
 
   
     
@@ -493,7 +493,7 @@ Image(&#39;ML.PNG&#39;, width = 800) Machine Learning es un metodo de análisis 
           <div class="article-style" itemprop="articleBody">
             <p>Antes de inicar con conceptos básicos sobre redes neuronales tensorflow keras etc,  estudiaremos las ideas fundamentales sobre el mundo de la inteligencia artificial.</p>
 <p>La inteligencia artificial se puede definir como la ciencia de entrenar máquinas para ejecutar tareas humanas y machine learning es una parte de la inteligencia artifical encargada de resolver esos problemas.</p>
-<pre><code>Image('ML.PNG', width = 800)
+<pre tabindex="0"><code>Image('ML.PNG', width = 800)
 </code></pre><p><img src="../figs/Machine_learning_I_1_0.png" alt="png"></p>
 <p>Machine Learning es un metodo de análisis para la construcción de modelos automatas, que usan diversos algoritmos para aprender iterativamente de un conjunto de datos historicos.</p>
 <p>Los campos de aplicación de machine learning son muy diversos:</p>
@@ -509,7 +509,7 @@ Image(&#39;ML.PNG&#39;, width = 800) Machine Learning es un metodo de análisis 
 <p>Las redes neuronales son una forma de modelar matematicamente un neuron biológico. Esto es, son arquitecturas inspiradas en el cerebro humano y en su estructura ampliamente paralela, con capacidad de adquirir, almacenar y utilizar conocimiento experimental, generalizando su conocimiento a partir de ejemplos anteriores.</p>
 <p>En 1943 se lanza el primer modelo computacional para una neurona artificial y es llamado de perceptron.</p>
 <p>El perceptron (Figura 1), es la idea mas simple de un neuron artificial y se puede definir como el conjunto de entradas de una muestra <strong>X</strong> las cuales representan los estimulos que la neurona recibe del ambiente y que se combinan con los pesos sinápticos <strong>W</strong> para determinar la entrada del neuron, dicha entrada pasa por una función de activación o umbral que genera una salida <strong>Y</strong> la cual determinará si el neuron se activa siempre y cuando el valor de la combinacion lineal de sus entradas con los pesos supere el umbral de activación.</p>
-<pre><code>Image('perceptron.PNG', width = 800)
+<pre tabindex="0"><code>Image('perceptron.PNG', width = 800)
 </code></pre><p><img src="../figs/Machine_learning_I_4_0.png" alt="png"></p>
 <p>En un neuron podemos codificar información que nos servira para realizar tareas de calsificación prediccion, etc. Sin embargo la figura de un perceptron matematicamente (antes de la funcion de activación), no es mas que un función que realiza un calculo numérico lineal.
 Internamente la neurona utiliza todos los valores de entrada para realizar una suma ponderada entre los estimulos <strong>X</strong> multiplicados por un valor especifico llamado pesos <strong>W</strong> y que son los parametros y la parte fundamental del proceso de aprendizaje.</p>
@@ -518,11 +518,11 @@ Internamente la neurona utiliza todos los valores de entrada para realizar una s
 <p>Si lo ven el modelo matemático de una neurona no es mas que una funcion lineal</p>
 <p>$$ y = aX +b$$</p>
 <p>Una forma práctica de analizar una neurona artificial es simulando una compuerta <strong>and</strong> donde tenemos dos posibles valores de entrada <strong>x1</strong> ,  <strong>x2</strong>  y cuatro posibles combinaciones de salida <strong>y</strong> que las podemos etiquetar como 0(inactiva) y 1(activa), este nuevo concepto etiqueta es clave en el aprendizaje de máquinas supervisado ya que la neurona aprenderá de los datos históricos o también conocidos como etiquetas ( como se puede ver las etiquetas son los mismos valores de salida).</p>
-<pre><code>Image('tabla.PNG', width = 800)
+<pre tabindex="0"><code>Image('tabla.PNG', width = 800)
 </code></pre><p><img src="../figs/Machine_learning_I_6_0.png" alt="png"></p>
 <p>Pero como se sabe el resultado de usar una regresión lineal entre las combinaciones entre x1 y x2 nos da un resultado  numérico continuo  y no un  número binario, para eso se introducen las llamadas funciones de activación, que en la figura 1 son representadas por la ultima caja del modelo y que utilizaran un umbral para decidir si el valor numérico entregado por la suma ponderada supera dicho umbral se entregará como salida un 1 ( neurona activa) caso contrario será entregado un 0 ( neurona no activa).</p>
 <p>una forma mas simple e intuitiva de ver este problema es tratandolo como un problema de clasificación. Esto es encontrar una recta que separe los valores 0 de los valores 1 como se muestra en la siguiente grafica de una compuerta <strong>and</strong>.</p>
-<pre><code>Image('and.PNG', width = 500)
+<pre tabindex="0"><code>Image('and.PNG', width = 500)
 </code></pre><p><img src="../figs/Machine_learning_I_8_0.png" alt="png"></p>
 <p>La linea azul es la linea de regresión que la neurona aprendio despues de alguna etapas de entrenamiento y consiguio encontrar los mejores valores de <strong>W</strong> para lograr su objetivo ( separar los valores 0 de los valores 1).</p>
 <p>Pero que es el entrenamiento?
@@ -544,14 +544,14 @@ el entrenamiento en modelos de machine learning es la aplicacion de un algoritmo
 $$ y=WX+b$$</p>
 <p>donde <strong>W</strong> y <strong>b</strong> como ya sabemos representan los pesos y bias como son llamados en machine learning o como matematicamente se les conoce la pendiente e intersección de la recta respectivamente, <strong>X</strong> representa el conjunto de entrada de nuestros sistemas (nuestros datos historicos) y <strong>y</strong> será el resultado deseado.</p>
 <p>Iniciaremos creando un conjunto de características aleatorias sinteticas que representaran el conjunto de datos de entrada <strong>X</strong>, suponiendo que se trata de una variable de precio de casas en un barrio por ejemplo.</p>
-<pre><code>#importamos las librerias necesarias
+<pre tabindex="0"><code>#importamos las librerias necesarias
 import tensorflow as tf
 
 # generamos valores aleatorios de entrada en fomra de tensores
 Numero_muestras=1000
 X = tf.random.normal(shape=(Numero_muestras,))
-</code></pre><p>Ahora crearemos el modelo de regresión lineal, basado en la formula anterior e inicializando los pesos y el bias con valores aleatorios, esto con el fin de mostrar por que es imoprtante el entrenamiento. Atento que mencione &ldquo;&ldquo;inicializar&rdquo;&quot;, en todo algoritmo de machine learning en su etapa inicial los pesos y bias se inician con valores aleatorios my pequeños preferiblemente diferentes de zero. En este caso a modo de ejemplo asignaremos unos valores constantes de: <strong>W=16.0</strong> y <strong>b=10.0</strong></p>
-<pre><code>class Regresion(object):
+</code></pre><p>Ahora crearemos el modelo de regresión lineal, basado en la formula anterior e inicializando los pesos y el bias con valores aleatorios, esto con el fin de mostrar por que es imoprtante el entrenamiento. Atento que mencione &ldquo;&ldquo;inicializar&rdquo;&rdquo;, en todo algoritmo de machine learning en su etapa inicial los pesos y bias se inician con valores aleatorios my pequeños preferiblemente diferentes de zero. En este caso a modo de ejemplo asignaremos unos valores constantes de: <strong>W=16.0</strong> y <strong>b=10.0</strong></p>
+<pre tabindex="0"><code>class Regresion(object):
   def __init__(self):
     self.W = tf.Variable(16.0)  # pesos w inicializado en 16
     self.b = tf.Variable(10.0) # bias inicializado en 10
@@ -560,22 +560,22 @@ X = tf.random.normal(shape=(Numero_muestras,))
     return self.W*X + self.b   # ecuación de la regresión
 </code></pre><p>y como por arte de magia el modelo de regresión lineal esta creado de forma muy simple, donde al llamar el metodo call retornaremos nuestra función de regresión previamente explicada.</p>
 <p>Ahora se creará una instancia del modelo y se hará una predicción</p>
-<pre><code>modelo = Regresion()  # instancia del modelo
+<pre tabindex="0"><code>modelo = Regresion()  # instancia del modelo
 modelo(20).numpy()    # en este caso X es la entrada de la redque conocemos y le damos un valor de 20
 </code></pre><pre><code>330.0
 </code></pre>
 <p>Como se puede ver el resultado de la regresión nos dio un valor de 330.0. Pero será este resultado lo que realmente estabamos buscando?, será que el modelo me predijo correctamente lo que se queria?. una forma de averiguarlo es creando un conjunto de datos historicos sinteticos a los cuales les  llamaremos &ldquo;reales&rdquo;. Recordemos que todo sistema de machine learning funciona con datos historicos.
 Como estamos trabajando con un sistema supervisado, recrearemos unos valores para <strong>W</strong> y <strong>b</strong> ideales para asi poder tener nuestros datos historicos simulados.</p>
 <p>Este es el punto mas importante los datos de <strong>w</strong> y <strong>b</strong> no los conocemos si los supieramos no necesitariamos algoritmos de aprendizaje, es por eso que en este ejemplo los idealizamos como si los supieramos para entender el por que es importante la etapa de entrenamiento.</p>
-<pre><code>#datos ideales
+<pre tabindex="0"><code>#datos ideales
 TRUE_W=3.0
 TRUE_b=0.5
 </code></pre><p>Para tener un conjunto de datos sinteticos mas reales adicionaremos ruido a nuestros conjunto de datos, esto simulara efecto de datos perdidos en el dataset, datos extremos, datos nulos etc.</p>
-<pre><code>noise =tf.random.normal(shape=(Numero_muestras,))
+<pre tabindex="0"><code>noise =tf.random.normal(shape=(Numero_muestras,))
 </code></pre><p>Con lo anterior creamos nuestro conjunto de datos historico simulado</p>
-<pre><code>y=X*TRUE_W+TRUE_b + noise
+<pre tabindex="0"><code>y=X*TRUE_W+TRUE_b + noise
 </code></pre><p>Ahora si, a lo que vinimos, vamos a crear un grafico donde pondremos los datos historicos reales y los datos que el modelo predice. Lo ideal seria encontrar una linea de regresion que este bien por encima de los datos originales</p>
-<pre><code>import matplotlib.pyplot as plt
+<pre tabindex="0"><code>import matplotlib.pyplot as plt
 #grafica de los valores historicos reales
 plt.scatter(X,y, label=&quot;valores reales&quot;)
 #grafica de los valores predichos por el modelo
@@ -587,13 +587,13 @@ plt.scatter(X,modelo(X), label = &quot;valores predichos&quot;)
 <p>Ese es nuestro objetivo actualizar los pesos sucesivamente hasta encontrar los que mejor adapten la linea de regresión a los datos historicos. En este caso nuestro modelo deberiá haber encontrado unos pesos de <strong>W=3.0</strong> y <strong>b=0.5</strong> esto no se consiguio debido al hecho de que en el modelo de regresión creado los valores de <strong>W</strong> y <strong>b</strong> se dejaron fijos en 16.0 y 10.0 respectivamente.</p>
 <p>Es por eso que el entrenamiento de los modelos es de suma importancia en todo algorimto de aprendizaje y conceptos como función de coste, errore medio cuadratico, descenso del gradiente entre otros empiezan a aparecer para facilitar la vida al momento de predecir.</p>
 <p>#Entrenamiento del modelo de regresión</p>
-<pre><code>print('valores reales    ',X[:4].numpy(),'\nValores predichos ',modelo(X)[:4].numpy())
+<pre tabindex="0"><code>print('valores reales    ',X[:4].numpy(),'\nValores predichos ',modelo(X)[:4].numpy())
 </code></pre><pre><code>valores reales     [-0.98775786 -0.4940117  -1.1781967  -0.46405175] 
 Valores predichos  [-5.804126   2.0958128 -8.851147   2.575172 ]
 </code></pre>
 <p>Como se puede observar el error entre los valores reales y los valores predichos por el modelo son demasiado grandes es por eso que la grafica a quedado tan separada una de la otra. Con el fin de ajustar los valores y reducir esa discrepancia entre valores reales y predichos, se usan tecnicas que minimicen esos errores y son conocidas como funciones de coste <em>J</em>, que para el caso de la regresión lineal se tiene la del <strong>error minimo cuadrado</strong>:</p>
 <p>$J = (y_{real} - y_{predicho})^{2}$</p>
-<pre><code>def error_medio_cuadratico(y_real,y_predicho):
+<pre tabindex="0"><code>def error_medio_cuadratico(y_real,y_predicho):
   return tf.reduce_mean(tf.square(y_real-y_predicho)) # error
 </code></pre><p>Como la tasa de errores se obtiene haciendo la diferencia de cada valor, se aplica la media de todos los errores de <strong>Y_real</strong> y <strong>Y_predicho</strong> con el objetivo de tener un solo valor que es el que se ira a sumar o restar a los pesos y bias para que estos se actualicen.
 seriá algo asi</p>
@@ -605,14 +605,14 @@ seriá algo asi</p>
 </ol>
 <p>El primer item se soluciona con el calculo del gradiente, ya para el segundo es necesario adicionar un parámetro mas a nuestro algoritmmo de aprendizaje que es la tasa de aprendizaje que generalmente esta configurada entre 0 y 1.</p>
 <p>Calcularemos el gradiente con las funciones ofrecidas por tensorflow.</p>
-<pre><code>def entrenamiento(modelo,X,y,tasa_aprendizaje=0.01):
+<pre tabindex="0"><code>def entrenamiento(modelo,X,y,tasa_aprendizaje=0.01):
   with tf.GradientTape() as t:
     error_actual=error_medio_cuadratico(y ,modelo(X))
   derivada_W, derivada_b = t.gradient(error_actual,[modelo.W,modelo.b])  
   modelo.W.assign_sub(tasa_aprendizaje*derivada_W)
   modelo.b.assign_sub(tasa_aprendizaje*derivada_b)
 </code></pre><p>Ahora con nuestra función de entrenamiento que contiene la actualizacion de pesos podremos mejorar el cálculo de nuestro modelo de regresión, para eso crearemos un loop con un determinado número de iteraciones para que los pesos se actualicen correctamente</p>
-<pre><code># en estas variables guardaremos los valores de los pesos de cada pasada 
+<pre tabindex="0"><code># en estas variables guardaremos los valores de los pesos de cada pasada 
 ws,bs = [],[]
 numero_itraciones=10
 for iteracion in range(numero_itraciones):
@@ -635,7 +635,7 @@ Iteración 8, perdida 8.9938383102417
 Iteración 9, perdida 6.2000041007995605
 </code></pre>
 <p>Como se puede observar la error despues de varias iteraciones disminuye considerablemnte eso quieres decir que la red esta aprendiendo a ajustar los pesos y generalizarlos a los ideales</p>
-<pre><code>import matplotlib.pyplot as plt
+<pre tabindex="0"><code>import matplotlib.pyplot as plt
 #grafica de los valores historicos reales
 plt.scatter(X,y, label=&quot;valores reales&quot;)
 #grafica de los valores predichos por el modelo
@@ -858,7 +858,7 @@ plt.scatter(X,modelo(X), label = &quot;valores predichos&quot;)
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 

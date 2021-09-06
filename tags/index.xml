@@ -220,15 +220,6 @@
     </item>
     
     <item>
-      <title>Superpixels</title>
-      <link>http://carloshinojosa.me/tags/superpixels/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/superpixels/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Superpixels Algorithms</title>
       <link>http://carloshinojosa.me/tags/superpixels-algorithms/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
@@ -279,6 +270,15 @@
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/tags/spectral-image-fusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Superpixels</title>
+      <link>http://carloshinojosa.me/tags/superpixels/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/superpixels/</guid>
       <description></description>
     </item>
     
