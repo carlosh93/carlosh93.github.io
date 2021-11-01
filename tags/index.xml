@@ -7,10 +7,55 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Oct 2021 15:15:15 -0500</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clustering algorithms</title>
+      <link>http://carloshinojosa.me/tags/clustering-algorithms/</link>
+      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/clustering-algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyperspectral image clustering</title>
+      <link>http://carloshinojosa.me/tags/hyperspectral-image-clustering/</link>
+      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/hyperspectral-image-clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subspace Clustering</title>
+      <link>http://carloshinojosa.me/tags/subspace-clustering/</link>
+      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/subspace-clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Classification</title>
+      <link>http://carloshinojosa.me/tags/unsupervised-classification/</link>
+      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/unsupervised-classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised learning</title>
+      <link>http://carloshinojosa.me/tags/unsupervised-learning/</link>
+      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/unsupervised-learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Computational Imaging</title>
@@ -72,24 +117,6 @@
       <pubDate>Fri, 16 Jul 2021 15:16:09 -0500</pubDate>
       
       <guid>http://carloshinojosa.me/tags/spectral-image-classification/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Subspace Clustering</title>
-      <link>http://carloshinojosa.me/tags/subspace-clustering/</link>
-      <pubDate>Fri, 16 Jul 2021 15:16:09 -0500</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/subspace-clustering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unsupervised Classification</title>
-      <link>http://carloshinojosa.me/tags/unsupervised-classification/</link>
-      <pubDate>Fri, 16 Jul 2021 15:16:09 -0500</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/unsupervised-classification/</guid>
       <description></description>
     </item>
     
