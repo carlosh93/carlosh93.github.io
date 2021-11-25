@@ -44,7 +44,7 @@
 &lt;p&gt;Note que, debido a que nuestra intención es solo modificar el código en nuestra computadora local y ejecutar el código en Colab, no necesitamos tener instalado Python y las librerias de Tensorflow en nuestra computadora ya que estas se encuentran instaladas en Colab. Sin embargo, es recomendable instalar Python (Anaconda) y configurarlo con Pycharm en nuestra computadora local. A continuación proporciono links de interes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Instalar Anaconda: Windows: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/windows/,&#34;&gt;https://docs.anaconda.com/anaconda/install/windows/,&lt;/a&gt; Linux: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/linux/,&#34;&gt;https://docs.anaconda.com/anaconda/install/linux/,&lt;/a&gt; Mac: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/mac-os/&#34;&gt;https://docs.anaconda.com/anaconda/install/mac-os/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Instalar Anaconda: Windows: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/windows/&#34;&gt;https://docs.anaconda.com/anaconda/install/windows/&lt;/a&gt;, Linux: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/linux/&#34;&gt;https://docs.anaconda.com/anaconda/install/linux/&lt;/a&gt;, Mac: &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/mac-os/&#34;&gt;https://docs.anaconda.com/anaconda/install/mac-os/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Configurar Pycharm con Anaconda: &lt;a href=&#34;https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/&#34;&gt;https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/&lt;/a&gt;&lt;/p&gt;
