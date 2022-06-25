@@ -103,16 +103,16 @@ Cuda compilation tools, release 10.1, V10.1.243
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%%shell
 pwd
 ls
-mkdir &amp;quot;nuevo_directorio&amp;quot;
+mkdir &amp;#34;nuevo_directorio&amp;#34;
 ls
-rmdir &amp;quot;nuevo_directorio&amp;quot;
+rmdir &amp;#34;nuevo_directorio&amp;#34;
 ls
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;/content
 sample_data
 nuevo_directorio  sample_data
 sample_data
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note que si se agrega &lt;em&gt;%%shell&lt;/em&gt; al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir &lt;em&gt;%pwd&lt;/em&gt;, escribimos &lt;em&gt;pwd&lt;/em&gt; solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &amp;lsquo;sample_data/&amp;rsquo;. Luego creamos la carpeta &amp;lsquo;nuevo_directorio&amp;rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.&lt;/p&gt;
+&lt;p&gt;Note que si se agrega &lt;em&gt;%%shell&lt;/em&gt; al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir &lt;em&gt;%pwd&lt;/em&gt;, escribimos &lt;em&gt;pwd&lt;/em&gt; solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &amp;lsquo;sample_data/&amp;rsquo;. Luego creamos la carpeta &amp;rsquo;nuevo_directorio&amp;rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.&lt;/p&gt;
 &lt;p&gt;En general se puede utilizar cualquier comando linux, incluso instalar paquetes linux con el software apt, por ejemplo:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%%shell
 sudo apt install nano
@@ -154,8 +154,8 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# link to google drive
 
 from google.colab import drive
-#drive.mount(&#39;/content/gdrive/&#39;)
-drive.mount(&amp;quot;/content/gdrive/&amp;quot;, force_remount=True)
+#drive.mount(&amp;#39;/content/gdrive/&amp;#39;)
+drive.mount(&amp;#34;/content/gdrive/&amp;#34;, force_remount=True)
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;amp;response_type=code&amp;amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
 
 Enter your authorization code:
@@ -290,8 +290,8 @@ En conclusion, gracias a la sincronización que nos provee el cliente de google 
 &lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;
 Cuando ejecutamos entrenamientos muy largos, es posible que Colab se desconecte inesperadamente debido a falta de interactividad. Para solucionar este problema podemos agregar un código Javascript en esta página para hacer &amp;ldquo;clicks&amp;rdquo; de manera automática en el boton Conect (Boton donde se muestra uso de RAM y Disco). El código en cuestión es el siguiente:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function ClickConnect(){
-    console.log(&amp;quot;Clicked on connect button&amp;quot;); 
-    document.querySelector(&amp;quot;colab-connect-button&amp;quot;).click()
+    console.log(&amp;#34;Clicked on connect button&amp;#34;); 
+    document.querySelector(&amp;#34;colab-connect-button&amp;#34;).click()
 }
 setInterval(ClickConnect,60000)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Este código debe agregarse en la consola de Javascript de la siguiente manera:&lt;/p&gt;
@@ -301,8 +301,7 @@ setInterval(ClickConnect,60000)
 while(1):
     a.append(‘1’)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Al ejecutarlo, este comando va a llenar la memoria ram disponible en Colab y forzará a este a ampliar la capacidad. Debemos esperar aproximadamente 1 minuto hasta que salga un letrero que pregunta si deseamos ampliar la memoria. Despues de aceptar, tendremos más memoria RAM en nuestro notebook. Mas información: &lt;a href=&#34;https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d&#34;&gt;https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d&lt;/a&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
