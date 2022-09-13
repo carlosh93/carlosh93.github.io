@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jhon López on Carlos Hinojosa</title>
+    <title>Jhon Lopez on Carlos Hinojosa</title>
     <link>http://carloshinojosa.me/authors/jhon-lopez/</link>
-    <description>Recent content in Jhon López on Carlos Hinojosa</description>
+    <description>Recent content in Jhon Lopez on Carlos Hinojosa</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 16 Jul 2021 15:16:09 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/jhon-lopez/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Optics lens design for privacy-preserving scene captioning</title>
+      <link>http://carloshinojosa.me/publication/conf-icip2022/</link>
+      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-icip2022/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Efficient subspace clustering of hyperspectral images using similarity-constrained sampling</title>

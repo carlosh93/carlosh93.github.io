@@ -7,10 +7,19 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2022 15:15:15 -0500</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/karen-sanchez/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CX-DaGAN: Domain Adaptation for Pneumonia Diagnosis on a Small Chest X-ray Dataset</title>
+      <link>http://carloshinojosa.me/publication/journal-ieee-tmi-da-chestxray-2022/</link>
+      <pubDate>Tue, 13 Sep 2022 15:15:15 -0500</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/journal-ieee-tmi-da-chestxray-2022/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hierarchical Compressed Subspace Clustering of Infrared Single-pixel Measurements</title>
