@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Wed, 20 Oct 2021 15:15:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>http://carloshinojosa.me/authors/admin/</link>
-      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/admin/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m Carlos Hinojosa. Computer scientist and engineer with over six years of experience in scientific research and software development. I received the B. Sc. and M. Sc. degrees in Computer Science from Universidad Industrial de Santander, Colombia, in 2015 and 2018, respectively. Currently, I am pursuing a Ph.D. in Computer Science at Universidad Industrial de Santander. My research interests are in computer vision, machine learning, computational imaging, sparse representation, and signal processing. I also have developed scientific software for companies like Ecopetrol S.A and my university under distinct research projects. I have experience with different programming languages, including C/C++, Java, C#, Javascript, MATLAB, Typescript, Python, and Bash scripting in Linux-like operating systems. Furthermore, I have experience with Linux system administration and hybrid mobile app development with different frameworks like Ionic, React, and Cordova.&lt;/p&gt;
@@ -25,20 +25,56 @@
     </item>
     
     <item>
+      <title>Henry Arguello</title>
+      <link>http://carloshinojosa.me/authors/henry-arguello/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/henry-arguello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jonathan Monsalve</title>
+      <link>http://carloshinojosa.me/authors/jonathan-monsalve/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/jonathan-monsalve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Karen Sanchez</title>
+      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kevin Arias</title>
+      <link>http://carloshinojosa.me/authors/kevin-arias/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/kevin-arias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miguel Marquez</title>
+      <link>http://carloshinojosa.me/authors/miguel-marquez/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/miguel-marquez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Esteban Vera</title>
       <link>http://carloshinojosa.me/authors/esteban-vera/</link>
       <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
       
       <guid>http://carloshinojosa.me/authors/esteban-vera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Henry Arguello</title>
-      <link>http://carloshinojosa.me/authors/henry-arguello/</link>
-      <pubDate>Wed, 20 Oct 2021 15:15:15 -0500</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/henry-arguello/</guid>
       <description></description>
     </item>
     
@@ -75,15 +111,6 @@
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/denis-kouame/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karen Sanchez</title>
-      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
       <description></description>
     </item>
     

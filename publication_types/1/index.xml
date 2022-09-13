@@ -7,10 +7,19 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hierarchical Compressed Subspace Clustering of Infrared Single-pixel Measurements</title>
+      <link>http://carloshinojosa.me/publication/conf-whispers2022-singlepixel-clustering/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-whispers2022-singlepixel-clustering/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Learning Privacy-preserving Optics for Human Pose Estimation.</title>
