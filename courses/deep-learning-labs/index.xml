@@ -103,16 +103,16 @@ Cuda compilation tools, release 10.1, V10.1.243
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%%shell
 pwd
 ls
-mkdir &amp;quot;nuevo_directorio&amp;quot;
+mkdir &amp;#34;nuevo_directorio&amp;#34;
 ls
-rmdir &amp;quot;nuevo_directorio&amp;quot;
+rmdir &amp;#34;nuevo_directorio&amp;#34;
 ls
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;/content
 sample_data
 nuevo_directorio  sample_data
 sample_data
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note que si se agrega &lt;em&gt;%%shell&lt;/em&gt; al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir &lt;em&gt;%pwd&lt;/em&gt;, escribimos &lt;em&gt;pwd&lt;/em&gt; solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &amp;lsquo;sample_data/&amp;rsquo;. Luego creamos la carpeta &amp;lsquo;nuevo_directorio&amp;rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.&lt;/p&gt;
+&lt;p&gt;Note que si se agrega &lt;em&gt;%%shell&lt;/em&gt; al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir &lt;em&gt;%pwd&lt;/em&gt;, escribimos &lt;em&gt;pwd&lt;/em&gt; solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &amp;lsquo;sample_data/&amp;rsquo;. Luego creamos la carpeta &amp;rsquo;nuevo_directorio&amp;rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.&lt;/p&gt;
 &lt;p&gt;En general se puede utilizar cualquier comando linux, incluso instalar paquetes linux con el software apt, por ejemplo:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%%shell
 sudo apt install nano
@@ -154,8 +154,8 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# link to google drive
 
 from google.colab import drive
-#drive.mount(&#39;/content/gdrive/&#39;)
-drive.mount(&amp;quot;/content/gdrive/&amp;quot;, force_remount=True)
+#drive.mount(&amp;#39;/content/gdrive/&amp;#39;)
+drive.mount(&amp;#34;/content/gdrive/&amp;#34;, force_remount=True)
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;amp;response_type=code&amp;amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
 
 Enter your authorization code:
@@ -291,8 +291,8 @@ Epoch 10/10
 &lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;
 Cuando ejecutamos entrenamientos muy largos, es posible que Colab se desconecte inesperadamente debido a falta de interactividad. Para solucionar este problema podemos agregar un código Javascript en esta página para hacer &amp;ldquo;clicks&amp;rdquo; de manera automática en el boton Conect (Boton donde se muestra uso de RAM y Disco). El código en cuestión es el siguiente:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function ClickConnect(){
-    console.log(&amp;quot;Clicked on connect button&amp;quot;); 
-    document.querySelector(&amp;quot;colab-connect-button&amp;quot;).click()
+    console.log(&amp;#34;Clicked on connect button&amp;#34;); 
+    document.querySelector(&amp;#34;colab-connect-button&amp;#34;).click()
 }
 setInterval(ClickConnect,60000)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Este código debe agregarse en la consola de Javascript de la siguiente manera:&lt;/p&gt;
@@ -326,7 +326,7 @@ herramientas.&lt;/li&gt;
       <guid>http://carloshinojosa.me/courses/deep-learning-labs/concepts/</guid>
       <description>&lt;p&gt;Antes de inicar con conceptos básicos sobre redes neuronales tensorflow keras etc,  estudiaremos las ideas fundamentales sobre el mundo de la inteligencia artificial.&lt;/p&gt;
 &lt;p&gt;La inteligencia artificial se puede definir como la ciencia de entrenar máquinas para ejecutar tareas humanas y machine learning es una parte de la inteligencia artifical encargada de resolver esos problemas.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&#39;ML.PNG&#39;, width = 800)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&amp;#39;ML.PNG&amp;#39;, width = 800)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Machine Learning es un metodo de análisis para la construcción de modelos automatas, que usan diversos algoritmos para aprender iterativamente de un conjunto de datos historicos.&lt;/p&gt;
 &lt;p&gt;Los campos de aplicación de machine learning son muy diversos:&lt;/p&gt;
@@ -342,7 +342,7 @@ herramientas.&lt;/li&gt;
 &lt;p&gt;Las redes neuronales son una forma de modelar matematicamente un neuron biológico. Esto es, son arquitecturas inspiradas en el cerebro humano y en su estructura ampliamente paralela, con capacidad de adquirir, almacenar y utilizar conocimiento experimental, generalizando su conocimiento a partir de ejemplos anteriores.&lt;/p&gt;
 &lt;p&gt;En 1943 se lanza el primer modelo computacional para una neurona artificial y es llamado de perceptron.&lt;/p&gt;
 &lt;p&gt;El perceptron (Figura 1), es la idea mas simple de un neuron artificial y se puede definir como el conjunto de entradas de una muestra &lt;strong&gt;X&lt;/strong&gt; las cuales representan los estimulos que la neurona recibe del ambiente y que se combinan con los pesos sinápticos &lt;strong&gt;W&lt;/strong&gt; para determinar la entrada del neuron, dicha entrada pasa por una función de activación o umbral que genera una salida &lt;strong&gt;Y&lt;/strong&gt; la cual determinará si el neuron se activa siempre y cuando el valor de la combinacion lineal de sus entradas con los pesos supere el umbral de activación.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&#39;perceptron.PNG&#39;, width = 800)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&amp;#39;perceptron.PNG&amp;#39;, width = 800)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_4_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;En un neuron podemos codificar información que nos servira para realizar tareas de calsificación prediccion, etc. Sin embargo la figura de un perceptron matematicamente (antes de la funcion de activación), no es mas que un función que realiza un calculo numérico lineal.
 Internamente la neurona utiliza todos los valores de entrada para realizar una suma ponderada entre los estimulos &lt;strong&gt;X&lt;/strong&gt; multiplicados por un valor especifico llamado pesos &lt;strong&gt;W&lt;/strong&gt; y que son los parametros y la parte fundamental del proceso de aprendizaje.&lt;/p&gt;
@@ -351,11 +351,11 @@ Internamente la neurona utiliza todos los valores de entrada para realizar una s
 &lt;p&gt;Si lo ven el modelo matemático de una neurona no es mas que una funcion lineal&lt;/p&gt;
 &lt;p&gt;$$ y = aX +b$$&lt;/p&gt;
 &lt;p&gt;Una forma práctica de analizar una neurona artificial es simulando una compuerta &lt;strong&gt;and&lt;/strong&gt; donde tenemos dos posibles valores de entrada &lt;strong&gt;x1&lt;/strong&gt; ,  &lt;strong&gt;x2&lt;/strong&gt;  y cuatro posibles combinaciones de salida &lt;strong&gt;y&lt;/strong&gt; que las podemos etiquetar como 0(inactiva) y 1(activa), este nuevo concepto etiqueta es clave en el aprendizaje de máquinas supervisado ya que la neurona aprenderá de los datos históricos o también conocidos como etiquetas ( como se puede ver las etiquetas son los mismos valores de salida).&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&#39;tabla.PNG&#39;, width = 800)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&amp;#39;tabla.PNG&amp;#39;, width = 800)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_6_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pero como se sabe el resultado de usar una regresión lineal entre las combinaciones entre x1 y x2 nos da un resultado  numérico continuo  y no un  número binario, para eso se introducen las llamadas funciones de activación, que en la figura 1 son representadas por la ultima caja del modelo y que utilizaran un umbral para decidir si el valor numérico entregado por la suma ponderada supera dicho umbral se entregará como salida un 1 ( neurona activa) caso contrario será entregado un 0 ( neurona no activa).&lt;/p&gt;
 &lt;p&gt;una forma mas simple e intuitiva de ver este problema es tratandolo como un problema de clasificación. Esto es encontrar una recta que separe los valores 0 de los valores 1 como se muestra en la siguiente grafica de una compuerta &lt;strong&gt;and&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&#39;and.PNG&#39;, width = 500)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Image(&amp;#39;and.PNG&amp;#39;, width = 500)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_8_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;La linea azul es la linea de regresión que la neurona aprendio despues de alguna etapas de entrenamiento y consiguio encontrar los mejores valores de &lt;strong&gt;W&lt;/strong&gt; para lograr su objetivo ( separar los valores 0 de los valores 1).&lt;/p&gt;
 &lt;p&gt;Pero que es el entrenamiento?
@@ -410,9 +410,9 @@ TRUE_b=0.5
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ahora si, a lo que vinimos, vamos a crear un grafico donde pondremos los datos historicos reales y los datos que el modelo predice. Lo ideal seria encontrar una linea de regresion que este bien por encima de los datos originales&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import matplotlib.pyplot as plt
 #grafica de los valores historicos reales
-plt.scatter(X,y, label=&amp;quot;valores reales&amp;quot;)
+plt.scatter(X,y, label=&amp;#34;valores reales&amp;#34;)
 #grafica de los valores predichos por el modelo
-plt.scatter(X,modelo(X), label = &amp;quot;valores predichos&amp;quot;)
+plt.scatter(X,modelo(X), label = &amp;#34;valores predichos&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;matplotlib.collections.PathCollection at 0x7f18e6a00a58&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_24_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
@@ -420,7 +420,7 @@ plt.scatter(X,modelo(X), label = &amp;quot;valores predichos&amp;quot;)
 &lt;p&gt;Ese es nuestro objetivo actualizar los pesos sucesivamente hasta encontrar los que mejor adapten la linea de regresión a los datos historicos. En este caso nuestro modelo deberiá haber encontrado unos pesos de &lt;strong&gt;W=3.0&lt;/strong&gt; y &lt;strong&gt;b=0.5&lt;/strong&gt; esto no se consiguio debido al hecho de que en el modelo de regresión creado los valores de &lt;strong&gt;W&lt;/strong&gt; y &lt;strong&gt;b&lt;/strong&gt; se dejaron fijos en 16.0 y 10.0 respectivamente.&lt;/p&gt;
 &lt;p&gt;Es por eso que el entrenamiento de los modelos es de suma importancia en todo algorimto de aprendizaje y conceptos como función de coste, errore medio cuadratico, descenso del gradiente entre otros empiezan a aparecer para facilitar la vida al momento de predecir.&lt;/p&gt;
 &lt;p&gt;#Entrenamiento del modelo de regresión&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;print(&#39;valores reales    &#39;,X[:4].numpy(),&#39;\nValores predichos &#39;,modelo(X)[:4].numpy())
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;print(&amp;#39;valores reales    &amp;#39;,X[:4].numpy(),&amp;#39;\nValores predichos &amp;#39;,modelo(X)[:4].numpy())
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;valores reales     [-0.98775786 -0.4940117  -1.1781967  -0.46405175] 
 Valores predichos  [-5.804126   2.0958128 -8.851147   2.575172 ]
 &lt;/code&gt;&lt;/pre&gt;
@@ -455,7 +455,7 @@ for iteracion in range(numero_itraciones):
   error_actual = error_medio_cuadratico(y,modelo(X))
 
   entrenamiento(modelo,X,y,tasa_aprendizaje=0.1)
-  print(&amp;quot;Iteración {}, perdida {}&amp;quot;.format(iteracion, error_actual.numpy()))
+  print(&amp;#34;Iteración {}, perdida {}&amp;#34;.format(iteracion, error_actual.numpy()))
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Iteración 0, perdida 255.19960021972656
 Iteración 1, perdida 165.8444366455078
 Iteración 2, perdida 107.90821838378906
@@ -470,9 +470,9 @@ Iteración 9, perdida 6.2000041007995605
 &lt;p&gt;Como se puede observar la error despues de varias iteraciones disminuye considerablemnte eso quieres decir que la red esta aprendiendo a ajustar los pesos y generalizarlos a los ideales&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import matplotlib.pyplot as plt
 #grafica de los valores historicos reales
-plt.scatter(X,y, label=&amp;quot;valores reales&amp;quot;)
+plt.scatter(X,y, label=&amp;#34;valores reales&amp;#34;)
 #grafica de los valores predichos por el modelo
-plt.scatter(X,modelo(X), label = &amp;quot;valores predichos&amp;quot;)
+plt.scatter(X,modelo(X), label = &amp;#34;valores predichos&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;matplotlib.collections.PathCollection at 0x7f18ddeda3c8&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;../figs/Machine_learning_I_35_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;

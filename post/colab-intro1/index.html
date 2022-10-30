@@ -7,11 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-<<<<<<< HEAD
-  <meta name="generator" content="Hugo 0.104.3" />
-=======
-  <meta name="generator" content="Hugo 0.92.2" />
->>>>>>> 177aa809e95f77221a92da81ff99747b3d51fe4f
+  <meta name="generator" content="Hugo 0.105.0">
 
   
 
@@ -680,16 +676,16 @@ Cuda compilation tools, release 10.1, V10.1.243
 <pre tabindex="0"><code>%%shell
 pwd
 ls
-mkdir &quot;nuevo_directorio&quot;
+mkdir &#34;nuevo_directorio&#34;
 ls
-rmdir &quot;nuevo_directorio&quot;
+rmdir &#34;nuevo_directorio&#34;
 ls
 </code></pre><pre><code>/content
 sample_data
 nuevo_directorio  sample_data
 sample_data
 </code></pre>
-<p>Note que si se agrega <em>%%shell</em> al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir <em>%pwd</em>, escribimos <em>pwd</em> solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &lsquo;sample_data/&rsquo;. Luego creamos la carpeta &lsquo;nuevo_directorio&rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.</p>
+<p>Note que si se agrega <em>%%shell</em> al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir <em>%pwd</em>, escribimos <em>pwd</em> solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &lsquo;sample_data/&rsquo;. Luego creamos la carpeta &rsquo;nuevo_directorio&rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.</p>
 <p>En general se puede utilizar cualquier comando linux, incluso instalar paquetes linux con el software apt, por ejemplo:</p>
 <pre tabindex="0"><code>%%shell
 sudo apt install nano
@@ -731,8 +727,8 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 <pre tabindex="0"><code># link to google drive
 
 from google.colab import drive
-#drive.mount('/content/gdrive/')
-drive.mount(&quot;/content/gdrive/&quot;, force_remount=True)
+#drive.mount(&#39;/content/gdrive/&#39;)
+drive.mount(&#34;/content/gdrive/&#34;, force_remount=True)
 </code></pre><pre><code>Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;response_type=code&amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
 
 Enter your authorization code:
@@ -867,8 +863,8 @@ En conclusion, gracias a la sincronización que nos provee el cliente de google 
 <p><strong>1)</strong>
 Cuando ejecutamos entrenamientos muy largos, es posible que Colab se desconecte inesperadamente debido a falta de interactividad. Para solucionar este problema podemos agregar un código Javascript en esta página para hacer &ldquo;clicks&rdquo; de manera automática en el boton Conect (Boton donde se muestra uso de RAM y Disco). El código en cuestión es el siguiente:</p>
 <pre tabindex="0"><code>function ClickConnect(){
-    console.log(&quot;Clicked on connect button&quot;); 
-    document.querySelector(&quot;colab-connect-button&quot;).click()
+    console.log(&#34;Clicked on connect button&#34;); 
+    document.querySelector(&#34;colab-connect-button&#34;).click()
 }
 setInterval(ClickConnect,60000)
 </code></pre><p>Este código debe agregarse en la consola de Javascript de la siguiente manera:</p>
@@ -878,8 +874,7 @@ setInterval(ClickConnect,60000)
 while(1):
     a.append(‘1’)
 </code></pre><p>Al ejecutarlo, este comando va a llenar la memoria ram disponible en Colab y forzará a este a ampliar la capacidad. Debemos esperar aproximadamente 1 minuto hasta que salga un letrero que pregunta si deseamos ampliar la memoria. Despues de aceptar, tendremos más memoria RAM en nuestro notebook. Mas información: <a href="https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d">https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d</a></p>
-<pre tabindex="0"><code>
-</code></pre>
+<pre tabindex="0"><code></code></pre>
     </div>
 
     
@@ -1025,7 +1020,7 @@ while(1):
 <section id="comments">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1155,11 +1150,7 @@ while(1):
     
     
     
-<<<<<<< HEAD
     <script src="/js/academia.min.8d21580ddffa7e5a3f65db85bca47827.js"></script>
-=======
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
->>>>>>> 177aa809e95f77221a92da81ff99747b3d51fe4f
 
     
 
