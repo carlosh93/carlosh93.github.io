@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,20 +22,20 @@
     </item>
     
     <item>
+      <title>Projects</title>
+      <link>http://carloshinojosa.me/project/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>http://carloshinojosa.me/publication/</link>
       <pubDate>Tue, 13 Sep 2022 15:15:15 -0500</pubDate>
       
       <guid>http://carloshinojosa.me/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://carloshinojosa.me/project/</link>
-      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/project/</guid>
       <description></description>
     </item>
     

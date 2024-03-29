@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.109.0">
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
 
@@ -85,7 +85,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.a27027602987ead7f4111784193b5f9d.css">
+  <link rel="stylesheet" href="/css/academia.min.21dd17c57da63b5d50cc96fce0b62689.css">
 
   
     
@@ -425,7 +425,7 @@
 <div class="container split-header">
   <div class="row justify-content-center">
     <div class="col-lg-8">
-        <img class="img-fluid w-100" src="/post/colab-intro1/featured_hu82e4b10b460722de3801ddb1ae8a4a17_63674_680x500_fill_q90_lanczos_center_3.png" itemprop="image" alt="">
+        <img class="img-fluid w-100" src="/post/colab-intro1/featured_hu82e4b10b460722de3801ddb1ae8a4a17_63674_680x500_fill_q90_lanczos_center_2.png" itemprop="image" alt="">
         
     </div>
     <div class="col-lg-8">
@@ -439,8 +439,8 @@
 
 
 
-<meta content="2020-05-30 18:04:38 -0500 -05" itemprop="datePublished">
-<meta content="2020-05-30 18:04:38 -0500 -05" itemprop="dateModified">
+<meta content="2020-05-30 18:04:38 -0500 -0500" itemprop="datePublished">
+<meta content="2020-05-30 18:04:38 -0500 -0500" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -617,7 +617,7 @@
 <p>Note que, debido a que nuestra intención es solo modificar el código en nuestra computadora local y ejecutar el código en Colab, no necesitamos tener instalado Python y las librerias de Tensorflow en nuestra computadora ya que estas se encuentran instaladas en Colab. Sin embargo, es recomendable instalar Python (Anaconda) y configurarlo con Pycharm en nuestra computadora local. A continuación proporciono links de interes:</p>
 <ol>
 <li>
-<p>Instalar Anaconda: Windows: <a href="https://docs.anaconda.com/anaconda/install/windows/">https://docs.anaconda.com/anaconda/install/windows/</a>, Linux: <a href="https://docs.anaconda.com/anaconda/install/linux/">https://docs.anaconda.com/anaconda/install/linux/</a>, Mac: <a href="https://docs.anaconda.com/anaconda/install/mac-os/">https://docs.anaconda.com/anaconda/install/mac-os/</a></p>
+<p>Instalar Anaconda: Windows: <a href="https://docs.anaconda.com/anaconda/install/windows/,">https://docs.anaconda.com/anaconda/install/windows/,</a> Linux: <a href="https://docs.anaconda.com/anaconda/install/linux/,">https://docs.anaconda.com/anaconda/install/linux/,</a> Mac: <a href="https://docs.anaconda.com/anaconda/install/mac-os/">https://docs.anaconda.com/anaconda/install/mac-os/</a></p>
 </li>
 <li>
 <p>Configurar Pycharm con Anaconda: <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/">https://docs.anaconda.com/anaconda/user-guide/tasks/pycharm/</a></p>
@@ -631,7 +631,7 @@
 <p><img src="https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/sel_entorno_conect.gif" alt="texto alternativo"></p>
 <p>Una vez conectados, Colab nos asigna un entorno <strong>Linux con 25.51 GB de Ram, 68 GB de disco duro</strong> y una GPU cuyas caracteristicas podemos consultar ejecutando la siguiente celda</p>
 <h3 id="características-de-la-gpu-asignada">Características de la GPU asignada</h3>
-<pre tabindex="0"><code># Check nvidia and nvcc cuda compiler
+<pre><code># Check nvidia and nvcc cuda compiler
 
 !nvidia-smi
 !/usr/local/cuda/bin/nvcc --version
@@ -663,33 +663,33 @@ Cuda compilation tools, release 10.1, V10.1.243
 <p>Nota: Este notebook está pre-configurado para trabajar con 25 Gb de memoria RAM, sin embargo esta configuración no es por defecto. La cantidad de memoria asignada por general es de 12 a 16 GB. Si crea un notebook nuevo en Colab y quiere tener 25 GB ver sección de Bonus al final de este tutorial.</p>
 <h3 id="comandos-básicos">Comandos Básicos</h3>
 <p>Debido a que cada notebook de Colab se ejecuta en una máquina Linux, es posible utilizar todos los comandos de Linux. Los comandos más básicos para movernos dentro de este tipo de ambiente son:</p>
-<pre tabindex="0"><code>%pwd # Ver el directorio actual de trabajo
+<pre><code>%pwd # Ver el directorio actual de trabajo
 %ls # Listar los archivos del directorio actual
 %cd # Cambiar de directorio
 %mkdir # Crear un nuevo directorio
 %rmdir # Eliminar un directorio vacio
 </code></pre><p>Por ejemplo, si quiero ver en que carpeta me encuentro actualmente ejecuto una celda con el comando:</p>
-<pre tabindex="0"><code>%pwd
+<pre><code>%pwd
 </code></pre><pre><code>'/content'
 </code></pre>
 <p>Como vemos, me encuentro en la carpeta &lsquo;/content&rsquo;, es decir, la carpeta raiz de Colab. Adicionalmente, podemos ejecutar varios comandos dentro de una celda agregando %%shell al inicio de esta. Por ejemplo:</p>
-<pre tabindex="0"><code>%%shell
+<pre><code>%%shell
 pwd
 ls
-mkdir &#34;nuevo_directorio&#34;
+mkdir &quot;nuevo_directorio&quot;
 ls
-rmdir &#34;nuevo_directorio&#34;
+rmdir &quot;nuevo_directorio&quot;
 ls
 </code></pre><pre><code>/content
 sample_data
 nuevo_directorio  sample_data
 sample_data
 </code></pre>
-<p>Note que si se agrega <em>%%shell</em> al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir <em>%pwd</em>, escribimos <em>pwd</em> solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &lsquo;sample_data/&rsquo;. Luego creamos la carpeta &rsquo;nuevo_directorio&rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.</p>
+<p>Note que si se agrega <em>%%shell</em> al inicio, se debe quitar el simbolo % al principio de cada comando. Así, en vez de escribir <em>%pwd</em>, escribimos <em>pwd</em> solamente. Note ademas, que el resultado de cada comando se muestra en una linea aparte. De esta manera, el primer comando ls, muestra el contenido de la carpeta /content, que en este caso es solo la carpeta &lsquo;sample_data/'. Luego creamos la carpeta &lsquo;nuevo_directorio&rsquo; (observe que el comando mkdir no arroja ninguna salida), listamos el contenido de content/ para ver la nueva carpeta creada y por ultimo borramos la carpeta.</p>
 <p>En general se puede utilizar cualquier comando linux, incluso instalar paquetes linux con el software apt, por ejemplo:</p>
-<pre tabindex="0"><code>%%shell
+<pre><code>%%shell
 sudo apt install nano
-</code></pre><pre tabindex="0"><code>%%shell
+</code></pre><pre><code>%%shell
 sudo apt install nano
 </code></pre><pre><code>Reading package lists... Done
 Building dependency tree       
@@ -724,11 +724,11 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 <h1 id="setup">Setup</h1>
 <p>Lo primero que haremos será conectarnos con nuestra cuenta de Google Drive. <strong>Importante conectarse a la cuenta de google drive en donde se tiene almacenado el proyecto o el código a ejecutar.</strong> Adicionalmente, esta cuenta debe estar previamente sincronizada en nuestra computadora utilizando un cliente de Google Drive (Ver Introducción). Para conectarnos a google drive, ejecutamos la celda de abajo y seguimos los pasos. Por favor seleccione la cuenta previamente sincronizada.</p>
 <p>##Mount Goolge Drive</p>
-<pre tabindex="0"><code># link to google drive
+<pre><code># link to google drive
 
 from google.colab import drive
-#drive.mount(&#39;/content/gdrive/&#39;)
-drive.mount(&#34;/content/gdrive/&#34;, force_remount=True)
+#drive.mount('/content/gdrive/')
+drive.mount(&quot;/content/gdrive/&quot;, force_remount=True)
 </code></pre><pre><code>Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&amp;redirect_uri=urn%3aietf%3awg%3aoauth%3a2.0%3aoob&amp;response_type=code&amp;scope=email%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdocs.test%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive%20https%3a%2f%2fwww.googleapis.com%2fauth%2fdrive.photos.readonly%20https%3a%2f%2fwww.googleapis.com%2fauth%2fpeopleapi.readonly
 
 Enter your authorization code:
@@ -748,16 +748,16 @@ Mounted at /content/gdrive/
 <p><img src="https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/screen_pycharm.png" alt="texto alternativo"></p>
 <p><img src="https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/carpeta_google_drive.png" alt="texto alternativo"></p>
 <p>Una vez tengamos listo el código en nuestra carpeta local, solo basta con ejecutar una celda de la siguiente forma</p>
-<pre tabindex="0"><code>!python3 nombre_archivo.py --parametros (opcional)
+<pre><code>!python3 nombre_archivo.py --parametros (opcional)
 </code></pre><p>De esta forma ejecutaremos nuestro código en Colab. Note que nuestro código tambien puede generar salidas, las cuales (si se almacenan dentro de la misma carpeta del proyecto) quedarán sincronizadas con nuestra computadora local.</p>
 <p>Aqui un ejemplo de ejecutar la funcion main.py dentro de mi carpeta proyecto &ldquo;colab_tutorial&rdquo;. Primero vamos hacia la carpeta con los comandos básicos explicados en la sección 2.</p>
-<pre tabindex="0"><code>%cd /content/gdrive/My\ Drive/colab_tutorial/
+<pre><code>%cd /content/gdrive/My\ Drive/colab_tutorial/
 </code></pre><pre><code>/content/gdrive/My Drive/colab_tutorial
 </code></pre>
-<pre tabindex="0"><code>%ls
+<pre><code>%ls
 </code></pre><pre><code>main.py
 </code></pre>
-<pre tabindex="0"><code>!python main.py
+<pre><code>!python main.py
 </code></pre><pre><code>2020-05-19 01:24:56.751869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
 2020-05-19 01:24:58.852417: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
 2020-05-19 01:24:58.866042: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
@@ -847,9 +847,9 @@ Epoch 10/10
 </ol>
 <p>La desventaja de visualizar en Colab es que debemos esperar a que termine el entrenamiento para visualizar Tensorboard. Por el contrario, debido a que tenemos nuestra carpeta sincronizada, podemos ejecutar Tensorboard en nuestra computadora y visualizar el entrenamiento de manera local en tiempo real mientras se ejecuta el entrenamiento en Colab.</p>
 <p>Para visualizar el resultado directamente en este notebook ejecutamos las siguientes dos celdas. La primera solo se ejecuta una vez, pues es la encargada de cargar la extension.</p>
-<pre tabindex="0"><code># Load the TensorBoard notebook extension (Ejecutar una sola vez)
+<pre><code># Load the TensorBoard notebook extension (Ejecutar una sola vez)
 %load_ext tensorboard
-</code></pre><pre tabindex="0"><code>%tensorboard --logdir logs/fit
+</code></pre><pre><code>%tensorboard --logdir logs/fit
 </code></pre><pre><code>Reusing TensorBoard on port 6006 (pid 1921), started 0:04:55 ago. (Use '!kill 1921' to kill it.)
 
 
@@ -862,19 +862,20 @@ En conclusion, gracias a la sincronización que nos provee el cliente de google 
 <h1 id="bonus">Bonus</h1>
 <p><strong>1)</strong>
 Cuando ejecutamos entrenamientos muy largos, es posible que Colab se desconecte inesperadamente debido a falta de interactividad. Para solucionar este problema podemos agregar un código Javascript en esta página para hacer &ldquo;clicks&rdquo; de manera automática en el boton Conect (Boton donde se muestra uso de RAM y Disco). El código en cuestión es el siguiente:</p>
-<pre tabindex="0"><code>function ClickConnect(){
-    console.log(&#34;Clicked on connect button&#34;); 
-    document.querySelector(&#34;colab-connect-button&#34;).click()
+<pre><code>function ClickConnect(){
+    console.log(&quot;Clicked on connect button&quot;); 
+    document.querySelector(&quot;colab-connect-button&quot;).click()
 }
 setInterval(ClickConnect,60000)
 </code></pre><p>Este código debe agregarse en la consola de Javascript de la siguiente manera:</p>
 <p><img src="https://raw.githubusercontent.com/carlosh93/carlosh93.github.io/master/files/notebook_files/prevent_disconecting.gif" alt="texto alternativo"></p>
 <p><strong>2)</strong> Si se quiere mas memoria ram, se puede ejecutar el siguiente código en una celda:</p>
-<pre tabindex="0"><code>a = []
+<pre><code>a = []
 while(1):
     a.append(‘1’)
 </code></pre><p>Al ejecutarlo, este comando va a llenar la memoria ram disponible en Colab y forzará a este a ampliar la capacidad. Debemos esperar aproximadamente 1 minuto hasta que salga un letrero que pregunta si deseamos ampliar la memoria. Despues de aceptar, tendremos más memoria RAM en nuestro notebook. Mas información: <a href="https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d">https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d</a></p>
-<pre tabindex="0"><code></code></pre>
+<pre><code>
+</code></pre>
     </div>
 
     
@@ -1020,7 +1021,7 @@ while(1):
 <section id="comments">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -1150,7 +1151,7 @@ while(1):
     
     
     
-    <script src="/js/academia.min.8d21580ddffa7e5a3f65db85bca47827.js"></script>
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
 
     
 
@@ -1168,7 +1169,7 @@ while(1):
       <div class="col-md-6">
         
         <p>
-          © All right reserved by Carlos Hinojosa, 2022 &middot; 
+          © All right reserved by Carlos Hinojosa, 2024 &middot; 
           <a href="http://hdspgroup.com/" target="_blank" rel="noopener">HDSP Research Group</a>
         </p>
       </div>
