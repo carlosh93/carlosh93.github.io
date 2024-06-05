@@ -7,10 +7,55 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Tue, 13 Sep 2022 15:15:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Computational Imaging</title>
+      <link>http://carloshinojosa.me/tags/computational-imaging/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/computational-imaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational Photography</title>
+      <link>http://carloshinojosa.me/tags/computational-photography/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/computational-photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer vision</title>
+      <link>http://carloshinojosa.me/tags/computer-vision/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Human Action Recognition</title>
+      <link>http://carloshinojosa.me/tags/human-action-recognition/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/human-action-recognition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Preserving</title>
+      <link>http://carloshinojosa.me/tags/privacy-preserving/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/tags/privacy-preserving/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>deep-learning</title>
@@ -58,47 +103,11 @@
     </item>
     
     <item>
-      <title>Computational Imaging</title>
-      <link>http://carloshinojosa.me/tags/computational-imaging/</link>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/computational-imaging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computational Photography</title>
-      <link>http://carloshinojosa.me/tags/computational-photography/</link>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/computational-photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer vision</title>
-      <link>http://carloshinojosa.me/tags/computer-vision/</link>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Image Captioning</title>
       <link>http://carloshinojosa.me/tags/image-captioning/</link>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/tags/image-captioning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy Preserving</title>
-      <link>http://carloshinojosa.me/tags/privacy-preserving/</link>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://carloshinojosa.me/tags/privacy-preserving/</guid>
       <description></description>
     </item>
     

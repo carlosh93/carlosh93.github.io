@@ -49,7 +49,87 @@
   
   <url>
     <loc>http://carloshinojosa.me/authors/admin/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/1/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computational-photography/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/ehsan-adeli/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/fei-fei-li/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/henry-arguello/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/human-action-recognition/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/juan-carlos-niebles/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/miguel-marquez/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/privacy-preserving/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-eccv2022/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/</loc>
+    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -64,11 +144,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/authors/adrian-basarab/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/</loc>
     <lastmod>2022-09-13T15:15:15-05:00</lastmod>
   </url>
   
@@ -98,11 +173,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/authors/henry-arguello/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
     <lastmod>2022-09-13T15:15:15-05:00</lastmod>
   </url>
@@ -118,43 +188,8 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/publication_types/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/transfer-learning/</loc>
     <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication_types/1/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computational-photography/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -178,11 +213,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/tags/privacy-preserving/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/publication/conf-whispers2022-singlepixel-clustering/</loc>
     <lastmod>2022-09-09T00:00:00+00:00</lastmod>
   </url>
@@ -194,11 +224,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/authors/kevin-arias/</loc>
-    <lastmod>2022-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/miguel-marquez/</loc>
     <lastmod>2022-09-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -249,11 +274,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/human-pose-estimation/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/juan-carlos-niebles/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url>
   
