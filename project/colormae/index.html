@@ -143,9 +143,9 @@
   <meta property="og:description" content="Landing page of our ECCV 2024 Paper."><meta property="og:image" content="http://carloshinojosa.me/img/icon-192.png">
   <meta property="twitter:image" content="http://carloshinojosa.me/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2024-07-15T00:18:30&#43;00:00">
+  <meta property="article:published_time" content="2024-09-24T00:18:30&#43;00:00">
   
-  <meta property="article:modified_time" content="2024-07-15T00:18:30&#43;00:00">
+  <meta property="article:modified_time" content="2024-09-24T00:18:30&#43;00:00">
   
 
   
@@ -498,16 +498,7 @@
 
 
   <p style="text-align:center">
-    King Abdullah University of Science and Technology (KAUST), AI Initiative.
-  </p>
-
-
-
-<br>
-<br>
-  <p style="text-align:center">
-    Site under construction... <br>
-    GitHub under construction here: <a href="https://github.com/carlosh93/ColorMAE">https://github.com/carlosh93/ColorMAE </a>
+    King Abdullah University of Science and Technology (KAUST), GenAI Center of Excellence
   </p>
 
 
@@ -529,6 +520,9 @@
 
 
 
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/ColorMAE.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
@@ -540,9 +534,34 @@
 
 
 
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/ColorMAE_Supp.pdf" target="_blank" rel="noopener">
+  Supplementary
+</a>
 
 
 
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/carlosh93/ColorMAE" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/ColorMAE_Poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
 
 
 
@@ -554,6 +573,484 @@
 
   </div>
 
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="abstract" class="home-section wg-blank   intro_class_colormae"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Abstract</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+
+
+
+<figure class="introFig">
+
+<img src="/files/ECCV2024ColorMAE/intro_white.png" >
+
+
+</figure>
+
+
+
+<p style="text-align: justify;">Current Data-dependent Masking approaches for MAE allow for the extraction of better feature representations but come with additional computational costs. In contrast, data-independent masking approaches do not incur additional computational costs, although they result in lower visual representations. Can we enhance MAE performance beyond random masking without relying on input data or incurring additional computational costs?</p>
+
+<p style="text-align: justify;">We introduce <span style="background: linear-gradient(to right, #4690ec, #4bbd7a, #9d45ef, #fb4437); -webkit-background-clip: text; color: transparent;">ColorMAE</span>, a simple yet effective data-independent method which generates different binary mask patterns by filtering random noise. Drawing inspiration from color noise in image processing, we explore four types of filters to yield mask patterns with different spatial and semantic priors. <span style="background: linear-gradient(to right, #4690ec, #4bbd7a, #9d45ef, #fb4437); -webkit-background-clip: text; color: transparent;">ColorMAE</span> requires no additional learnable parameters or computational overhead in the network, yet it significantly enhances the learned representations.</p>
+
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="method" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Method Overview</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+
+
+
+<figure>
+
+<img src="/files/ECCV2024ColorMAE/proposed_white.png" >
+
+
+</figure>
+
+
+
+<p style="text-align: justify;">
+In image processing, the concept of color noise refers to different types of noise, each characterized by a unique frequency distribution, such as predominance in the low-frequency band. Inspired by this concept, we introduce a simple yet effective data-independent method, termed <span style="background: linear-gradient(to right, #4690ec, #4bbd7a, #9d45ef, #fb4437); -webkit-background-clip: text; color: transparent;">ColorMAE</span>, which generates binary mask patterns by filtering random noise. We explore four types of filters to yield mask patterns with different spatial and semantic priors. To align with traditional terminology in image processing, we categorize the produced <i>random</i> patterns as <span style="color: #fb4437">Red</span>, <span style="color: #4690ec"> Blue</span>, <span style="color: #4bbd7a">Green</span>, and <span style="color: #9d45ef">Purple</span> noise.</p>
+
+<h3><span style="color: #fb4437">Red Noise</span></h3>
+
+<p style="text-align: justify;">Let $W(x, y)$ represent a random noise image, where $x$ and $y$ are spatial coordinates. We apply a blurring operation over $W$ using a Gaussian kernel $G_{\sigma}$ with standard deviation $\sigma$ to filter out the high-frequency components and accentuate low frequencies effectively. This operation transforms the random noise into red noise $N_r$ given by:</p>
+
+<p>$$
+N_r = G_\sigma * W,
+$$</p>
+<p>where $*$ denotes the convolution operation.</p>
+
+
+<h3><span style="color: #4690ec">Blue Noise</span></h3>
+
+<p style="text-align: justify;">To generate blue noise patterns, it is required to apply a high-pass filter over $W$. A practical approach to implementing a high-pass filter involves first applying a low-pass filter $(G_\sigma * W)$ to obtain the low-frequency content. Then, this filtered output is subtracted from the original random noise image $W$, effectively retaining the high-frequency components. The resulting blue noise $N_b$ is formally expressed as</p>
+
+<p>$$
+N_b = W - G_\sigma * W.
+$$</p>
+
+
+<h3><span style="color: #4bbd7a">Green Noise</span></h3>
+
+<p style="text-align: justify;">This noise is defined as the mid-frequency component of white noise; i.e., it can be generated by applying a band-pass filter over $W$ to eliminate both high and low frequencies. Such band-pass filtering effect can be approximated by sequentially applying two Gaussian blurs: first, a weak blur is applied to $W$ to remove the highest frequency details, followed by a separate strong blur to capture the lowest frequency content of $W$. By subtracting the strongly blurred version of $W$ from the weakly blurred one, the resultant noise image retains only the mid-frequency components. Formally, the green noise $N_g$ image can be obtained as </p>
+
+<p>$$
+N_g = G_{\sigma_1} * W - G_{\sigma_2} * W,
+$$</p>
+<p>where $\sigma_1$ and $\sigma_2$ denote the standard deviation of the two Gaussian kernels with $\sigma_1  &lt; \sigma_2$.</p>
+<p>
+
+<h3><span style="color: #9d45ef">Purple Noise</span></h3>
+
+<p style="text-align: justify;">Finally, in this work, we refer to purple noise as the noise that has only high and low-frequency content, i.e., does not have a middle-frequency component. We apply a band-stop filter over the random noise $W$ to produce this type of noise. Specifically, we first apply a band-pass filter to $W$ to obtain green noise and then subtract it from the input $W$, preserving only the low and high frequencies. Formally, this transformation of the noise $W$ into purple noise $N_p$ can be expressed as </p>
+
+$$
+N_p = W - (G_{\sigma_1} * W - G_{\sigma_2} * W),
+$$</p>
+
+
+<p style="text-align: justify;">where $\sigma_1  < \sigma_2$. Analyzing the periodogram (P) in the above Figure (column "Purple"), we can observe that this noise combines the characteristics of both red and blue noise.</p>
+
+
+<h3>Mask Generation</span></h3>
+
+
+<p style="text-align: justify;">In implementation, we pre-compute color noise offline and store them in GPU memory before initiating MAE pre-training. To efficiently generate the masks during pre-training, we first apply random transformations on the loaded noise tensor to get a $P$-sized square noise window for every image in the batch $B$, where $P$ is the total number of patches. Then, we select the highest values from the noise window according to the desired mask ratio. Specifically, we apply random crop, horizontal flip, and vertical flip image transformation. Note that these image transformations operate in the spatial domain; hence, the frequency properties described in the previous section are preserved. The below Algorithm shows the pseudo-code for our masking approach in PyTorch style. </p>
+ 
+<style>
+        /* CSS styles */
+        .image-container {
+            display: flex;
+            justify-content: center;  /* Centers the image horizontally */
+        }
+
+        .image-container img {
+            max-width: 100%;   /* Makes the image responsive */
+            height: auto;      /* Maintains the aspect ratio */
+            max-height: 800px; /* Example max height; adjust as needed */
+            width: auto;       /* Ensures width adapts with height */
+        }
+    </style>
+
+    <!-- HTML structure -->
+    <div class="image-container">
+        <img src="/files/ECCV2024ColorMAE/algorithm.png" alt="Description of image">
+    </div>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="masks" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Our Data-independent Masking Strategies</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+
+<style>
+        figcaption {
+            text-align: justify;  /* Justify the caption text */
+            font-size: 18px;      /* Optional: adjust font size */
+            margin-top: 10px;     /* Optional: add space above the caption */
+        }
+</style>
+
+<figure>
+        <img src="/files/ECCV2024ColorMAE/main_qualitative_white.png" alt="Our Generated Masks.">
+        <figcaption>Reconstruction results on ImageNet validation images from MAE pre-trained during 300 epochs with our four generated masks: <span style="color: #4690ec">Blue</span>, <span style="color: #4bbd7a">Green</span>, <span style="color: #9d45ef">Purple</span>, and <span style="color: #fb4437">Red</span>.</figcaption>
+</figure>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="results" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Experimental Results</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+<p style="text-align: justify;">
+We evaluate the performance of MAE on the downstream tasks mentioned in the previous section when we pre-train with our proposed four types of <span style="background: linear-gradient(to right, #4690ec, #4bbd7a, #9d45ef, #fb4437); -webkit-background-clip: text; color: transparent;">ColorMAE</span> masks.</p>
+
+<style>
+        figcaption {
+            text-align: justify;  /* Justify the caption text */
+            font-size: 18px;      /* Optional: adjust font size */
+            margin-top: 10px;     /* Optional: add space above the caption */
+        }
+</style>
+
+<figure>
+        <img src="/files/ECCV2024ColorMAE/ablations_white.png" alt="Ablation Studies.">
+        <figcaption>Downstream tasks performance after fine-tuning. MAE is pre-trained on ImageNet-1K with random masking and our proposed masking approach. We report ImageNet-1K Top-1 accuracy, ADE20K mIoU, and COCO $AP^{bbox}$ for classification, semantic segmentation, and object detection, respectively.</figcaption>
+</figure>
+
+<figure>
+        <img src="/files/ECCV2024ColorMAE/comparison_white.png" alt="Comparison with state-of-the-art methods.">
+        <figcaption>Comparison with state-of-the-art methods pre-trained on ImageNet-1K. The resolution of images is $224 \times 224$ for both pre-training and fine-tuning. $\dagger$ indicates our implementation, including pre-training and fine-tuning. $\ddagger$ means the results are borrowed from Chen et al. (2024). § means the results are borrowed from Wang et al. (2024).</figcaption>
+</figure>
+
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="analysis" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Attention Analysis</h1>
+      
+    </div>
+    <div class="col-12">
+      
+
+<p style="text-align: justify;">
+In the Figure below, we show examples of self-attention maps of the [CLS] tokens averaged across the heads of the last layer, for the three different datasets. Here, we show the results for MAE pre-trained using random and our proposed <span style="color: #4bbd7a">Green</span> masking approach.
+</p>
+
+<style>
+        figcaption {
+            text-align: justify;  /* Justify the caption text */
+            font-size: 18px;      /* Optional: adjust font size */
+            margin-top: 10px;     /* Optional: add space above the caption */
+        }
+</style>
+
+<figure>
+        <img src="/files/ECCV2024ColorMAE/vis_attention.png" alt="Self-attention of the [CLS] tokens.">
+        <figcaption>Self-attention of the [CLS] tokens averaged across the heads of the last layer in MAE pre-trained using random masking and our proposed Green masking approach (<span style="color: #4bbd7a">ColorMAE-G</span>). We show attention maps on images from Imagenet-1K (1st-3rd columns), Microsoft COCO (4th-6th columns) and ADE20K (7th-9th columns) datasets. Both MAE and <span style="color: #4bbd7a">ColorMAE-G</span> are pre-trained on ImageNet-1K for 300 epochs. Please refer to our supplementary for more visualizations of the attention maps when pre-training MAE with other <span style="background: linear-gradient(to right, #4690ec, #4bbd7a, #9d45ef, #fb4437); -webkit-background-clip: text; color: transparent;">ColorMAE</span> masks.</figcaption>
+</figure>
+
+<figure>
+        <img src="/files/ECCV2024ColorMAE/vis_cam.png" alt="Class Activation Maps">
+        <figcaption>Comparative visualization of Class Activation Maps (CAM) generated with EigenCAM for ViT-B. First, we perform self-supervised pre-training using standard MAE with random masking and our <span style="color: #4bbd7a">ColorMAE-G</span> on the ImageNet-1K dataset. Then, we conduct end-to-end supervised fine-tuning following the standard protocol for ImageNet classification during 100 epochs. We show CAM maps of the ViT-B pretrained with MAE (second row) and our <span style="color: #4bbd7a">ColorMAE-G</span> (third row) on images from ImageNet-1K (1st-3rd column), Microsoft COCO (4th-6th columns), and ADE20K (7th-9th columns) datasets.</figcaption>
+</figure>
+
+<p>For more results, analysis, visualizations and details, please refer to our paper and supplementary materials.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="citation" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Cite this work</h1>
+      
+    </div>
+    <div class="col-12">
+      <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>@article{hinojosa2024colormae,
+  title={ColorMAE: Exploring data-independent masking strategies in Masked AutoEncoders},
+  author={Hinojosa, Carlos and Liu, Shuming and Ghanem, Bernard},
+  journal={arXiv preprint arXiv:2407.13036},
+  url={https://arxiv.org/pdf/2407.13036}
+  year={2024}
+}
+</code></pre>
+    </div>
   
 </div>
 
@@ -686,7 +1183,7 @@
         
         <p>
           © All right reserved by Carlos Hinojosa, 2024 &middot; 
-          <a href="https://cemse.kaust.edu.sa/ai/people/person/carlos-hinojosa-montero" target="_blank" rel="noopener">KAUST AI Initiative</a>
+          <a href="https://cemse.kaust.edu.sa/ai/people/person/carlos-hinojosa" target="_blank" rel="noopener">GenAI Center of Excellence</a>
         </p>
       </div>
       <div class="col-md-6">

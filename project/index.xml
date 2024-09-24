@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Mon, 15 Jul 2024 00:18:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2024 00:18:30 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>ColorMAE: Exploring data-independent masking strategies in Masked AutoEncoders</title>
       <link>http://carloshinojosa.me/project/colormae/</link>
-      <pubDate>Mon, 15 Jul 2024 00:18:30 +0000</pubDate>
+      <pubDate>Tue, 24 Sep 2024 00:18:30 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/project/colormae/</guid>
       <description></description>
