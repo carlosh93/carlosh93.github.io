@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,14 +15,167 @@
     <item>
       <title></title>
       <link>http://carloshinojosa.me/authors/admin/</link>
-      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       
       <guid>http://carloshinojosa.me/authors/admin/</guid>
-      <description>&lt;p&gt;Carlos is a Postdoctoral researcher at King Abdullah University of Science and Technology (KAUST) working with Prof. Bernard Ghanem. His research interests span Computer Vision, Machine Learning and Computational Imaging. In particular, he is interested in developing efficient vision systems and machine-learning models that can efficiently recognize and understand human actions and activities, objects, scenes and events while also obtaining additional benefits like privacy protection, compression, and robustness. Carlos received his Ph.D. with Laureate distinction from Universidad Industrial de Santander, Colombia, in 2022 under the supervision of Professor Henry Arguello. Carlos has different publications at top conferences such as CVPR, ICCV, and ECCV, ICIP, IEEE journals such as TMI, and JSTSP and has published two US patents. His paper “Optics Lens Design for Privacy-preserving Scene Captioning” received the Best Paper Award from the ICIP2022 and his work on &amp;ldquo;Learning Privacy-preserving Optics for Human Pose Estimation&amp;rdquo; received the Best Presentation Award at the LXCV workshop in ICCV 2021 and was featured as oral presentation (awarded to top 3%) at the ICCV 2021 main conference. He was an intern researcher at Stanford Vision and Learning Lab (SVL) in 2021. He has co-organized the LXCV workshop at CVPR (2 times), ICCV (2 times) and ECCV (1 time).&lt;/p&gt;
+      <description>&lt;p&gt;Carlos is an AI Researcher at King Abdullah University of Science and Technology (KAUST) working with Prof. Bernard Ghanem. His research interests span Computer Vision, Machine Learning, and AI Safety. He is particularly interested in developing trustworthy, accurate, and efficient vision and AI systems that can reliably perceive, understand, and act on information, while protecting privacy and aligning with societal values. Carlos received his Ph.D. with Laureate distinction from Universidad Industrial de Santander, Colombia, in 2022, under the supervision of Professor Henry Arguello. He has publications at top venues including CVPR, ICCV, ECCV, ACL, and IEEE journals such as TMI and JSTSP, and is a co-inventor on two US patents in privacy-preserving computer vision, one of which has since been issued (US 12,651,379 B2). His paper &amp;ldquo;Optics Lens Design for Privacy-preserving Scene Captioning&amp;rdquo; received the Best Paper Award at ICIP 2022, and his research has been featured as an oral presentation at several top conferences, including ICCV 2021, CVPR 2026, and ECCV 2026. He was a research intern at the Stanford Vision and Learning Lab (SVL) in 2021 and recently a visiting researcher at the Torr Vision Group at the University of Oxford. He currently leads the AI Safety research theme within IVUL and the research effort on the Competitive Research Grant (CRG) between KAUST and the University of Oxford on safe AI agents (&amp;ldquo;Safe Operating System Agents&amp;rdquo;). He has also co-organized the LXCV workshop at CVPR (2 times), ICCV (2 times), and ECCV (1 time), as well as the SaFeMM-AI workshop at ICCV 2025.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Aritra Bhowmik</title>
+      <link>http://carloshinojosa.me/authors/aritra-bhowmik/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/aritra-bhowmik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bernard Ghanem</title>
+      <link>http://carloshinojosa.me/authors/bernard-ghanem/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/bernard-ghanem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cees G. M. Snoek</title>
+      <link>http://carloshinojosa.me/authors/cees-g.-m.-snoek/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/cees-g.-m.-snoek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fida Mohammad Thoker</title>
+      <link>http://carloshinojosa.me/authors/fida-mohammad-thoker/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/fida-mohammad-thoker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alhim Adonai Vera Gonzalez</title>
+      <link>http://carloshinojosa.me/authors/alhim-adonai-vera-gonzalez/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/alhim-adonai-vera-gonzalez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Donghoon Kim</title>
+      <link>http://carloshinojosa.me/authors/donghoon-kim/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/donghoon-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haidar Bin Hamid</title>
+      <link>http://carloshinojosa.me/authors/haidar-bin-hamid/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/haidar-bin-hamid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Karen Sanchez</title>
+      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrés Villa</title>
+      <link>http://carloshinojosa.me/authors/andres-villa/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/andres-villa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Denis Parra</title>
+      <link>http://carloshinojosa.me/authors/denis-parra/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/denis-parra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juan León Alcázar</title>
+      <link>http://carloshinojosa.me/authors/juan-leon-alcazar/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/juan-leon-alcazar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pablo Messina</title>
+      <link>http://carloshinojosa.me/authors/pablo-messina/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/pablo-messina/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Álvaro Soto</title>
+      <link>http://carloshinojosa.me/authors/alvaro-soto/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/alvaro-soto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fabian Perez</title>
+      <link>http://carloshinojosa.me/authors/fabian-perez/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/fabian-perez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hoover Rueda-Chacón</title>
+      <link>http://carloshinojosa.me/authors/hoover-rueda-chacon/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/hoover-rueda-chacon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sara Rojas</title>
+      <link>http://carloshinojosa.me/authors/sara-rojas/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/sara-rojas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shuming Liu</title>
+      <link>http://carloshinojosa.me/authors/shuming-liu/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/authors/shuming-liu/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -85,15 +238,6 @@
       <pubDate>Tue, 13 Sep 2022 15:15:15 -0500</pubDate>
       
       <guid>http://carloshinojosa.me/authors/denis-kouame/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karen Sanchez</title>
-      <link>http://carloshinojosa.me/authors/karen-sanchez/</link>
-      <pubDate>Tue, 13 Sep 2022 15:15:15 -0500</pubDate>
-      
-      <guid>http://carloshinojosa.me/authors/karen-sanchez/</guid>
       <description></description>
     </item>
     

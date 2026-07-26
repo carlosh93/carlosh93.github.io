@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Safety on Carlos Hinojosa</title>
+    <link>http://carloshinojosa.me/tags/ai-safety/</link>
+    <description>Recent content in AI Safety on Carlos Hinojosa</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
+    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="http://carloshinojosa.me/tags/ai-safety/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Multimodal Safety Evaluation in Generative Agent Social Simulations</title>
+      <link>http://carloshinojosa.me/publication/conf-acl2026-multimodal-safety/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-acl2026-multimodal-safety/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

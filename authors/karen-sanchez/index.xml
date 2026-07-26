@@ -7,10 +7,28 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; All right reserved by Carlos Hinojosa, {year}</copyright>
-    <lastBuildDate>Tue, 13 Sep 2022 15:15:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="http://carloshinojosa.me/authors/karen-sanchez/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Multimodal Safety Evaluation in Generative Agent Social Simulations</title>
+      <link>http://carloshinojosa.me/publication/conf-acl2026-multimodal-safety/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-acl2026-multimodal-safety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CURE: Curriculum-Guided Multi-Task Training for Reliable Anatomy-Grounded Report Generation</title>
+      <link>http://carloshinojosa.me/publication/conf-cvpr2026-cure/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://carloshinojosa.me/publication/conf-cvpr2026-cure/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CX-DaGAN: Domain Adaptation for Pneumonia Diagnosis on a Small Chest X-ray Dataset</title>

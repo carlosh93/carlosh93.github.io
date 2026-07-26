@@ -18,23 +18,223 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/talk/coding/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>http://carloshinojosa.me/authors/admin/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/talk/qualitative/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>http://carloshinojosa.me/publication_types/1/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>http://carloshinojosa.me/authors/aritra-bhowmik/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/talk/synthesizing/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>http://carloshinojosa.me/tags/audio/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/bernard-ghanem/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/cees-g.-m.-snoek/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/fida-mohammad-thoker/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/masked-modeling/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication_types/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/self-supervised-learning/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-eccv2026-structured-noise/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/video-understanding/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/ai-safety/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/alhim-adonai-vera-gonzalez/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/donghoon-kim/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/generative-agents/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/haidar-bin-hamid/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/multi-agent-systems/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/multimodal-models/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-acl2026-multimodal-safety/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/andres-villa/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-cvpr2026-cure/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/denis-parra/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/juan-leon-alcazar/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/medical-imaging/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/pablo-messina/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/report-generation/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/vision-language-models/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/alvaro-soto/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/3d-reconstruction/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/fabian-perez/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/hoover-rueda-chacon/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/neural-radiance-fields/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/sara-rojas/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/spectral-imaging/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-iccv2025-unmix-nerf/</loc>
+    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/publication/conf-eccv2024-colormae/</loc>
+    <lastmod>2024-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/tags/masked-autoencoders/</loc>
+    <lastmod>2024-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/authors/shuming-liu/</loc>
+    <lastmod>2024-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,32 +253,12 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/authors/admin/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication_types/1/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/tags/computational-imaging/</loc>
     <lastmod>2022-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://carloshinojosa.me/tags/computational-photography/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/computer-vision/</loc>
     <lastmod>2022-09-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,21 +303,6 @@
   </url>
   
   <url>
-    <loc>http://carloshinojosa.me/publication_types/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/publication/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/tags/</loc>
-    <lastmod>2022-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://carloshinojosa.me/publication_types/2/</loc>
     <lastmod>2022-09-13T15:15:15-05:00</lastmod>
   </url>
@@ -174,11 +339,6 @@
   
   <url>
     <loc>http://carloshinojosa.me/tags/generative-adversarial-networks/</loc>
-    <lastmod>2022-09-13T15:15:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://carloshinojosa.me/authors/karen-sanchez/</loc>
     <lastmod>2022-09-13T15:15:15-05:00</lastmod>
   </url>
   
@@ -604,6 +764,10 @@
   
   <url>
     <loc>http://carloshinojosa.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://carloshinojosa.me/talk/</loc>
   </url>
   
 </urlset>
