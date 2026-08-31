@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Carlos Hinojosa">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="ECCV 2026 Oral (Spotlight). We filter white noise into color noise to build structured masks for masked video and audio modeling: Green3D for video, Regularized Blue Noise for audio, at no additional computational cost.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://carloshinojosa.me/project/structured-noise-masking/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#23BF53">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.21dd17c57da63b5d50cc96fce0b62689.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.2dd238a3414c104cb7f59f92f605eb26.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153594023-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://carloshinojosa.me/project/structured-noise-masking/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@CarlosH_93">
+  <meta property="twitter:creator" content="@CarlosH_93">
+  
+  <meta property="og:site_name" content="Carlos Hinojosa">
+  <meta property="og:url" content="http://carloshinojosa.me/project/structured-noise-masking/">
+  <meta property="og:title" content="Structured-Noise Masked Modeling for Video, Audio and Beyond | Carlos Hinojosa">
+  <meta property="og:description" content="ECCV 2026 Oral (Spotlight). We filter white noise into color noise to build structured masks for masked video and audio modeling: Green3D for video, Regularized Blue Noise for audio, at no additional computational cost."><meta property="og:image" content="http://carloshinojosa.me/project/structured-noise-masking/featured.png">
+  <meta property="twitter:image" content="http://carloshinojosa.me/project/structured-noise-masking/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2026-08-16T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2026-08-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Structured-Noise Masked Modeling for Video, Audio and Beyond | Carlos Hinojosa</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Carlos Hinojosa</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#gallery"><span>Conferences</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resume/"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="introduction" class="home-section wg-paper-hero   snm-page snm-hero"  >
+    <div class="container">
+      
+
+<div class="paper-hero">
+
+  
+  <div class="paper-venue-row">
+    <span class="paper-venue">ECCV 2026 &middot; Malm&ouml;, Sweden</span>
+    
+    <span class="paper-badge"><i class="fas fa-award"></i>Oral &middot; Spotlight</span>
+    
+  </div>
+  
+
+  <h1 class="paper-title">Structured-Noise Masked Modeling for<br>Video, Audio and Beyond</h1>
+  
+
+  
+  <p class="paper-authors">
+    <span class="paper-author"><a href="https://aritrabhowmik.github.io/" target="_blank" rel="noopener">Aritra Bhowmik</a><sup>1&#8727;</sup></span><span class="paper-author"><a href="https://carloshinojosa.me" target="_blank" rel="noopener">Carlos Hinojosa</a><sup>2&#8727;</sup></span><span class="paper-author"><a href="https://fmthoker.github.io/" target="_blank" rel="noopener">Fida Mohammad Thoker</a><sup>2&#8727;</sup></span><br class="paper-author-break"><span class="paper-author"><a href="https://www.bernardghanem.com/" target="_blank" rel="noopener">Bernard Ghanem</a><sup>2</sup></span><span class="paper-author"><a href="https://www.ceessnoek.info/" target="_blank" rel="noopener">Cees G. M. Snoek</a><sup>1</sup></span>
+  </p>
+  
+
+  
+  <p class="paper-affiliations">
+    <span class="paper-affil"><sup>1</sup>University of Amsterdam</span><span class="paper-affil"><sup>2</sup>King Abdullah University of Science and Technology (KAUST)</span>
+  </p>
+  
+
+  <p class="paper-equal-note">&#8727; Equal contribution.</p>
+
+  
+  <div class="paper-links">
+    
+      
+      
+      
+        
+          
+        
+      
+      
+    
+      
+      
+      
+        
+          
+        
+      
+      
+    
+      
+      
+      
+        
+        
+      
+      
+      
+      <a class="paper-link-btn" href="https://github.com/IVUL-KAUST/structured-noise-masking" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i><span>Code</span>
+      </a>
+      
+    
+      
+      
+      
+        
+        
+      
+      
+      
+      <a class="paper-link-btn" href="https://huggingface.co/collections/IVUL-KAUST/structured-noise-masking" target="_blank" rel="noopener">
+        <span class="paper-link-emoji" aria-hidden="true">🤗</span><span>Hugging Face</span>
+      </a>
+      
+    
+      
+      
+      
+        
+          
+        
+      
+      
+    
+      
+      
+      
+        
+          
+        
+      
+      
+    
+      
+      
+      
+        
+        
+      
+      
+      
+      <a class="paper-link-btn" href="#citation">
+        <i class="fas fa-quote-right"></i><span>BibTeX</span>
+      </a>
+      
+    
+  </div>
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="nav" class="home-section wg-blank   snm-page snm-nav-section"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      
+      
+      
+
+<nav class="snm-nav" aria-label="Page sections">
+  <a href="#abstract">Abstract</a>
+  <a href="#method">Method</a>
+  <a href="#results">Results</a>
+  <a href="#ablations">Ablations</a>
+  <a href="#citation">Cite</a>
+</nav>
+
+<script>
+(function () {
+  function init() {
+    var nav = document.querySelector('.snm-nav');
+    if (!nav) return;
+    var links = [].slice.call(nav.querySelectorAll('a'));
+    var targets = links.map(function (a) {
+      return document.getElementById(a.getAttribute('href').slice(1));
+    });
+    function sync() {
+      var offset = nav.getBoundingClientRect().bottom + 8;
+      var current = -1;
+      for (var i = 0; i < targets.length; i++) {
+        if (targets[i] && targets[i].getBoundingClientRect().top <= offset) current = i;
+      }
+      links.forEach(function (a, i) { a.classList.toggle('is-active', i === current); });
+    }
+
+    window.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="abstract" class="home-section wg-blank   snm-page snm-abstract"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      <h1>Abstract</h1>
+      
+      
+
+
+<p class="snm-lead">Masked modeling has emerged as a robust self-supervised learning framework. However, most methods rely on <em>random</em> masking, which disregards the structural properties of different data modalities. To align with the spatiotemporal and spectral characteristics of video and audio data, we introduce a <strong>structured noise-based masking</strong> approach. By filtering white noise into different color noise distributions, we generate structured masks that capture modality-specific patterns without requiring handcrafted heuristics or access to the data. Our approach enhances masked video and audio modeling frameworks without any additional computational cost. Experiments show that structured noise masking consistently outperforms random masking, underscoring the value of modality-aware masking strategies for representation learning.</p>
+
+<h3 class="snm-h3">Contributions</h3>
+
+<div class="snm-cards">
+
+  <div class="snm-card snm-card-green">
+    <div class="snm-card-tag">Video</div>
+    <h4>3D Green masking <span class="snm-mono">(Green3D)</span></h4>
+    <p>A color-noise masking strategy that produces <strong>spatiotemporally coherent</strong> masks: visible patches stay clustered in space, while the pattern evolves smoothly across frames.</p>
+  </div>
+
+  <div class="snm-card snm-card-blue">
+    <div class="snm-card-tag">Audio</div>
+    <h4>Regularized Blue Noise <span class="snm-mono">(R-BN)</span></h4>
+    <p>A 2D blue-noise optimization that enforces a <strong>controlled, well-separated distribution</strong> of visible spectrogram patches across time and frequency.</p>
+  </div>
+
+  <div class="snm-card snm-card-multi">
+    <div class="snm-card-tag">Multimodal</div>
+    <h4>Evaluation across modalities</h4>
+    <p>Green3D for the video stream, R-BN for the audio stream. We evaluate on <strong>video, audio, and audio-visual</strong> benchmarks in both unimodal and multimodal settings.</p>
+  </div>
+
+</div>
+
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="method" class="home-section wg-blank   snm-page snm-method"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      <h1>Method</h1>
+      <p>From white noise to structured noise masks</p>
+      
+
+<p>An input $X$ (image, video, or audio spectrogram) is split into patches and embedded as $X_p = \phi(X) \in \mathbb{R}^{N\times d}$. A masking function $\eta$ turns a noise tensor and a mask ratio $\gamma$ into a binary mask $M \in \{0,1\}^N$, and the encoder only sees the visible tokens. <strong>The only thing we change is the noise that goes into $\eta$.</strong></p>
+
+
+<h3 class="snm-h3">Color noise, in one equation each</h3>
+
+
+<p>Given white noise $n_w \sim \mathcal{N}(0,1)$ and a $d$-dimensional Gaussian kernel $G_\sigma$, three filters give three different families of masks:</p>
+
+
+
+<div class="snm-noise-grid">
+  <div class="snm-noise snm-noise-red">
+    <div class="snm-noise-tag">Red (low-pass)</div>
+    <div class="snm-noise-eq">$n_r = G_\sigma * n_w$</div>
+    <p>Smooth, large-scale masked regions.</p>
+  </div>
+  <div class="snm-noise snm-noise-blue">
+    <div class="snm-noise-tag">Blue (high-pass)</div>
+    <div class="snm-noise-eq">$n_b = n_w - G_\sigma * n_w$</div>
+    <p>Fine-grained, evenly scattered patches.</p>
+  </div>
+  <div class="snm-noise snm-noise-green">
+    <div class="snm-noise-tag">Green (band-pass)</div>
+    <div class="snm-noise-eq">$n_g = G_{\sigma_1} * n_w - G_{\sigma_2} * n_w$</div>
+    <p>Mid-sized, spatially clustered masks.</p>
+  </div>
+</div>
+
+<p>with $\sigma_1 < \sigma_2$. These give the structured masks $M_r = \eta(X_p, n_r, \gamma)$, $M_b = \eta(X_p, n_b, \gamma)$ and $M_g = \eta(X_p, n_g, \gamma)$. <span class="snm-r">Red</span> noise keeps low frequencies and yields smooth, large-scale masked regions; <span class="snm-b">blue</span> noise keeps high frequencies and scatters visible patches finely; <span class="snm-g">green</span> noise balances both and produces mid-sized, clustered masks.</p>
+
+<figure class="snm-figure snm-figure-narrow">
+  <img src="/files/ECCV2026StructuredNoise/masks_2d.png" alt="Masks generated from 2D random, blue, green, and red noise.">
+  <figcaption>Masks generated from 2D random, <span class="snm-b">blue</span>, <span class="snm-g">green</span>, and <span class="snm-r">red</span> noise. Gray patches are masked; colored patches are visible.</figcaption>
+</figure>
+
+<hr>
+
+<h3 class="snm-h3" id="green3d"><span class="snm-g">Green3D</span> noise for video masking</h3>
+
+
+<p>Video masking has to respect both spatial coherence and temporal continuity. VideoMAE and SIGMA use random <em>tube</em> masking, which keeps a static mask across all frames: temporally consistent, but unrelated to the motion in the clip.</p>
+
+<p>We instead apply the green-noise band-pass in <strong>3D</strong>, using a white noise tensor $n_w$ and two 3D Gaussian kernels</p>
+
+<p>$$
+G_\sigma(\mathbf{x}) = \frac{1}{(2\pi)^{\frac{3}{2}}\sigma^3}\exp\left(-\frac{|\mathbf{x}|^2}{2\sigma^2}\right),
+\qquad \mathbf{x}=(x,y,z)\in\mathbb{R}^3 .
+$$</p>
+
+
+<p>Instead of fixing $(\sigma_1,\sigma_2)$, which produces masks with limited diversity and either overly static or noisy temporal behavior, we <strong>randomly sample $(\sigma_1,\sigma_2)$ within $[0.5, 2]$ for each sequence</strong>. This generates an ensemble of 3D green noise tensors that remain in the mid-frequency range. Empirically, this stochasticity yields smoother mask evolution and avoids overfitting to a single frequency.</p>
+
+<figure class="snm-figure">
+  <img src="/files/ECCV2026StructuredNoise/green3d.png" alt="Green3D masks evolving smoothly across consecutive video frames.">
+  <figcaption><strong>How a Green3D mask evolves.</strong> Rather than freezing one pattern for the clip, the visible regions shift gradually from frame to frame, following the motion in the scene. This avoids abrupt frame-to-frame changes in what the encoder can see.</figcaption>
+</figure>
+
+<div class="snm-note">
+  <i class="fas fa-lightbulb"></i>
+  <p>Green3D masks are precomputed offline as tensors (e.g. $N\times64\times64\times64$). During training they only undergo flips, normalization and resizing to the token volume (e.g. $14\times14\times8$). These are spatial-domain transforms, so the frequency properties are preserved and masking adds <strong>no computational cost</strong> at train time.</p>
+</div>
+
+<hr>
+
+<h3 class="snm-h3" id="r-bn"><span class="snm-b">Regularized Blue Noise (R-BN)</span> for audio masking</h3>
+
+
+<p>Audio spectrograms have a different structure. They encode time&ndash;frequency events, and clusters of visible patches, which help in vision, do not correspond to meaningful events here. Blue noise is a better fit because it spreads visible patches more evenly. However, simply high-pass filtering white noise does not <em>explicitly</em> control the separation between visible patches, so small clusters remain.</p>
+
+<p>R-BN addresses this with a lightweight optimization. We draw $K$ candidate masks $\{M^i\}_{i=1}^{K}$ by thresholding noise at the target ratio $\gamma$. Then, for each spatial position $P=(x,y)$ in randomized order, we consider a local window $U_P^i \in \mathbb{R}^{\Delta\times\Delta}$ and count visible patches aligned with $P$ along four orientations: horizontal ($d_1^i$), vertical ($d_2^i$) and the two diagonals ($d_3^i, d_4^i$). This gives a clustering score</p>
+
+<p>$$
+S_P^i = w_1 d_1^i + w_2 d_2^i + w_3 d_3^i + w_4 d_4^i .
+$$</p>
+
+
+<p>The least clustered candidate $\hat{\imath} = \arg\min_i S_P^i$ claims the patch as visible; every other candidate masks it. The loop runs until each mask holds $(1-\gamma)N$ visible patches.</p>
+
+<figure class="snm-figure">
+  <img src="/files/ECCV2026StructuredNoise/rbn_masking.png" alt="Regularized blue noise masking: clustering metric, initial mask, and optimized mask.">
+  <figcaption><strong>(a)</strong> The metric used to measure the concentration of visible patches in a window $U_P^i$. <strong>(b)</strong> An initial mask $M^i$, with clusters of visible patches. <strong>(c)</strong> The final mask $\hat{M}_b^i$ from our R-BN algorithm, with more uniformly distributed visible patches and less local clustering.</figcaption>
+</figure>
+
+<details class="snm-details">
+  <summary>Pseudocode: Regularized Blue Noise mask generation</summary>
+  <img src="/files/ECCV2026StructuredNoise/algorithm_rbn.png" alt="Algorithm 1: Regularized Blue Noise mask generation pseudocode.">
+</details>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="results" class="home-section wg-blank   snm-page snm-results"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      <h1>Results</h1>
+      <p>Video, audio, and audio-visual benchmarks</p>
+      
+
+
+<div class="snm-stats">
+  <div class="snm-stat"><span class="snm-stat-num snm-g">+1.2</span><span class="snm-stat-unit">%</span><span class="snm-stat-label">VideoMAE on SSv2<br>top-1 accuracy</span></div>
+  <div class="snm-stat"><span class="snm-stat-num snm-g">+8.7</span><span class="snm-stat-unit">%</span><span class="snm-stat-label">VideoMAE on DAVIS<br>segmentation mIoU</span></div>
+  <div class="snm-stat"><span class="snm-stat-num snm-g">+3.1</span><span class="snm-stat-unit">%</span><span class="snm-stat-label">SIGMA on SEVERE<br>mean score</span></div>
+  <div class="snm-stat"><span class="snm-stat-num snm-b">+1.1</span><span class="snm-stat-unit">%</span><span class="snm-stat-label">MaskSpec on AS-20k<br>audio classification</span></div>
+  <div class="snm-stat"><span class="snm-stat-num">0</span><span class="snm-stat-label">additional compute<br>masks are precomputed</span></div>
+</div>
+
+<h3 class="snm-h3">Video: action recognition</h3>
+
+<p>We replace the random tube masking in <strong>VideoMAE</strong> and <strong>SIGMA</strong> with Green3D, leaving the architecture and every pretraining hyperparameter unchanged. ViT-B backbone, 800 epochs.</p>
+
+<div class="snm-table-wrap">
+<table class="snm-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="2">Masking type</th>
+      <th>SSv2 pretraining</th>
+      <th colspan="2">K400 pretraining</th>
+    </tr>
+    <tr>
+      <th>Data-independent</th>
+      <th>Data-adaptive</th>
+      <th>SSv2 top-1</th>
+      <th>SSv2 top-1</th>
+      <th>K400 top-1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>VideoMAE</td><td>Random</td><td>&ndash;</td><td>69.6</td><td>68.5</td><td>80.0</td></tr>
+    <tr class="snm-ours"><td>VideoMAE + <strong>Ours</strong></td><td>Green3D</td><td>&ndash;</td><td>70.8<sup class="snm-delta">+1.2</sup></td><td>69.7<sup class="snm-delta">+1.2</sup></td><td>80.5<sup class="snm-delta">+0.5</sup></td></tr>
+    <tr><td>CMAE-V</td><td>Random</td><td>&ndash;</td><td>69.7</td><td>&ndash;</td><td>80.2</td></tr>
+    <tr><td>OmniMAE</td><td>Random</td><td>&ndash;</td><td>69.5</td><td>69.0</td><td>80.8</td></tr>
+    <tr><td>MME</td><td>Random</td><td>&ndash;</td><td>70.0</td><td>70.5</td><td>81.5</td></tr>
+    <tr><td>MGM</td><td>&ndash;</td><td>Motion</td><td>70.6</td><td>71.1</td><td>80.8</td></tr>
+    <tr><td>MGMAE</td><td>&ndash;</td><td>Motion</td><td>71.0</td><td>68.9</td><td>81.2</td></tr>
+    <tr><td>SIGMA</td><td>Random</td><td>&ndash;</td><td>71.2</td><td>71.1</td><td>81.5</td></tr>
+    <tr class="snm-ours"><td>SIGMA + <strong>Ours</strong></td><td>Green3D</td><td>&ndash;</td><td><strong>72.0</strong><sup class="snm-delta">+0.8</sup></td><td><strong>71.8</strong><sup class="snm-delta">+0.7</sup></td><td><strong>82.1</strong><sup class="snm-delta">+0.6</sup></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p class="snm-takeaway">VideoMAE+Green3D matches or surpasses the motion-guided approaches MGM and MGMAE, which require access to motion priors such as optical flow or motion vectors and add computational overhead (MGMAE is about 1.5&times; slower than VideoMAE). Green3D is data-independent and adds no cost, since the masks are precomputed.</p>
+
+<h3 class="snm-h3">Video: unsupervised video object segmentation</h3>
+
+<p>Action recognition pools space&ndash;time features into one global clip vector. Segmentation does not: it evaluates whether the encoder produces temporally consistent, object-centric dense features. This is where we observe the largest gains.</p>
+
+<div class="snm-table-wrap">
+<table class="snm-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="2">Clustering</th>
+      <th colspan="2">Overclustering</th>
+    </tr>
+    <tr><th>YTVOS</th><th>DAVIS</th><th>YTVOS</th><th>DAVIS</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>VideoMAE</td><td>34.1</td><td>29.5</td><td>61.3</td><td>56.2</td></tr>
+    <tr class="snm-ours"><td>VideoMAE + <strong>Ours</strong></td><td>35.6<sup class="snm-delta">+1.5</sup></td><td><strong>38.2</strong><sup class="snm-delta">+8.7</sup></td><td>62.5<sup class="snm-delta">+1.5</sup></td><td>58.2<sup class="snm-delta">+2.0</sup></td></tr>
+    <tr><td>MGM</td><td>36.6</td><td>36.5</td><td>61.2</td><td>56.6</td></tr>
+    <tr><td>MGMAE</td><td>34.5</td><td>31.0</td><td>60.1</td><td>57.5</td></tr>
+    <tr><td>SIGMA</td><td>41.1</td><td>33.1</td><td>67.1</td><td>59.0</td></tr>
+    <tr class="snm-ours"><td>SIGMA + <strong>Ours</strong></td><td><strong>42.1</strong><sup class="snm-delta">+1.3</sup></td><td>34.2<sup class="snm-delta">+1.2</sup></td><td><strong>68.4</strong><sup class="snm-delta">+1.3</sup></td><td><strong>60.0</strong><sup class="snm-delta">+1.0</sup></td></tr>
+  </tbody>
+</table>
+<p class="snm-table-note">mIoU under the protocol of <em>Time Does Tell</em>; ViT-B pretrained on K400, official checkpoints for all prior work.</p>
+</div>
+
+<figure class="snm-figure">
+  <img src="/files/ECCV2026StructuredNoise/davis_qualitative.jpg" alt="Unsupervised video object segmentation on DAVIS: ground truth, VideoMAE, and VideoMAE + Green3D.">
+  <figcaption><strong>Qualitative results on DAVIS.</strong> Green3D masking produces sharper, more object-centric segmentations and is more temporally consistent across frames than the VideoMAE baseline.</figcaption>
+</figure>
+
+<h3 class="snm-h3">Video: SEVERE generalization benchmark</h3>
+
+<p>Eight experiments across four axes of generalization: domain shift, sample efficiency, action granularity, and task shift. All methods pretrained on K400 with a ViT-B backbone.</p>
+
+<div class="snm-table-wrap">
+<table class="snm-table snm-table-tight">
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="2">Domain shift</th>
+      <th colspan="2">Sample efficiency</th>
+      <th colspan="2">Action granularity</th>
+      <th colspan="2">Task shift</th>
+      <th rowspan="2">Mean</th>
+    </tr>
+    <tr>
+      <th>SSv2</th><th>Gym99</th>
+      <th>UCF(10<sup>3</sup>)</th><th>Gym(10<sup>3</sup>)</th>
+      <th>FX-S1</th><th>UB-S1</th>
+      <th>UCF-RC&darr;</th><th>Charades</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>VideoMAE</td><td>68.6</td><td>86.6</td><td>74.6</td><td>25.9</td><td>36.6</td><td>74.3</td><td>0.172</td><td>17.2</td><td>58.3</td></tr>
+    <tr class="snm-ours"><td>VideoMAE + <strong>Ours</strong></td><td>69.7</td><td>88.1</td><td>75.0</td><td>29.9</td><td>38.6</td><td>74.8</td><td>0.170</td><td>18.2</td><td>59.6<sup class="snm-delta">+1.3</sup></td></tr>
+    <tr><td>MVD</td><td>70.0</td><td>82.5</td><td>67.1</td><td>17.5</td><td>31.3</td><td>50.5</td><td>0.184</td><td>16.1</td><td>52.1</td></tr>
+    <tr><td>MGMAE</td><td>68.9</td><td>87.2</td><td>77.2</td><td>24.1</td><td>33.7</td><td>79.5</td><td>0.181</td><td>17.9</td><td>58.8</td></tr>
+    <tr><td>MGM</td><td>71.1</td><td>89.1</td><td>78.4</td><td>26.4</td><td>38.6</td><td>86.9</td><td><strong>0.152</strong></td><td>22.5</td><td>62.2</td></tr>
+    <tr><td>MME</td><td>70.1</td><td>89.7</td><td>79.2</td><td>29.8</td><td>55.5</td><td><strong>87.2</strong></td><td>0.155</td><td>23.6</td><td>65.0</td></tr>
+    <tr><td>SIGMA</td><td>70.9</td><td>89.7</td><td>84.1</td><td>28.0</td><td>55.1</td><td>79.9</td><td>0.169</td><td>23.1</td><td>64.2</td></tr>
+    <tr class="snm-ours"><td>SIGMA + <strong>Ours</strong></td><td><strong>71.8</strong></td><td><strong>90.7</strong></td><td><strong>85.0</strong></td><td><strong>35.0</strong></td><td><strong>56.5</strong></td><td>85.9</td><td>0.163</td><td><strong>27.5</strong></td><td><strong>67.3</strong><sup class="snm-delta">+3.1</sup></td></tr>
+  </tbody>
+</table>
+<p class="snm-table-note">For UCF-RC, <em>lower is better</em>: the metric reports mean repetition-counting error.</p>
+</div>
+
+<p class="snm-takeaway">Averaged over the eight settings, Green3D raises the SEVERE mean score by 1.3 points for VideoMAE and by 3.1 points for SIGMA, with improvements on all four axes of generalization.</p>
+
+<h3 class="snm-h3">Audio</h3>
+
+<p>R-BN replaces the default random masking inside <strong>AudioMAE</strong> and <strong>MaskSpec</strong>, leaving the rest of each framework unchanged. ViT-B, 80% masking during pretraining on AudioSet-2M, 30% during fine-tuning.</p>
+
+<div class="snm-table-wrap">
+<table class="snm-table">
+  <thead>
+    <tr><th>Method</th><th>AS-20k</th><th>AS-2M</th><th>ESC-50</th><th>SPC-2</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SS-AST</td><td>31.0</td><td>&ndash;</td><td>88.8</td><td>98.0</td></tr>
+    <tr><td>MaskSpec</td><td>32.3</td><td>47.1</td><td>89.6</td><td>97.7</td></tr>
+    <tr class="snm-ours snm-ours-blue"><td>MaskSpec + <strong>Ours</strong></td><td>33.4<sup class="snm-delta">+1.1</sup></td><td>47.6<sup class="snm-delta">+0.5</sup></td><td>90.4<sup class="snm-delta">+0.8</sup></td><td>98.2<sup class="snm-delta">+0.5</sup></td></tr>
+    <tr><td>MAE-AST</td><td>30.6</td><td>&ndash;</td><td>90.0</td><td>97.9</td></tr>
+    <tr><td>Audio-MAE<sup>*</sup></td><td>36.1</td><td>46.3</td><td>94.1</td><td>98.3</td></tr>
+    <tr class="snm-ours snm-ours-blue"><td>Audio-MAE + <strong>Ours</strong></td><td><strong>36.8</strong><sup class="snm-delta">+0.7</sup></td><td><strong>47.2</strong><sup class="snm-delta">+0.9</sup></td><td><strong>94.6</strong><sup class="snm-delta">+0.5</sup></td><td><strong>98.7</strong><sup class="snm-delta">+0.4</sup></td></tr>
+  </tbody>
+</table>
+<p class="snm-table-note"><sup>*</sup> Results from our own evaluation. The public AudioSet test split has changed over time due to YouTube removals, so we re-evaluate every baseline on the <em>same</em> current split for a fair comparison.</p>
+</div>
+
+<p class="snm-takeaway">R-BN improves both frameworks on all four benchmarks. Unlike MaskSpec, which relies on predefined time&ndash;frequency rules, or MAE-AST, which uses additional speech data, R-BN needs no supervision or access to the data.</p>
+
+<h3 class="snm-h3">Audio-visual</h3>
+
+<p>Inside <strong>CAV-MAE</strong>, we use Green3D for the video stream and R-BN for the audio stream. 75% masking on both modalities, ViT-B, 25 epochs of pretraining on VGGSound.</p>
+
+<div class="snm-table-wrap">
+<table class="snm-table">
+  <thead>
+    <tr><th>Method</th><th>Audio</th><th>Video</th><th>Audio-Video</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>MBT</td><td>52.3</td><td><strong>51.2</strong></td><td>64.1</td></tr>
+    <tr><td>CAV-MAE<sup>*</sup></td><td>58.5</td><td>45.6</td><td>64.3</td></tr>
+    <tr class="snm-ours"><td>CAV-MAE + <strong>Ours</strong></td><td><strong>59.1</strong><sup class="snm-delta">+0.6</sup></td><td>46.4<sup class="snm-delta">+0.8</sup></td><td><strong>64.9</strong><sup class="snm-delta">+0.6</sup></td></tr>
+  </tbody>
+</table>
+<p class="snm-table-note"><sup>*</sup> Results from our own evaluation, following the authors' publicly released VGGSound pipeline.</p>
+</div>
+
+<p class="snm-takeaway">Since CAV-MAE uses random masking for both streams, structured noise can be used as a drop-in replacement without adding objectives or computational cost. We observe gains in the unimodal settings as well as in the joint audio-visual setting.</p>
+
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="ablations" class="home-section wg-blank   snm-page snm-ablations"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      <h1>Ablations</h1>
+      <p>Which color, and why 3D?</p>
+      
+
+
+<p>All ablations use smaller subsets: <strong>mini-Kinetics</strong> (25% of K400) and <strong>mini-SSv2</strong> (50% of SSv2) for video, <strong>AS-20k</strong> and <strong>ESC-50</strong> for audio.</p>
+
+<h3 class="snm-h3">The best mask color differs between video and audio</h3>
+
+<div class="snm-two-col">
+
+<div class="snm-table-wrap">
+<p class="snm-table-title">3D masks for video</p>
+<table class="snm-table">
+  <thead><tr><th>Color mask</th><th>$\mathcal{L}_{\text{recon}}$</th><th>mini-Kinetics</th><th>mini-SSv2</th></tr></thead>
+  <tbody>
+    <tr><td>Random</td><td>0.67</td><td>51.6</td><td>52.8</td></tr>
+    <tr><td class="snm-b">Blue</td><td>0.41</td><td>50.9</td><td>52.1</td></tr>
+    <tr><td class="snm-r">Red</td><td>0.85</td><td>51.0</td><td>52.3</td></tr>
+    <tr class="snm-ours"><td class="snm-g"><strong>Green</strong></td><td>0.60</td><td><strong>52.7</strong></td><td><strong>54.5</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="snm-table-wrap">
+<p class="snm-table-title">2D masks for audio</p>
+<table class="snm-table">
+  <thead><tr><th>Color mask</th><th>$\mathcal{L}_{\text{recon}}$</th><th>AS-20k</th><th>ESC-50</th></tr></thead>
+  <tbody>
+    <tr><td>Random</td><td>0.52</td><td>36.1</td><td>94.1</td></tr>
+    <tr class="snm-ours snm-ours-blue"><td class="snm-b"><strong>Blue</strong></td><td>0.45</td><td><strong>36.5</strong></td><td><strong>94.2</strong></td></tr>
+    <tr><td class="snm-r">Red</td><td>0.61</td><td>35.5</td><td>92.6</td></tr>
+    <tr><td class="snm-g">Green</td><td>0.57</td><td>36.4</td><td>94.1</td></tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<p class="snm-takeaway">For <strong>video</strong>, green gives the best balance between reconstruction difficulty and solvability in our experiments (loss 0.60). Blue lowers the reconstruction loss the most (0.41), which appears to make the task too easy, while red raises it (0.85); both give lower accuracy than green. For <strong>audio</strong>, the ordering changes: blue performs best, green gives no benefit over random, and red degrades accuracy. The ranking of colors is therefore not the same across the two modalities.</p>
+
+<figure class="snm-figure">
+  <img src="/files/ECCV2026StructuredNoise/audio_reconstruction.jpg" alt="Spectrogram reconstruction under random, red, green, and R-BN masking.">
+  <figcaption><strong>Spectrogram reconstruction under different masking strategies</strong> (AudioMAE, masking ratio 0.8). Random masking leads to scattered reconstructions, while red and green noise introduce artifacts that distort the frequency structure. Regularized Blue noise masking produces a more balanced reconstruction, closer to the spectral distribution of the input.</figcaption>
+</figure>
+
+<h3 class="snm-h3">Blue vs. R-BN, and 3D vs. 2D</h3>
+
+<div class="snm-two-col">
+
+<div class="snm-table-wrap">
+<p class="snm-table-title">Audio: regularizing blue noise</p>
+<table class="snm-table">
+  <thead><tr><th>Masking type</th><th>$\mathcal{L}_{\text{recon}}$</th><th>AS-20k</th><th>ESC-50</th></tr></thead>
+  <tbody>
+    <tr><td>Blue</td><td>0.45</td><td>36.5</td><td>94.2</td></tr>
+    <tr class="snm-ours snm-ours-blue"><td><strong>R-BN</strong></td><td>0.49</td><td><strong>36.8</strong></td><td><strong>94.6</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="snm-table-wrap">
+<p class="snm-table-title">Video: 3D vs. 2D structure</p>
+<table class="snm-table">
+  <thead><tr><th>Masking type</th><th>$\mathcal{L}_{\text{recon}}$</th><th>mini-Kinetics</th><th>mini-SSv2</th></tr></thead>
+  <tbody>
+    <tr><td>Tube</td><td>0.67</td><td>51.6</td><td>52.8</td></tr>
+    <tr><td>Green2D</td><td>0.73</td><td>51.9</td><td>52.9</td></tr>
+    <tr class="snm-ours"><td><strong>Green3D</strong></td><td>0.60</td><td><strong>52.7</strong></td><td><strong>54.5</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<p class="snm-takeaway">Applying the same 2D green mask to every frame gives only a small improvement over random tube masking (+0.3 / +0.1). Independently sampling a fresh 2D green mask per frame does not help either (51.7 / 53.1). In our experiments the gain comes from coherent 3D spatiotemporal structure, which suggests that extending structured noise masking from images to video is not a trivial adaptation.</p>
+
+<figure class="snm-figure">
+  <img src="/files/ECCV2026StructuredNoise/video_reconstruction.jpg" alt="Video reconstruction under tube, 2D blue, 2D red, 2D green, and Green3D masking.">
+  <figcaption><strong>Video reconstruction under different masking strategies</strong> (VideoMAE pretrained on SSv2, masking ratio 0.75). Tube masking does not align with the structures in the video; 2D noise-based masking adds spatial coherence but lacks temporal consistency. Green3D follows the spatiotemporal structure, preserving motion continuity across frames.</figcaption>
+</figure>
+
+<h3 class="snm-h3">Fine-grained tasks across 3D mask colors</h3>
+
+<div class="snm-table-wrap">
+<table class="snm-table snm-table-tight">
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="4">SEVERE</th>
+      <th colspan="2">Clustering</th>
+      <th colspan="2">Overclustering</th>
+    </tr>
+    <tr>
+      <th>Gym99</th><th>FX-S1</th><th>UB-S1</th><th>Charades</th>
+      <th>YTVOS</th><th>DAVIS</th><th>YTVOS</th><th>DAVIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Random</td><td>72.0</td><td>35.7</td><td>71.3</td><td>14.2</td><td>29.7</td><td>25.3</td><td>56.2</td><td>43.9</td></tr>
+    <tr><td class="snm-r">Red3D</td><td>72.5</td><td>37.5</td><td><strong>73.0</strong></td><td>15.4</td><td>31.2</td><td>25.9</td><td>54.7</td><td>48.6</td></tr>
+    <tr><td class="snm-b">Blue3D</td><td>73.4</td><td>34.7</td><td>69.3</td><td>15.8</td><td>31.3</td><td>25.5</td><td>55.6</td><td>44.1</td></tr>
+    <tr class="snm-ours"><td class="snm-g"><strong>Green3D</strong></td><td><strong>75.4</strong></td><td><strong>38.5</strong></td><td>72.6</td><td><strong>16.0</strong></td><td><strong>32.9</strong></td><td><strong>27.3</strong></td><td><strong>60.0</strong></td><td><strong>50.9</strong></td></tr>
+  </tbody>
+</table>
+<p class="snm-table-note">Red3D and Blue3D improve some individual metrics, while Green3D is the strongest overall across these tasks.</p>
+</div>
+
+<div class="snm-note">
+  <i class="fas fa-sliders-h"></i>
+  <p><strong>Masking ratio.</strong> VideoMAE typically peaks near 90% masking and AudioMAE near 80%. Green3D and R-BN follow the same trends: gains grow from 80% to 90% for video, and performance peaks near 80% for audio. The masking ratios used with random masking therefore carry over.</p>
+</div>
+
+<p class="snm-takeaway">Taken together, these ablations point in the same direction: the choice of structured noise matters, and the choice that works best is not the same for video and audio.</p>
+
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="citation" class="home-section wg-blank   snm-page snm-citation"  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12">
+      <h1>Cite this work</h1>
+      
+      
+<p class="snm-bib-label">Structured-Noise Masked Modeling (ECCV 2026)</p>
+<pre><code>@inproceedings{bhowmik2026structured,
+  title     = {Structured-Noise Masked Modeling for Video, Audio and Beyond},
+  author    = {Bhowmik, Aritra and Hinojosa, Carlos and Thoker, Fida Mohammad
+               and Ghanem, Bernard and Snoek, Cees G. M.},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026}
+}
+</code></pre>
+
+<p class="snm-bib-note">This work builds directly on <a href="/project/colormae/">ColorMAE</a> (ECCV 2024), which introduced color noise-based masking for static images. If you use our masking strategies, please consider citing it as well.</p>
+<p class="snm-bib-label">ColorMAE (ECCV 2024)</p>
+
+<pre><code>@InProceedings{Hinojosa_2024_ECCV,
+    author    = {Hinojosa, Carlos and Liu, Shuming and Ghanem, Bernard},
+    title     = {ColorMAE: Exploring data-independent masking strategies in Masked AutoEncoders},
+    booktitle = {European Conference on Computer Vision (ECCV)},
+    month     = {September},
+    year      = {2024},
+    doi       = {10.1007/978-3-031-72661-3_25}
+}
+</code></pre>
+
+<div class="snm-ack">
+  <h4>Acknowledgements</h4>
+  <p>This work has been financially supported by TomTom, the University of Amsterdam, and the allowance of Top consortia for Knowledge and Innovation (TKIs) from the Netherlands Ministry of Economic Affairs and Climate Policy. Cees G. M. Snoek is also (partially) funded by the Horizon Europe project ELLIOT (GA No. 101214398). The research was also supported by funding from King Abdullah University of Science and Technology (KAUST) Center of Excellence for Generative AI, under award number 5940. For computing time, this research used Ibex, managed by the Supercomputing Core Laboratory at KAUST in Thuwal, Saudi Arabia. We also extend our gratitude to the anonymous reviewers for their valuable feedback and insightful suggestions during the rebuttal stage, which considerably improved this work.</p>
+</div>
+
+<script>
+(function () {
+  function init() {
+    document.querySelectorAll('.snm-citation pre').forEach(function (pre) {
+      if (pre.parentNode.classList.contains('snm-bib')) return;
+      var wrap = document.createElement('div');
+      wrap.className = 'snm-bib';
+      pre.parentNode.insertBefore(wrap, pre);
+      wrap.appendChild(pre);
+
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'snm-copy';
+      btn.textContent = 'Copy';
+      btn.setAttribute('aria-label', 'Copy BibTeX entry to clipboard');
+      btn.addEventListener('click', function () {
+        var text = pre.innerText;
+        var done = function () {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () {});
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(ta);
+        }
+      });
+      wrap.appendChild(btn);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//http-carloshinojosa-me.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © All right reserved by Carlos Hinojosa, 2026
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/CarlosH_93" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:carlos_h93?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://wa.link/7hxpg4" target="_blank" rel="noopener" title="Whatsapp Me"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

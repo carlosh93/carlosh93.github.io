@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><title>scroll probe</title>
+<style>html,body{margin:0}iframe{width:1280px;height:900px;border:0;display:block}</style>
+<iframe id="f" src="/project/structured-noise-masking/"></iframe>
+<pre id="out">pending</pre>
+<script>
+var f = document.getElementById('f');
+f.addEventListener('load', function () {
+  var w = f.contentWindow, d = f.contentDocument;
+  setTimeout(function () {
+    w.scrollTo(0, 6000);
+    w.dispatchEvent(new Event('scroll'));
+    setTimeout(function () {
+      var act = d.querySelector('.snm-nav a.is-active');
+      var nav = d.querySelector('.snm-nav');
+      document.getElementById('out').textContent =
+        'scrollY=' + w.scrollY +
+        ' | active=' + (act ? act.textContent : 'NONE') +
+        ' | navBottom=' + (nav ? Math.round(nav.getBoundingClientRect().bottom) : '?') +
+        ' | resultsTop=' + Math.round(d.getElementById('results').getBoundingClientRect().top);
+    }, 2500);
+  }, 2500);
+});
+</script>
